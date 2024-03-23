@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window caption="0,0,0,30" roundcorner="0,0,0,0" sizebox="0,0,0,0" mininfo="258,162" size="258,162">
+ <Font id="0" name="微软雅黑" size="13" bold="false" default="true"/>
+ <Font id="1" name="微软雅黑" size="18" bold="true"/>
+ <Font id="2" name="微软雅黑" size="13" underline="true"/>
+ <Font id="3" name="微软雅黑" size="12" />
+ <Font id="4" name="微软雅黑" size="14" />
+<VerticalLayout bkcolor="0xff3a384d">
+	<HorizontalLayout name="titlespace" width="9" height="9" padding="232,20,0,0">
+		<Button name="dlg_close" tooltip="关闭" visible="true" width="9" height="9" normalimage="common_small_dlg_close_btn.png"/>
+	</HorizontalLayout>
+
+	<VerticalLayout name="dlg_client_view" inset="0,0,0,0" childpadding="5">
+		<Label text="VPN Turbo" textcolor="#ffffffff" font="4" padding="0,0,0,0" align="left" valign="vcenter"/>
+    <Label text="Connect failed.Try again please!" textcolor="#ffffffff" font="4" padding="0,0,0,0" align="left" valign="vcenter"/>
+    <Label text="VPN Proxy Turbo" textcolor="#ffffffff" font="4" padding="0,0,0,0" align="left" valign="vcenter"/>
+	</VerticalLayout>
+</VerticalLayout>
+</Window>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window roundcorner="0,0,0,-1" sizebox="0,0,0,0" size="374,419"    >
+<Font id="1" name="Segoe UI" size="16" bold="true"/>
+<Font id="2" name="Segoe UI" size="24" bold="true"/>
+<Font id="3" name="Segoe UI" size="14" bold="true"/>
+<Font id="10" name="Segoe UI" size="10" />
+<Font id="11" name="Segoe UI" size="11" />
+<Font id="12" name="Segoe UI" size="12" bold="true" />
+<Font id="13" name="Segoe UI" size="13" />
+<Font id="14" name="Segoe UI" size="14" bold="false" default="true"/>
+<Font id="15" name="Segoe UI" size="15" />
+<Font id="16" name="Segoe UI" size="16" />
+<Font id="18" name="Segoe UI" size="18" bold="true" />
+<Font id="20" name="Segoe UI" size="20" />
+<Font id="22" name="Segoe UI" size="22" />
+<Font id="32" name="Segoe UI" size="32" />
+<Default name="VScrollBar" value="bknormalimage=&quot;file='bg_normal.png' source='0,0,8,50'&quot; width=&quot;8&quot; scrollunit=&quot;40&quot; showbutton1=&quot;false&quot; showbutton2=&quot;false&quot; thumbnormalimage=&quot;file='scrollbar.png' hquality='false' source='0,0,8,62' corner='3,3,3,3'&quot; thumbhotimage=&quot;file='scrollbar.png' source='0,0,8,62' corner='3,3,3,3'&quot; thumbpushedimage=&quot;file='scrollbar.png' source='0,0,8,62' corner='3,3,3,3'&quot;"/>
+<VerticalLayout  > 
+	<VerticalLayout     bkcolor="#FFFFFFFF"   width="374" height="419" bkimage="bg_setting.png">
+	  <VerticalLayout  padding="0,0,0,0"  childalign="left" >
+
+		<Label height="22"  width ="142"  padding="16,24,0,0" autosize="true"  align="left" valign="vcenter" font="14" textcolor="#D9000000" textid="412" mouse="false"></Label>
+		
+		<Edit name = "app_name_input"  textpadding ="8,7,8,6" font ="14" textcolor="#4D000000"   bkcolor="#FFF6F2F2"  height="32" width ="342" padding="16,16,0,0" wanttab="false" wantreturn="false" multiline="false"  graytextcolor="#ff696969"  graytext ="Add applications"  bkimage="SplitTunneling/text_pressed1.png"></Edit>
+		
+		<HorizontalLayout height="20" width="150"  padding="16,33,0,0" childalign="left" align="left" >
+			<Label   width ="100"   align="left" valign="vcenter" font="14" textcolor="#D9000000" textid="413" mouse="false"></Label>
+			<Label   align="left" width ="3"  font="14" textcolor="#D9000000" text="(" mouse="false"></Label>
+			<Label  name ="sys_app_num" minwidth ="6" align="center"  maxwidth="50"  font="14" textcolor="#D9000000" text="0" mouse="false"></Label>
+			<Label    width ="3"  align="left" font="14" textcolor="#D9000000" text=")" mouse="false"></Label>
+		   <Control />
+		</HorizontalLayout>
+		
+			
+	 
+		<VerticalLayout padding="16,11,0,0" bkcolor="#FFFFFFFF"  width="342" height="240">
+			
+			<VerticalLayout  name="computer_app" vscrollbar="true" linesize="40"  >
+					
+			</VerticalLayout>
+			
+			<Label visible ="false"  name="bypassappsearch" padding="10,122,10,0" height="40"  width ="320"   align="center" valign="vcenter" font="4" textcolor="#FFA8A8A8" textid="418" multiline="true" mouse="false"></Label>
+		   
+	  </VerticalLayout>
+
+	  <VerticalLayout name="page_loading_bypass"  inset="0,0,0,0" childalign="center" bkcolor="#FFFFFFFF" float="true" pos="0,0,374,419" visible="fasle">
+		   <Control />
+		   <GifAnim bkimage="page_loading.gif" autosize="true" />
+		   <Control />
+	  </VerticalLayout>
+	 
+	  <Button name="dlg_close" tooltip="close" float="true" pos="341,13,361,33" bkimage="file='promotion/ic_close_1.png'"/>
+
+	 </VerticalLayout>
+	 <Button name="browse_computer"  textid="414"  font ="3"  float="true" pos="219,124,361,143" align="right"   textcolor="#FFFA7B47" hottextcolor="#FFbA7B47" pushedtextcolor="#FFffFFff" disabledtextcolor="#FFA7A6AA"   />
+	</VerticalLayout>
+</VerticalLayout>
+</Window>

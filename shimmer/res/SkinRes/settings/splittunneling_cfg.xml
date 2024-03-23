@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window roundcorner="0,0,0,0" sizebox="0,0,0,0" size="710,580" >
+ <Font id="0" name="微软雅黑" size="13" bold="false" default="true"/>
+ <Font id="1" name="微软雅黑" size="18" bold="true"/>
+ <Font id="2" name="微软雅黑" size="12" shared="true" />
+ <Font id="3" name="微软雅黑" size="16" bold="true"/>
+ <Font id="4" name="微软雅黑" size="14" bold="true" shared="true"/>
+ <Font id="5" name="微软雅黑" size="20" />
+ <Font id="6" name="微软雅黑" size="14" shared="true"/>
+ <Font id="7" name="微软雅黑" size="12" bold="true"/>
+ <Font id="8" name="微软雅黑" size="16" />
+ <Font id="9" name="微软雅黑" size="24" bold="true" shared="true"/>
+ <Font id="10" name="微软雅黑" size="12" />
+ <Font id="11" name="微软雅黑" size="10" />
+ <Font id="12" name="微软雅黑" size="11" bold="true"/>  
+<Default name="VScrollBar" value="bknormalimage=&quot;file='bg_normal.png' source='0,0,8,50'&quot; width=&quot;8&quot; scrollunit=&quot;40&quot; showbutton1=&quot;false&quot; showbutton2=&quot;false&quot; thumbnormalimage=&quot;file='scrollbar.png' hquality='false' source='0,0,8,62' corner='3,3,3,3'&quot; thumbhotimage=&quot;file='scrollbar.png' source='0,0,8,62' corner='3,3,3,3'&quot; thumbpushedimage=&quot;file='scrollbar.png' source='0,0,8,62' corner='3,3,3,3'&quot;"/>
+ 
+<VerticalLayout childvalign="left" >  
+    <HorizontalLayout height="32"  childvalign="vcenter" childalign="left"  padding="0,19,0,0">
+		<Label textcolor="#ff696969"   font="9" textid="400" width="190"  align="left" valign="left" multiline="true" padding="56,0,0,0"/>
+		<Button bkimage="settings/ic_premium.png"  width="80" height="18"  padding="14,0,0,0"  mouse="false" ></Button>
+	</HorizontalLayout>    
+   
+   	<Label bkcolor="#ffEBE7E6"  height="1" width="446" font="6"   align="left" valign="left" multiline="true" padding="56,16,0,0"/>
+    <Label  height="57" font="6"   align="left" valign="left" multiline="true" padding="56,16,56,0"  textid="404" />	
+
+	<VerticalLayout childvalign="left" padding="56,32,0,0" name="splittunnel_layout" visible="false"> 
+		<HorizontalLayout height="25"  childvalign="vcenter" childalign="left"  >
+			<Option textcolor="#ff696969" hottextcolor="#ff696969" textpadding="0,0,0,4" selected="true" pushedtextcolor="#FFFFFFFF"   font="3" textid="405"  name="web_site_btn" width="103"  align="left" valign="left" hotimage="file='SplitTunneling\Rectangle_1.png' dest='0,0,65,25'" selectedimage="file='SplitTunneling\Rectangle_1.png' dest='0,0,65,25' "    group="bypass_fun_btn" />
+			<Option textcolor="#ff696969" hottextcolor="#ff696969" textpadding="0,0,0,4" pushedtextcolor="#FFFFFFFF"  font="3" textid="406" name="application_btn" width="190"  align="left" valign="left" hotimage="file='SplitTunneling\Rectangle_1.png' dest='0,0,95,25' " selectedimage="file='SplitTunneling\Rectangle_1.png' dest='0,0,95,25' "  group="bypass_fun_btn" />
+		</HorizontalLayout> 
+		
+		<VerticalLayout childvalign="left" padding="0,16,56,5" visible="false"  name ="app_list_vl">
+			<Button name="choose_app_btn" padding="0,0,36,0"   textid="411" font ="8" width="185" height="32"  textcolor="#FFFFFFFF" disabledtextcolor="#FFA7A6AA" align="center" normalimage="file='SpeedTest/btn_normal.png' " hotimage="file = 'SpeedTest/btn_hover.png'  " pushedimage="SpeedTest/btn_active.png" />			
+	   		<Label bkcolor="#ffEBE7E6"  height="1" width="446" font="6"   align="left" valign="left" multiline="true" padding="0,16,0,0"/>
+	   	    <Label textcolor="#ff696969"   font="3" textid="410" padding="0,16,0,0"   align="left" valign="left" />		
+		    <HorizontalLayout height="19"  childvalign="vcenter" childalign="left" padding="0,12,0,0" >
+				<Label textcolor="#ff696969"   font="4" textid="406" width="328"  align="left" valign="left"  />
+				<Label textcolor="#ff696969"   font="4" textid="409"   align="left" valign="left" />
+		    </HorizontalLayout>    
+	   		<VerticalLayout childvalign="left" padding="0,8,0,0" visible="true"  name ="app_list" linesize="40" height="160" vscrollbar="true">			
+			</VerticalLayout >	
+	   </VerticalLayout >
+		
+		<VerticalLayout childvalign="left" padding="0,16,56,5" visible="true"  name ="web_list_vl">
+			<HorizontalLayout height ="32" padding="0,0,0,0" >
+				<RichEdit name = "web_url_input" graytext ="Enter URL e.g. www.facebook.com" font ="6" textcolor="#4D000000"  width ="342" height="32" padding="0,0,0,0" wanttab="false" wantreturn="false" multiline="false" textpadding="8,7,0,6" graytextcolor="#ff696969" bkimage="SplitTunneling/Rectangle.png"></RichEdit>
+		
+				<Button name="add_bypass_web_item" padding="8,0,36,0"   text="Add" font ="8" width="96" height="32"  textcolor="#FFFFFFFF" disabledtextcolor="#FFA7A6AA" align="center" normalimage="file='SpeedTest/btn_normal.png' " hotimage="file = 'SpeedTest/btn_hover.png' " pushedimage="SpeedTest/btn_active.png" />
+			</HorizontalLayout>	
+
+			<Label bkcolor="#ffEBE7E6"  height="1" width="446" font="6"   align="left" valign="left" multiline="true" padding="0,16,0,0"/>
+			
+	        <Label textcolor="#ff696969"   font="3" textid="407" padding="0,16,0,0"   align="left" valign="left" />		
+	    	<HorizontalLayout height="19"  childvalign="vcenter" childalign="left" padding="0,12,0,0" >
+				<Label textcolor="#ff696969"   font="4" textid="408" width="328"  align="left" valign="left"  />
+				<Label textcolor="#ff696969"   font="4" textid="409"   align="left" valign="left" />
+		    </HorizontalLayout> 
+			<VerticalLayout childvalign="left" padding="0,8,0,0" visible="true"  name ="web_list" linesize="40" height="160" vscrollbar="true">
+		
+			</VerticalLayout >		
+		</VerticalLayout >  
+ 		
+	
+	</VerticalLayout >  
+
+    <HorizontalLayout float="true"  pos="460,24,502,51">
+		<Option name="split_tunneling_on_off"  normalimage="settings/ic_switch_off.png"  selectedimage="settings/ic_switch_on.png" />
+	</HorizontalLayout> 
+  
+</VerticalLayout >  
+</Window>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window caption="0,0,0,0" roundcorner="0,0,0,0" sizebox="0,0,0,0" size="710,580">
+ <Font id="0" name="Segoe UI" size="13" bold="false" default="true"/>
+ <Font id="1" name="Segoe UI" size="18" bold="true"/>
+ <Font id="2" name="Segoe UI" size="12" shared="true" />
+ <Font id="3" name="Segoe UI" size="16" bold="true"/>
+ <Font id="4" name="Segoe UI" size="14" bold="true"/>
+ <Font id="5" name="Segoe UI" size="20" />
+ <Font id="6" name="Segoe UI" size="14" />
+ <Font id="7" name="Segoe UI" size="12" bold="true"/>
+ <Font id="8" name="Segoe UI" size="16" shared="true"/>
+ <Font id="9" name="Segoe UI" size="10" />
+ <Font id="10" name="Segoe UI" size="8" />
+ <Font id="18" name="Segoe UI" size="18" bold="true"/>
+ <Font id="11" name="Segoe UI" size="24" bold="true"/>
+ <Font id="28" name="Segoe UI" size="28" bold="true"/>
+  <Font id="32" name="Segoe UI" size="32" bold="true"/>
+<!--<Default name="VScrollBar" value="width=&quot;8&quot; showbutton1=&quot;false&quot; showbutton2=&quot;false&quot; thumbnormalimage=&quot;file='Scrollbars.png' source='0,0,8,12' corner='2,3,2,3'&quot; thumbhotimage=&quot;file='Scrollbars.png' source='0,0,8,12' corner='2,3,2,3'&quot; thumbpushedimage=&quot;file='Scrollbars.png' source='0,0,8,12' corner='2,3,2,3'&quot; bknormalimage=&quot;file='Scrollbars.png' source='0,12,8,24' corner='2,3,2,3'&quot; bkhotimage=&quot;file='Scrollbars.png' source='0,12,8,24' corner='2,3,2,3'&quot; bkpushedimage=&quot;file='Scrollbars.png' source='0,12,8,24' corner='2,3,2,3'&quot;" />-->
+<Default name="VScrollBar" value="width=&quot;8&quot; scrollunit=&quot;42&quot; showbutton1=&quot;false&quot; showbutton2=&quot;false&quot; thumbnormalimage=&quot;file='scrollbar.png' hquality='false' source='0,0,8,62' corner='3,3,3,3'&quot; thumbhotimage=&quot;file='scrollbar.png' source='0,0,8,62' corner='3,3,3,3'&quot; thumbpushedimage=&quot;file='scrollbar.png' source='0,0,8,62' corner='3,3,3,3'&quot;"/>
+<VerticalLayout bkcolor="0xFFFFFFFF" bkimage="file='welcomepage/bg_discount.png'   source='0,5,710,580'" >
+
+	<Option name="welcome_title_3"  float="true"  mouse="false"  pos="236,25,472,58" bkimage="file='welcomepage/Group2.png'"/>
+	
+	<Option name="welcome_tab_1"  float="true"  mouse="false"  pos="260,82,450,434" bkimage="file='welcomepage/basic.png'"/>
+	<Option name="welcome_tab_2"  float="true"  mouse="false"  pos="474,82,666,434" bkimage="file='welcomepage/premium.png'"/>
+
+<!--
+	<Label   align ="left" float="true"  mouse="false"  pos="33,136,83,137"     bkcolor="#FFFFFFFF"   multiline="false" />
+-->	
+	<Label   text="Have an account？" textid="429" align ="left" height="34"  width="220" endellipsis="true" font="11"   padding="33,82,0,0"     textcolor="#FFFFFFFF"   multiline="false" />
+	<Button name="sign_in"  text="<u>Sign in</u>" showhtml="true"  textid="434"  align ="left"   font="3" height="21"   padding="33,2,0,0"      textcolor="#FFFFFFFF" hottextcolor="#FFE3E3E3" pushedtextcolor="#FFFFFFFF"  multiline="false" />
+	<Label   text="Speed？"   align ="left" textid="419"  font="3"  height="21"  padding="33,52,0,0"      textcolor="#FFFFFFFF"   multiline="false" />	
+	<Label   text="Streaming resolution"  textid="420" align ="left"  height="21" font="3"    padding="33,12,0,0"      textcolor="#FFFFFFFF"   multiline="false" />
+	<Label   text="Optimized for Netflix" textid="421"  align ="left" height="21"   font="3"    padding="33,12,0,0"      textcolor="#FFFFFFFF"   multiline="false" />
+	<Label   text="BT & P2P"   align ="left" textid="422"   font="3"  height="21"  padding="33,12,0,0"      textcolor="#FFFFFFFF"   multiline="false" />	
+	<Label   text="Virtual locations"   align ="left" textid="423"     font="3"  height="21"  padding="33,12,0,0"      textcolor="#FFFFFFFF"   multiline="false" />	
+	<Label   text="Linked devices"   align ="left"   font="3" textid="424"  height="21"  padding="33,12,0,0"      textcolor="#FFFFFFFF"   multiline="false" />		
+	<Label   text="Tech support"   align ="left"   font="3" textid="425" height="21"  padding="33,12,0,0"      textcolor="#FFFFFFFF"   multiline="false" />	
+
+	<Button name="proceed_with_free_2"   textcolor ="#FFFFFFFF"   float="true"   font="6"  pos="46,474,346,530"    normalimage="file='welcomepage/Rectangle_w.png' corner='20,0,20,0'"      borderround="8,8"/>
+		
+	<Button name="try_Premium_free_2"    float="true"   font="6"  pos="374,474,664,530"   normalimage="file='welcomepage/Rectangle.png'"  align ="center"     borderround="8,8"/>
+
+
+	<Label name="welcome_page_1_left_btn_top_dsc" mouse="false" text="Proceed with Bisic"    float="true"  align="center" font="8"   pos="46,483,346,504"     textcolor="#FFFFFFFF"   multiline="false" />
+  	<Label name="welcome_page_1__left_btn_bottom_dsc" mouse="false" text="Speed limit server"    float="true"  align="center" font="2"   pos="46,504,346,521"      textcolor="#FFFFFFFF"   multiline="false" />
+  	
+	<Label name="welcome_page_1_right_btn_top_dsc" mouse="false" text="Try Premoum Free"    float="true"  align="center" font="3"   pos="374,483,664,504"     textcolor="#FFFFFFFF"   multiline="false" />
+  	<Label name="welcome_page_1__right_btn_bottom_dsc" mouse="false"  text="Free 3-day trial"    float="true"  align="center" font="2"  pos="374,504,664,521"     textcolor="#FFFFFFFF"   multiline="false" />
+  
+
+
+	<Label  text="30-day money-back guarantee" textid="428"    float="true"  align="center" font="2"   pos="0,542,710,558"     textcolor="#FFFFFFFF"   multiline="false" />
+  
+
+	
+	<Button name="dlg_return" textcolor="#FFA7A6AA" tooltip="return" float="true"  width ="24" height="24" pos="22,10,46,34" normalimage="file='pay/ic_back.png' source='4,0,28,24'" hotimage="file='pay/ic_back.png' source='42,0,66,24'"  pushedimage="file='pay/ic_back.png' source='42,0,66,24'" />	
+
+</VerticalLayout>
+
+</Window>

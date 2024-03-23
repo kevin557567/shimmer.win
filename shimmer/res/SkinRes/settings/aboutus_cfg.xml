@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window roundcorner="0,0,0,0" sizebox="0,0,0,0" size="710,580" >
+ <Font id="0" name="微软雅黑" size="13" bold="false" default="true"/>
+ <Font id="1" name="微软雅黑" size="18" bold="true"/>
+ <Font id="2" name="微软雅黑" size="12" shared="true" />
+ <Font id="3" name="微软雅黑" size="16" bold="true"/>
+ <Font id="4" name="微软雅黑" size="14" bold="true" shared="true"/>
+ <Font id="5" name="微软雅黑" size="20" />
+ <Font id="6" name="微软雅黑" size="14" shared="true"/>
+ <Font id="7" name="微软雅黑" size="12" bold="true"/>
+ <Font id="8" name="微软雅黑" size="16" />
+ <Font id="9" name="微软雅黑" size="24" bold="true" shared="true"/>
+ <Font id="10" name="微软雅黑" size="12" />
+ <Font id="11" name="微软雅黑" size="10" />
+ <Font id="12" name="微软雅黑" size="11" bold="true"/>  
+ 
+ <Font id="50" name="微软雅黑" size="14"  underline="true"/> 
+<VerticalLayout childvalign="left" >  
+		<Label textcolor="#ff696969"  height="32" font="9" textid1="300"  textid="391" align="left" valign="left" multiline="true" padding="56,19,0,0"/>
+		<Label bkcolor="#ffEBE7E6"  height="1" width="446" font="6"   align="left" valign="left" multiline="true" padding="56,16,0,0"/>
+        <Label textcolor="#D9000000" name="" height="19" font="6" textid1="301" textid="392" align="left" valign="left" multiline="true" padding="56,16,56,0"/>		
+	    <Button  name="policy_btn" font="50" float="true" pos="100,488,270,507" endellipsis="true" textid="105"  tooltipid="105" text="Privacy Policy" align="right" valign="center" textcolor="#D9000000" hottextcolor="#FFFA7B47" pushedtextcolor="#ff696969"   normalimage="file='settings\Rectangle_11.png' dest='0,0,6,24'" hotimage="file='settings\ic_sidebar_active.png1' dest='0,0,6,24'" selectedimage="file='settings\ic_sidebar_active1.png' dest='0,0,6,24'"  group="cfg_btn1" />		
+	    <Button  name="terms_of_use_btn" font="50" float="true"  pos="304,488,454,507" endellipsis="true" textid="106"  tooltipid="106" text="Terms Of use" align="left" valign="center" textcolor="#D9000000" hottextcolor="#FFFA7B47" pushedtextcolor="#ff696969"   normalimage="file='settings\Rectangle_11.png' dest='0,0,6,24'" hotimage="file='settings\ic_sidebar_active1.png' dest='0,0,6,24'" selectedimage="file='settings\ic_sidebar_active1.png' dest='0,0,6,24'"  group="cfg_btn1" />		
+        
+		<Label bkcolor="#1A000000" float="true"  pos="287,488,288,512" font="6"   align="left" valign="left" multiline="true"/>
+ </VerticalLayout>
+</Window>

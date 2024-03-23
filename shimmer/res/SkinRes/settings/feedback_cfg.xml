@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window roundcorner="0,0,0,0" sizebox="0,0,0,0" size="710,580" >
+ <Font id="0" name="微软雅黑" size="13" bold="false" default="true"/>
+ <Font id="1" name="微软雅黑" size="18" bold="true"/>
+ <Font id="2" name="微软雅黑" size="12" shared="true" />
+ <Font id="3" name="微软雅黑" size="16" bold="true"/>
+ <Font id="4" name="微软雅黑" size="14" bold="true" shared="true"/>
+ <Font id="5" name="微软雅黑" size="20" />
+ <Font id="6" name="微软雅黑" size="14" shared="true"/>
+ <Font id="7" name="微软雅黑" size="12" bold="true"/>
+ <Font id="8" name="微软雅黑" size="16" />
+ <Font id="9" name="微软雅黑" size="24" bold="true" shared="true"/>
+ <Font id="10" name="微软雅黑" size="12" />
+ <Font id="11" name="微软雅黑" size="10" />
+ <Font id="12" name="微软雅黑" size="11" bold="true"/>  
+   <Font id="22" name="微软雅黑" size="22" bold="true"/>  
+  <VerticalLayout name ="feedbackpage" >
+	<Label font="9" height="24" padding="56,19,0,0"  textcolor="#ff696969" text="Feedback" textid="104"/>
+	<Control float="true" pos="56,65,502,68" bkcolor="#ffEBE7E6" height="1" mouse="false"></Control>
+	<Label font="4" height="19" padding="56,30,0,0" textcolor="#ff696969" text="How can we help you?" textid="310"/>
+	<Label font="13" multiline ="true" width ="420" height="38" padding="56,4,0,0" textcolor="#FF666666" text="Please describe the problems you encountered. We will resolve them and contact you with your registed email." textid="312"/>
+	<Label font="4" height="20" padding="56,18,0,0" textcolor="#ff696969" text="Select the problem you have encountered:" textid="311"/>
+	<VerticalLayout name = "problems" width ="578" height="150" >
+		<HorizontalLayout height="16" padding="56,11,0,0" font ="3" visible ="true" >
+			<CheckBox name="FBP0" visible ="true"  textid="313" tooltipid="313" endellipsis="true"  width ="216" height="16"  textcolor="#FF444444"  selectedtextcolor="#FFFA7B47" align="left" textpadding="24,-4,0,0" autosize="true" font ="0"  normalimage="file='language_unselect.png' dest='0,0,12,12'" selectedimage="file='language_selected.png' dest='0,0,12,12'" />
+			<CheckBox name="FBP1" visible ="true"  textid="314" tooltipid="314" endellipsis="true" text ="Auto-disconnect" padding="12,0,0,0" width ="216" height="16"  textcolor="#FF444444" selectedtextcolor="#FFFA7B47"  align="left" textpadding="24,-4,0,0"  font ="0" autosize="true"  normalimage="file='language_unselect.png' dest='0,0,12,12'" selectedimage="file='language_selected.png' dest='0,0,12,12'" />
+		</HorizontalLayout>
+		<HorizontalLayout height="16" padding="56,11,0,0" font ="3" visible ="true" >
+			<CheckBox name="FBP2" visible ="true"  textid="315" tooltipid="315" endellipsis="true"  text ="Server request" width ="216" height="16" textcolor="#FF444444" selectedtextcolor="#FFFA7B47"  align="left" textpadding="24,-4,0,0" autosize="true" font ="0"  normalimage="file='language_unselect.png' dest='0,0,12,12'" selectedimage="file='language_selected.png' dest='0,0,12,12'" />
+			<CheckBox name="FBP3" visible ="true"  textid="316" tooltipid="316" endellipsis="true"  text ="Feature suggestion" padding="12,0,0,0" width ="216" height="16" textcolor="#FF444444" selectedtextcolor="#FFFA7B47"  align="left" textpadding="24,-4,0,0" autosize="true"  font ="0" normalimage="file='language_unselect.png' dest='0,0,12,12'" selectedimage="file='language_selected.png' dest='0,0,12,12'" />
+		</HorizontalLayout>
+		<HorizontalLayout height="16" padding="56,11,0,0" font ="3" visible ="true">
+			<CheckBox name="FBP4" visible ="true"  textid="317" tooltipid="317" endellipsis="true"  text ="Can't connect a VPN server" width ="216" height="16"  textcolor="#FF444444" selectedtextcolor="#FFFA7B47" align="left" textpadding="24,-4,0,0" autosize="true"  font ="0" normalimage="file='language_unselect.png' dest='0,0,12,12'" selectedimage="file='language_selected.png' dest='0,0,12,12'" />
+			<CheckBox name="FBP5" visible ="true"  textid="318" tooltipid="318" endellipsis="true"  text ="Streaming server enquiry" padding="12,0,0,0" width ="216" height="16"  textcolor="#FF444444"  selectedtextcolor="#FFFA7B47" align="left" textpadding="24,-4,0,0" autosize="true" font ="0"  normalimage="file='language_unselect.png' dest='0,0,12,12'" selectedimage="file='language_selected.png' dest='0,0,12,12'" />
+		</HorizontalLayout>
+		<HorizontalLayout height="16" padding="56,11,0,0" font ="3" visible ="true">
+			<CheckBox name="FBP6" visible ="true"  textid="319" tooltipid="319" endellipsis="true"  text ="Subscription/payment enquiry" width ="216" height="16" textcolor="#FF444444" selectedtextcolor="#FFFA7B47" align="left" textpadding="24,-4,0,0" autosize="true" font ="0"  normalimage="file='language_unselect.png' dest='0,0,12,12'" selectedimage="file='language_selected.png' dest='0,0,12,12'" />
+			<CheckBox name="FBP7" visible ="true"  textid="320" tooltipid="320" endellipsis="true"  text ="Sign-in/Registration Enquiry" padding="12,0,0,0" width ="216" height="16" textcolor="#FF444444" selectedtextcolor="#FFFA7B47"  align="left" textpadding="24,-4,0,0" autosize="true" font ="0" normalimage="file='language_unselect.png' dest='0,0,12,12'" selectedimage="file='language_selected.png' dest='0,0,12,12'"/>
+		</HorizontalLayout>
+		<HorizontalLayout height="16" padding="56,11,0,0" font ="3" visible ="true">
+			<CheckBox name="FBP8"  visible ="true"  textid="321" tooltipid="321" endellipsis="true" text ="Can't load websites after conencted" width1 ="300" height="16" textcolor="#FF444444" selectedtextcolor="#FFFA7B47" align="left" textpadding="24,-4,0,0" autosize="true" font ="0"   normalimage="file='language_unselect.png' dest='0,0,12,12'" selectedimage="file='language_selected.png' dest='0,0,12,12'" />
+		</HorizontalLayout>
+	</VerticalLayout>
+	
+	<VerticalLayout name ="free_user_vt"  visible="true"  >
+		<VerticalLayout name ="problemsDetail"  padding="0,6,0,0" height="90" >
+			<Label name ="warning" font ="4" textid="322" text="Problem details (Must be within 1000 characters)" height="20" padding="56,0,0,0" textcolor="#ff696969" />
+			<RichEdit name="feedback_detail" valign="vcenter"  font ="13" textcolor="#666666" bkcolor="#FFDDDDDD" height="60" padding="56,4,56,0"  borderround="4,4" wanttab="false" wantreturn="true" autovscroll ="true" multiline ="true" vscrollbar= "true" textpadding="8,3,8,3" graytextcolor="#66252232" text="Please decribe your issues here." textid="323" ></RichEdit>
+		</VerticalLayout>
+		
+		<VerticalLayout name ="problemsDetail2"  padding="0,6,0,0" height="60"   >
+			<Label name ="warning2" font ="4" textid="324" text="Email address:" height="20" padding="56,0,0,0" textcolor="#ff696969" />
+			<RichEdit name="feedback_email" valign="vcenter"  font ="13" textcolor="#666666" bkcolor="#FFDDDDDD" height="30" padding="56,4,56,0" borderround="4,4" wanttab="false" wantreturn="false" multiline="true" textpadding="8,3,8,3" graytextcolor="#66252232" text="Please enter email address." textid="325" ></RichEdit>
+		</VerticalLayout>
+	</VerticalLayout>
+	
+	<VerticalLayout name ="vip_user_vt" visible="false"   >
+		<VerticalLayout name ="problemsDetail"  padding="0,6,0,0"  >
+			<Label name ="warning" font ="4" textid="322" text="Problem details (Must be within 1000 characters)" height="20" padding="56,0,0,0" textcolor="#ff696969" />
+			<RichEdit name="feedback_detail" valign="vcenter"  font ="13" textcolor="#666666" bkcolor="#FFDDDDDD" height="94" padding="56,4,56,0"  borderround="4,4" wanttab="false" wantreturn="true" autovscroll ="true" multiline ="true" vscrollbar= "true" textpadding="8,3,8,3" graytextcolor="#66252232" text="Please decribe your issues here." textid="323" ></RichEdit>
+		</VerticalLayout>	
+	</VerticalLayout>
+
+	<HorizontalLayout float="true" pos="165,487,392,529">
+		<Button name="feedback_submit" corner="10,10,10,10" text="Submit" textid="326" font ="4" width="227" height="42"  textcolor="#FFFFFFFF" disabledtextcolor="#FFA7A6AA" align="center" normalimage="file='SpeedTest/btn_normal.png' corner='8,8,8,8'" hotimage="file = 'SpeedTest/btn_hover.png' corner='8,8,8,8' " pushedimage="SpeedTest/btn_active.png" />
+    </HorizontalLayout>
+  
+    <VerticalLayout name="page_loading" inset="0,0,0,0" childalign="center" bkcolor="#99000000" float="true" pos="0,0,570,544" visible="fasle">
+		<Control />
+		<GifAnim bkimage="page_loading.gif" autosize="true"/>
+		<Control />
+	</VerticalLayout>
+  
+  </VerticalLayout>
+</Window>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window roundcorner="0,0,0,-1" sizebox="0,0,0,0" size="710,580" layeredimage="file='bg_mask.png'" layeredopacity="255">
+<Font id="1" name="Segoe UI" size="16" bold="true"/>
+<Font id="2" name="Segoe UI" size="24" bold="true"/>
+<Font id="3" name="Segoe UI" size="14" bold="true"/>
+<Font id="10" name="Segoe UI" size="10" />
+<Font id="11" name="Segoe UI" size="11" />
+<Font id="12" name="Segoe UI" size="12" bold="true" />
+<Font id="13" name="Segoe UI" size="13" />
+<Font id="14" name="Segoe UI" size="14" bold="false" default="true"/>
+<Font id="15" name="Segoe UI" size="15" />
+<Font id="16" name="Segoe UI" size="16" />
+<Font id="18" name="Segoe UI" size="18" bold="true" />
+<Font id="20" name="Segoe UI" size="20" />
+<Font id="22" name="Segoe UI" size="22" />
+<Font id="32" name="Segoe UI" size="32" />
+<VerticalLayout itemshowhtml="true"  borderround="8,8,8,8"   >
+	<Control />
+		<VerticalLayout padding="325,0,0,0" name="price_promotion_dlg" bkimage="" height="303" width="311" childalign="center">
+		  <VerticalLayout name="price_promotion_page" borderround="8,8,8,8"  >
+			<GifAnim name ="promotion_gif" bkimage="promotion/img_dsicount_2.png"/>
+		  </VerticalLayout>
+		</VerticalLayout>
+	<Control />
+
+    <Button  float="true" mouse="false" pos="370,187,438,235" bkimage="file='promotion/bg_time.png' "/>	
+    <Button  float="true" mouse="false" pos="446,187,514,235" bkimage="file='promotion/bg_time.png' "/>	
+    <Button  float="true" mouse="false" pos="522,187,590,235" bkimage="file='promotion/bg_time.png' "/>	
+	<Button  float="true" mouse="false" pos="440,206,444,218" bkimage="file='promotion/ic_time.png' "/>	
+	<Button  float="true" mouse="false" pos="516,206,520,218" bkimage="file='promotion/ic_time.png' "/>	
+
+	<Label text="0" name="H1" align ="center"  float="true" pos="381,195,394,227" textcolor="#FFFA7A48"  font="2" />
+	<Label text="0" name="H2"  align ="center"  float="true" pos="415,195,428,227" textcolor="#FFFA7A48"  font="2" />
+	<Label text="0" name="M1"  align ="center"  float="true" pos="458,195,471,227" textcolor="#FFFA7A48"  font="2" />
+	<Label text="0" name="M2"  align ="center"  float="true" pos="492,195,505,227" textcolor="#FFFA7A48"  font="2" />
+	<Label text="0"   name="S1" align ="center"  float="true" pos="533,195,546,227" textcolor="#FFFA7A48"  font="2" />
+	<Label text="0"   name="S2" align ="center"  float="true" pos="567,195,580,227" textcolor="#FFFA7A48"  font="2" />
+
+ 	<Label  name="main_page_dul_buy_guide_title"  text="Congratulations! You've got an exclusive discount!" align ="center" multiline="true" showhtml="false" float="true" pos="363,266,597,314" textcolor="#D9000000"  font="18" />
+	
+ 	<Label  name="main_page_dul_buy_guide_desc" text="Extra 20% off on all plans" enabledshadow="true"  align ="center" multiline="true" showhtml="false" float="true" pos="325,330,636,368" textcolor="#FFFA7A48"  font="14"  />
+	
+	<Button name="dlg_op_ok" float="true" textcolor="#FFFFFFFF" text="Claim Your Discount" pos="367,384,594,426"  normalimage="file='rating/btn_normal.png'" hotimage="file='rating/btn_hover.png'" pushedimage="file='rating/btn_active.png'"/>
+	<Button name="dlg_close" tooltip="close" float="true" pos="608,148,628,168" bkimage="file='promotion/ic_close_1.png' "/>	
+</VerticalLayout>
+</Window>

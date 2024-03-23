@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window roundcorner="0,0,0,-1" sizebox="0,0,0,0" size="297,226"  layeredimage="" layeredopacity="255" >
+  <Font id="1" name="Segoe UI" size="16" bold="true"/>
+  <Font id="2" name="Segoe UI" size="24" bold="true"/>
+  <Font id="3" name="Segoe UI" size="14" bold="true"/>
+  <Font id="4" name="Segoe UI" size="12" bold="true"/>
+  <Font id="10" name="Segoe UI" size="10" />
+  <Font id="11" name="Segoe UI" size="11" />
+  <Font id="12" name="Segoe UI" size="12" />
+  <Font id="13" name="Segoe UI" size="12" />
+  <Font id="14" name="Segoe UI" size="14" bold="false" default="true"/>
+  <Font id="15" name="Segoe UI" size="15" />
+  <Font id="16" name="Segoe UI" size="16" />
+  <Font id="18" name="Segoe UI" size="18" />
+  <Font id="20" name="Segoe UI" size="20" />
+  <Font id="22" name="Segoe UI" size="22" />
+  <Font id="32" name="Segoe UI" size="32" />
+<VerticalLayout  >	
+<VerticalLayout  bkimage="gift_1.png" width="297" height="174"   padding="0,52,0,0" childalign="center">	
+	 <Label   height="21" textid="342" padding="0,42,0,0" textcolor="#FFFFFFFF" font="4" align="center" valign="vcenter"></Label>
+	 <Text   height="38" textid="343"  padding="0,8,0,0" mutiline ="true" textcolor="#FFFFFFFF" font="12" align="center" valign="vcenter"></Text>
+	 <Option name="dlg_ok" text="Upgrade now" textcolor="#FFFFFFFF" font="3" padding="0,22,0,0" height="33" width="150"  normalimage="btn_gr_normal.png" hotimage="btn_gr_hover.png" />
+</VerticalLayout>	 
+     <Button mouse="false" float="true" pos="112,0,186,74" bkimage="file='ic_vip.png'"/>	
+	 <Button tooltip="close" name="dlg_close" float="true" pos="277,60,289,72" bkimage="file='ic_close_1.png'"/>	 
+
+</VerticalLayout>
+
+</Window>

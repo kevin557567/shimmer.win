@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window caption="0,0,0,36" roundcorner="8,8,8,8" sizebox="0,0,0,0" mininfo="376,336" size="882,580"  layeredimage="main.png" layeredopacity="255">
+ <Font id="0" name="微软雅黑" size="13" bold="false" default="true"/>
+ <Font id="1" name="微软雅黑" size="18" bold="true"/>
+ <Font id="2" name="微软雅黑" size="12" shared="true" />
+ <Font id="3" name="微软雅黑" size="16" bold="true"/>
+ <Font id="4" name="微软雅黑" size="14" bold="true" shared="true"/>
+ <Font id="5" name="微软雅黑" size="20" />
+ <Font id="6" name="微软雅黑" size="14" shared="true"/>
+ <Font id="7" name="微软雅黑" size="12" bold="true"/>
+ <Font id="8" name="微软雅黑" size="16" />
+ <Font id="9" name="微软雅黑" size="24" bold="true" shared="true"/>
+ <Font id="10" name="微软雅黑" size="12" />
+ <Font id="11" name="微软雅黑" size="10" />
+ <Font id="12" name="微软雅黑" size="11" bold="true"/>
+<Default name="VScrollBar" value="bknormalimage=&quot;file='bg_normal.png' source='0,0,8,50'&quot; width=&quot;8&quot; scrollunit=&quot;50&quot; showbutton1=&quot;false&quot; showbutton2=&quot;false&quot; thumbnormalimage=&quot;file='scrollbar.png' hquality='false' source='0,0,8,62' corner='3,3,3,3'&quot; thumbhotimage=&quot;file='scrollbar.png' source='0,0,8,62' corner='3,3,3,3'&quot; thumbpushedimage=&quot;file='scrollbar.png' source='0,0,8,62' corner='3,3,3,3'&quot;"/>
+  <HorizontalLayout visible="true" name="start_page" bkimage="main.png">
+    <control  visible="true" name="left_plane" width="30" />
+    <VerticalLayout  visible="true" name="right_plane">
+      <VerticalLayout  visible="true" name="m_main_1" height="40" padding="10,5,10,5" >
+      <HorizontalLayout  childvalign="vcenter">
+        <HorizontalLayout name="logo_title1" visible="true" childvalign="vcenter">
+          <Button name="logo_turbo" enabled="false" width="22" height="20" normalimage="file='logo_turbo.png' source='0,0,22,20'" hotimage="file='logo_turbo.png' source='0,0,22,20'" pushedimage="file='logo_turbo.png' source='0,0,22,20'"/>
+          <Label name="caption"  text="Turbo VPN  1.0.0.3" padding="11,0,0,0" textcolor="#FFFFFFFF" font="3" valign="vcenter"></Label>
+        </HorizontalLayout>
+        <Control />
+        <Button name="minibtn" tooltipid="125" width="28" height="20" normalimage="file='minimize.png' source='28,0,56,20'" hotimage="file='minimize.png' source='28,0,56,20'" pushedimage="file='minimize.png' source='28,0,56,20'" padding="0,0,0,0"/>
+        <Button name="closebtn" tooltipid="126" width="28" height="20" normalimage="file='close.png' source='28,0,56,20'" hotimage="file='close.png' source='28,0,56,20'" pushedimage="file='close.png' source='28,0,56,20'"/>
+      </HorizontalLayout>
+      </VerticalLayout>
+
+      <HorizontalLayout  visible="true" name="m_main_page" >
+        <VerticalLayout name="proxy_list" linesize="50" pos="0,0,250,550" vscrollbar="true" width="300" >
+        </VerticalLayout>
+        <VerticalLayout name="main_plane">
+          <VerticalLayout name="title_plane" height="30">
+            <Label text="Login"  font="2" float="fasle"   padding="0,0,0,0" align ="left"  height="20"  textcolor="#FF000000" disabledtextcolor="#FFA7A6AA"/>
+          </VerticalLayout>
+
+          <!--connect_plane-->
+          <VerticalLayout name="connect_plane" visible="false">
+            <GifAnim name="connectbar" bkimage="run2.gif" autosize="true"/>
+          </VerticalLayout>
+
+          <!--login_plane-->
+          <VerticalLayout name="login_plane" visible="true">
+            <HorizontalLayout name ="sign_in_err_tips" float="true"   pos="104,332,596,352" width="492" height="20"  visible ="false">
+              <Control bkimage="account/ic_alert.png"  width="20"  />
+              <Label test="205" name ="sign_in_err_info"  padding="10,0,0,0" align ="left"  height="18"  textcolor="#FFF54D4D" disabledtextcolor="#FFA7A6AA" font="6" />
+            </HorizontalLayout>
+
+            <Edit name ="account_name"  graytext ="Name@example.com" nativebkcolor="#ffF4F4F4"  font ="8" float="true"   pos="103,150,400,195"  width ="300" height="45"  textcolor="#FF333333"  borderround="4,4" wanttab="false" wantreturn="false" multiline="false" textpadding="17,0,16,0"  bkimage="account/bg_table.png" ></Edit>
+            <Edit name ="signin_passwd" graytext="Password" font ="8" password="true"  nativebkcolor="#ffF4F4F4" float="true"     pos="103,210,200,255"    width ="300" height="45"  textcolor="#FF333333"  borderround="4,4"  multiline="false" textpadding="17,0,16,0"  bkimage="account/bg_table.png" ></Edit >
+            
+            <HorizontalLayout width ="710" height="42" padding="0,20,0,0">
+              <Control />
+              <Button name="bt_push_signin" test="203" textcolor ="#ffFFFFFF" width ="328" height="42"  float="false"   font="4"  pos="103,270,300,315"  bkimage="account/btn_sign_disable.png" normalimage="file='account/btn_sign_normal.png'" hotimage="file='account/btn_sign_hover.png' " pushedimage="file='account/btn_sign_pressed.png'"   align ="center" bkcolor ="#FF9C9EAD"    borderround="4,4"/>
+              <Control />
+            </HorizontalLayout>
+
+            <HorizontalLayout width ="710" height="18" padding="0,320,0,0">
+              <Control />
+              <Button name="bt_find_passwd" text="Find Password" float="false"    textcolor="#FFFA7B47"  height="18" font="6"  hottextcolor="FFFA7B47" pushedtextcolor ="#FFA7A6AA"  />
+              <Control />
+            </HorizontalLayout>
+
+            <Label test="209"  font="2" float="fasle"   padding="0,20,0,0" align ="center"  height="14"  textcolor="#FF333333" disabledtextcolor="#FFA7A6AA"  />
+            <HorizontalLayout width ="710" height="14" padding="0,6,0,0">
+              <Control />
+              <Button name="bt_to_signup" test="210" float="false"   pos="279,500,419,516"  textcolor="#FFFA7B47"  width ="180" height="14" font="6"  hottextcolor="FFFA7B47" pushedtextcolor ="#FFA7A6AA"  />
+              <Control />
+            </HorizontalLayout>
+          </VerticalLayout>
+          
+          <!--option_plane-->
+          <VerticalLayout name="option_plane" visible="false">
+            <Button name="bt_to_signup" test="210" float="false"   pos="279,500,419,516"  textcolor="#FFFA7B47"  width ="180" height="14" font="6"  hottextcolor="FFFA7B47" pushedtextcolor ="#FFA7A6AA"  />
+          </VerticalLayout>
+
+          <!--end-->
+          <HorizontalLayout  visible="true" name="status_plane" height="45" >
+            <Button name="login_btn" text="LOGIN" float="false"    textcolor="#FFFA7B47"  height="18" font="6"  hottextcolor="FFFA7B47" pushedtextcolor ="#FFA7A6AA" />
+            <Button name="connect_btn" text="connect" float="false"    textcolor="#FFFA7B47"  height="18" font="6"  hottextcolor="FFFA7B47" pushedtextcolor ="#FFA7A6AA" />
+            <Button name="option_btn" text="setting" float="false"    textcolor="#FFFA7B47"  height="18" font="6"  hottextcolor="FFFA7B47" pushedtextcolor ="#FFA7A6AA"  />
+          </HorizontalLayout>
+        </VerticalLayout>
+      </HorizontalLayout>
+    </VerticalLayout>
+  </HorizontalLayout> 
+</Window>

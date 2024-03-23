@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window roundcorner="0,0,0,0" sizebox="0,0,0,0" size="298,114">
+ <Font id="0" name="Segoe UI" size="14" bold="false" default="true"/>
+ <Font id="1" name="Segoe UI" size="18" bold="true"/>
+<VerticalLayout bkcolor="#FF171426" inset="16,0,16,0">
+  <HorizontalLayout padding="0,12,0,0" height="36" childalign="center">
+    <Control width="36" height="36" bkimage="settings/ic_connectionfailed.png"></Control>
+    <Label text="Connect failed" padding="8,0,0,0" height="24" textcolor="#ffffffff" font="1" align="left" valign="vcenter"/>
+    <Button name="dlg_close" tooltip="close" width="24" height="24" normalimage="settings/ic_flyout.png"/>
+  </HorizontalLayout>
+  <Label text="Due to policy, this service is not available in China. Thanks for your understanding." padding="0,8,0,20" multiline="true" textcolor="#ffffffff" align="left" valign="vcenter"/>
+</VerticalLayout>
+</Window>

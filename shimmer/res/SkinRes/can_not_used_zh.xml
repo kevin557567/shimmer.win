@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window roundcorner="0,0,0,0" sizebox="0,0,0,0" size="355,208" layeredimage="file='bg_dialogue.png' corner='10,10,10,68' hquality='false'">
+ <Font id="0" name="微软雅黑" size="14" bold="false" default="true"/>
+ <Font id="1" name="微软雅黑" size="16" bold="true"/>
+ <Font id="2" name="微软雅黑" size="18" bold="true"/>
+ <Font id="3" name="微软雅黑" size="16"/>
+<VerticalLayout>
+  <Button name="dlg_close" tooltip="Close" float="true" pos="320,11,348,31" normalimage="file='close_dialogue.png' source='0,0,28,20'" hotimage="file='close_dialogue.png' source='28,0,56,20'" pushedimage="file='close_dialogue.png' source='28,0,56,20'"/>
+  <Label text="连接失败" height="24" textcolor="#fe666666" font="2" align="center" valign="vcenter" padding="10,32,10,0"/>
+  <Label text="政策原因，本服务区暂停在中国大陆使用，谢谢谅解。" height="57" textcolor="#fe666666" font="3" multiline="true" align="center" valign="vcenter" padding="41,18,41,0"/>
+  <Control></Control>
+  <Button name="copy_btn" text="确定" height="24" textcolor="#fe666666" pushedtextcolor="fe3A384D" font="1" align="center" valign="vcenter" padding="10,0,10,17"/>
+</VerticalLayout>
+</Window>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window roundcorner="0,0,0,0" sizebox="0,0,0,0" size="376,304"   layeredimage="" layeredopacity="255" >
+  <Font id="1" name="Segoe UI" size="16" bold="true"/>
+  <Font id="2" name="Segoe UI" size="24" bold="true"/>
+  <Font id="3" name="Segoe UI" size="14" bold="true"/>
+  <Font id="10" name="Segoe UI" size="10" />
+  <Font id="11" name="Segoe UI" size="11" />
+  <Font id="12" name="Segoe UI" size="12" bold="false"/>
+  <Font id="13" name="Segoe UI" size="12" />
+  <Font id="14" name="Segoe UI" size="14" bold="false" default="true"/>
+  <Font id="15" name="Segoe UI" size="15" />
+  <Font id="16" name="Segoe UI" size="16" />
+  <Font id="18" name="Segoe UI" size="18" />
+  <Font id="20" name="Segoe UI" size="20" />
+  <Font id="22" name="Segoe UI" size="22" />
+    <Font id="24" name="Segoe UI" size="24" />
+  <Font id="32" name="Segoe UI" size="32" />
+	<VerticalLayout    >
+		 <VerticalLayout name="price_promotion_dlg" bkimage="promotion/bg_sale.png" width="376" height="244"  padding="0,60,0,0" >
+		  <VerticalLayout name="price_promotion_page" padding="8,8,8,8"  >
+		   <GifAnim name ="promotion_gif" bkimage="promotion/img_sale_banner.png" width="360" height="228" />
+		  </VerticalLayout>
+		</VerticalLayout>
+		
+		 <VerticalLayout name="price_promotion_time" bkimage="promotion/bg_time_countdown.png"  float="true" pos="43,0,334,90" >
+			<Label textid="236" height="14" padding="10,8,10,0"  align ="center"  textcolor="#FFFFFFFF"   font="12" />
+			
+		    <HorizontalLayout padding="0,46,0,0" height="14" name="remain_time_dsc" >
+				<Label text="Hrs" align ="center"  width="22" padding="45,0,0,0" textcolor="#FFFFFFFF"  font="12" />
+				<Label text="Mins" align ="center"  width="29" padding="68,0,0,0" textcolor="#FFFFFFFF"   font="12" />
+				<Label text="Sec" align ="center"  width="23" padding="65,0,0,0"  textcolor="#FFFFFFFF" font="12" />			
+		    </HorizontalLayout>
+			
+		</VerticalLayout> 
+
+        <Label text="0" name="H1" align ="center"  float="true" pos="76,32,89,61" textcolor="#D9000000"  font="24" />
+        <Label text="0" name="H2"  align ="center"  float="true" pos="109,32,125,61" textcolor="#D9000000"  font="24" />
+        <Label text="0" name="M1"  align ="center"  float="true" pos="166,32,182,61" textcolor="#D9000000"  font="24" />
+        <Label text="0" name="M2"  align ="center"  float="true" pos="201,32,217,61" textcolor="#D9000000"  font="24" />
+        <Label text="0"   name="S1" align ="center"  float="true" pos="258,32,274,61" textcolor="#D9000000"  font="24" />
+        <Label text="0"   name="S2" align ="center"  float="true" pos="293,32,309,61" textcolor="#D9000000"  font="24" />
+		
+		<Option name="dlg_op_ok" float="true" pos="0,60,376,304"  />
+		<Button name="dlg_close" tooltip="close" float="true" pos="350,76,360,86" bkimage="file='promotion/ic_close.png'"/>	
+	</VerticalLayout>
+</Window>

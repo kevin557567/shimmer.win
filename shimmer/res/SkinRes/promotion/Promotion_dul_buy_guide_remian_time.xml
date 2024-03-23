@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window roundcorner="0,0,0,0" sizebox="0,0,0,0" size="415,250" >
+  <Font id="1" name="Segoe UI" size="16" bold="true"/>
+  <Font id="2" name="Segoe UI" size="24" bold="true"/>
+  <Font id="3" name="Segoe UI" size="14" bold="true"/>
+  <Font id="10" name="Segoe UI" size="10" />
+  <Font id="11" name="Segoe UI" size="11" />
+  <Font id="12" name="Segoe UI" size="12" bold="false"/>
+  <Font id="13" name="Segoe UI" size="12" />
+  <Font id="14" name="Segoe UI" size="14" bold="false" default="true"/>
+  <Font id="15" name="Segoe UI" size="15" />
+  <Font id="16" name="Segoe UI" size="16" />
+  <Font id="18" name="Segoe UI" size="18" />
+  <Font id="20" name="Segoe UI" size="20" />
+  <Font id="22" name="Segoe UI" size="22" />
+  <Font id="24" name="Segoe UI" size="24" />
+  <Font id="30" name="Segoe UI" size="30"  bold="true" />
+  <Font id="32" name="Segoe UI" size="32" />
+    <Font id="33" name="Segoe UI" size="18" bold="true" />
+<VerticalLayout  bkcolor="#FFFFFFFF"  borderround="4,4" >
+	 <VerticalLayout name="price_promotion_dlg" bkimage="promotion/img_end.png" width="415" height="250"  padding="0,0,0,0" >
+	  <VerticalLayout name="price_promotion_page" padding="8,8,8,8"  >
+	   <GifAnim name ="promotion_gif" bkimage="" width="415" height="250" />
+	  </VerticalLayout>
+	</VerticalLayout>
+	
+	<Label text="Special Discount will end soon" name="remain_time_title" showhtml="true" align ="center"  float="true" pos="0,32,415,56" textcolor="#D9000000"  font="33" />
+	<Label text="20% off on top of the current discount" name="remain_time_content"  showhtml="true" align ="center"  float="true" pos="0,64,415,88" textcolor="#D9000000"  font="18" />
+	
+	<Label text="0" name="remain_time" align ="center"  float="true" pos="138,112,278,152" textcolor="#FFFA7B47"  font="30" />
+
+	
+	<Option name="dlg_op_ok" text="Claim your discount" float="true" pos="94,176,321,218"  textcolor="#FFFFFFFF"  normalimage="file='SpeedTest/btn_normal.png' " hotimage="file='SpeedTest/btn_hover.png'" pushedimage="file='SpeedTest/btn_active.png' "   />
+	<Button name="dlg_close" tooltip="close" float="true" pos="378,16,398,36" bkimage="file='promotion/ic_close_1.png'"/>	
+</VerticalLayout>
+</Window>

@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window caption="0,0,0,0" roundcorner="0,0,0,0" sizebox="0,0,0,0" size="710,580">
+	<Font id="0" name="Segoe UI" size="13" bold="false" default="true"    />
+	<Font id="1" name="Segoe UI" size="18" bold="true" shared="false"  />
+	<Font id="2" name="Segoe UI" size="12" bold="false"  />
+	<Font id="3" name="Segoe UI" size="16" bold="false"/>
+	<Font id="4" name="Segoe UI" size="14" bold="true"   />
+	<Font id="5" name="Segoe UI" size="20"     />
+	<Font id="6" name="Segoe UI" size="14"  />
+	<Font id="7" name="Segoe UI" size="12" bold="true"   />
+	<Font id="8" name="Segoe UI" size="16" />
+	<Font id="9" name="Segoe UI" size="10"  />
+	<Font id="10" name="Segoe UI" size="8"    />
+	<Font id="11" name="Segoe UI" size="24" bold="true" />
+	<Font id="12" name="Segoe UI" size="24" bold="false" />
+	<Font id="13" name="Segoe UI" size="20" bold="true"  />
+	<Font id="15" name="Segoe UI" size="15"  />
+	<Font id="16" name="Segoe UI" size="16"  />
+	<Font id="17" name="Segoe UI" size="17"  />
+	<Font id="18" name="Segoe UI" size="18" bold="false"  />
+	<Font id="19" name="Segoe UI" size="19"  />
+	<Font id="20" name="Segoe UI" size="20"   />
+ 	<Font id="21" name="Segoe UI" size="21"  bold="true" />	   	
+	<Font id="28" name="Segoe UI" size="28" bold="false"  />
+	<Font id="30" name="Segoe UI" size="30" bold="true"  />
+	<Font id="32" name="Segoe UI" size="32" bold="true"  />
+	<Font id="35" name="Segoe UI" size="35" bold="false"  />
+	<Font id="40" name="Segoe UI" size="40" bold="true" />	
+	<Font id="45" name="Segoe UI" size="45" bold="true"  />
+	<Font id="50" name="Segoe UI" size="50" bold="true" />
+	<Font id="55" name="Segoe UI" size="55" bold="true"  />
+	<Font id="60" name="Segoe UI" size="60" bold="true" />
+	<Font id="65" name="Segoe UI" size="65" bold="true"  />
+	<Font id="70" name="Segoe UI" size="70" bold="true"  />	
+	
+	<Font id="88" name="Segoe UI" size="88" bold="true"  />
+		<Font id="100" name="Segoe UI" size="110" bold="true"  />
+	<Font id="140" name="Segoe UI" size="140" bold="true"  />
+	<Font id="162" name="Segoe UI" size="162"  />
+	<Font id="170" name="Segoe UI" size="170"  />
+	<Font id="188" name="Segoe UI" size="190"  />
+
+<!--<Default name="VScrollBar" value="width=&quot;8&quot; showbutton1=&quot;false&quot; showbutton2=&quot;false&quot; thumbnormalimage=&quot;file='Scrollbars.png' source='0,0,8,12' corner='2,3,2,3'&quot; thumbhotimage=&quot;file='Scrollbars.png' source='0,0,8,12' corner='2,3,2,3'&quot; thumbpushedimage=&quot;file='Scrollbars.png' source='0,0,8,12' corner='2,3,2,3'&quot; bknormalimage=&quot;file='Scrollbars.png' source='0,12,8,24' corner='2,3,2,3'&quot; bkhotimage=&quot;file='Scrollbars.png' source='0,12,8,24' corner='2,3,2,3'&quot; bkpushedimage=&quot;file='Scrollbars.png' source='0,12,8,24' corner='2,3,2,3'&quot;" />-->
+<Default name="VScrollBar" value="width=&quot;8&quot; scrollunit=&quot;42&quot; showbutton1=&quot;false&quot; showbutton2=&quot;false&quot; thumbnormalimage=&quot;file='scrollbar.png' hquality='false' source='0,0,8,62' corner='3,3,3,3'&quot; thumbhotimage=&quot;file='scrollbar.png' source='0,0,8,62' corner='3,3,3,3'&quot; thumbpushedimage=&quot;file='scrollbar.png' source='0,0,8,62' corner='3,3,3,3'&quot;"/>
+<VerticalLayout bkcolor="0xFFFFFFFF" heigh="580" >
+<!--
+	<VerticalLayout name="bk_gif_vt" float="true"  mouse="false"  pos="0,0,710,580"   >
+	   <GifAnim name ="bk_gif" bkimage="pay/bg_vip.png"  />
+	</VerticalLayout>-->
+    <TabLayout name="price_page_tab" float="true" pos="0,0,710,580">
+	    <!--buy pag 0-->
+	
+		<VerticalLayout bkcolor="0xFFFFFFFF"  name="discount_vt"   visible="true" >
+			<VerticalLayout name="bk_gif_vt" float="true" pos="0,0,710,300"   >
+				<GifAnim name ="bk_gif" bkimage="pay/bg_sale_turbo.png"  />
+		    </VerticalLayout>
+		
+			<VerticalLayout name="normal_discount_vt"  float="true" pos="0,0,710,300"   visible="true" >
+				<Label name="discount_title1" text="<c #FFFFFFFF >Turbo VPN </c> <c #F0E531>Premium</c>" align ="center" textcolor="#FFFFFFFF"  height="24" padding="0,21,0,0"  showhtml="true"  font="1" />
+				<Label name="discount_title2" text="Limited offer. Save"  align ="center"  height="32" padding="0,4,0,0" textcolor="#FFFFFFFF" disabledtextcolor="#FFA7A6AA" font="11" />
+				<VerticalLayout	name="product_introduce" float="true" pos="0,0,710,300">
+					<Option name="select_pic_1" width ="32" height="32" float="true"  mouse="false"  pos="132,104,164,136" bkimage="file='pay/ic_speed.png'"/>
+					<Option name="select_pic_2" width ="32" height="32" float="true"  mouse="false"  pos="264,104,296,136" bkimage="file='pay/ic_servers.png'"/>
+					<Option name="select_pic_3" width ="32" height="32" float="true"   mouse="false" pos="397,104,429,136" bkimage="file='pay/ic_devices.png'"/>
+					<Option name="select_pic_4" width ="32" height="32" float="true"  mouse="false"  pos="539,104,571,136" bkimage="file='pay/ic_247.png'"/>
+					
+		
+					<Label name="product_dsc_1" text="Unlimited<n>speed</n>"  align ="center"  float="true"  pos="89,144,209,186"  multiline="true" showhtml="true" textcolor="#FFFFFFFF" disabledtextcolor="#FFA7A6AA" font="3" />
+					<Label name="product_dsc_2" text="22000+<n>servers</n>"  align ="center"  float="true"  pos="219,144,339,186" multiline="true" showhtml="true" textcolor="#FFFFFFFF" disabledtextcolor="#FFA7A6AA" font="3" />			
+					<Label name="product_dsc_3" text="Connect up to 5 devices"  align ="center"  float="true"  pos="356,144,476,186" multiline="true" showhtml="true" textcolor="#FFFFFFFF" disabledtextcolor="#FFA7A6AA" font="3" />
+					<Label name="product_dsc_4" text="24/7 customer <x 50>       support"  align ="center" float="true"  pos="495,144,615,186" multiline="true" showhtml="true" textcolor="#FFFFFFFF" disabledtextcolor="#FFA7A6AA" font="3" />
+				</VerticalLayout>
+			
+			</VerticalLayout>
+			
+			<VerticalLayout name="special_discount_vt"  float="true" pos="0,0,710,300"  visible="fasle" >
+				<Label name="discount_pic_title" align ="center" bkimage="file='promotion/Group 2.png'" height="33" width="236" padding="236,24,0,0"   font="1" />
+				<Label name="discount_title1" text="Extra <f 32> <i>20% off</i></f> on top of the current discount"  align ="center"  height="43" padding="0,9,0,0" textcolor="#FFFFFFFF" showhtml="true"   font="11" />
+				
+				<Button  float="true" mouse="false" pos="245,150,313,198" bkimage="file='promotion/bg_time.png' "/>	
+				<Button  float="true" mouse="false" pos="321,150,389,198" bkimage="file='promotion/bg_time.png' "/>	
+				<Button  float="true" mouse="false" pos="397,150,465,198" bkimage="file='promotion/bg_time.png' "/>	
+				<Button  float="true" mouse="false" pos="315,169,319,181" bkimage="file='promotion/ic_time.png' "/>	
+				<Button  float="true" mouse="false" pos="391,169,395,181" bkimage="file='promotion/ic_time.png' "/>	
+
+				<Label text="0" name="H1" align ="center"  float="true" pos="256,158,269,190" textcolor="#FFFA7A48"  font="11" />
+				<Label text="0" name="H2"  align ="center"  float="true" pos="290,158,303,190" textcolor="#FFFA7A48"  font="11" />
+				<Label text="0" name="M1"  align ="center"  float="true" pos="333,158,346,190" textcolor="#FFFA7A48"  font="11" />
+				<Label text="0" name="M2"  align ="center"  float="true" pos="367,158,380,190" textcolor="#FFFA7A48"  font="11" />
+				<Label text="0"   name="S1" align ="center"  float="true" pos="408,158,421,190" textcolor="#FFFA7A48"  font="11" />
+				<Label text="0"   name="S2" align ="center"  float="true" pos="442,158,455,190" textcolor="#FFFA7A48"  font="11" />
+			</VerticalLayout>	
+			
+			<HorizontalLayout  name="price_list_HL" visible="true" float="true" childvalign="vcenter"    pos="55,215,651,447" >
+			 <Control />
+				<HorizontalLayout name ="price_list" valign="center" height="224"  padding="0,0,0,0"  bkimage="file='pay/bg_shadow.png' corner='0,0,0,0' dest='0,5,595,232' "   >
+				</HorizontalLayout>	
+			 <Control />
+			</HorizontalLayout>
+<!--
+			<Option name="ic_select" width ="32" height="32" float="true"  mouse="false"  pos="264,468,280,484" bkimage="file='pay/ic_select.png'"/>
+			-->
+			<Label name="guarantee_dsc"  text="30-day money-back guarantee"  padding="0,465,0,0"  float="false" valign="vcenter"  align="center"   pos1="0,465,580,483"     height="18"  textcolor="#FF242234"   multiline="false" />
+		
+			<Button name="comfirm" text="Get it at $4.17/mo" textcolor ="#ffFFFFFF" width ="328" height="42"  float="true"   font="3"  pos="191,492,519,534"   normalimage="file='pay/btn_purchase_normal.png'" hotimage="file='pay/btn_purchase_normal.png' " pushedimage="file='pay/btn_purchase_hover.png'"   align ="center"     borderround="8,8"/>
+
+		</VerticalLayout>	
+		
+
+		<!--buy pag 1-->
+		<VerticalLayout bkcolor="0xFFFFFFFF"   >
+			<VerticalLayout name="bk_gif_vt" float="true"  mouse="false"  pos="0,0,710,580"   >
+				<GifAnim name ="bk_gif" bkimage="welcomepage/bg_discount.png"  />
+		    </VerticalLayout>
+		
+			<Option name="welcome_pic_title"  float="true"  mouse="false"  pos="236,25,472,58" bkimage="file='welcomepage/Group2.png'"/>
+			
+			<Option name="welcome_tab_1"  float="true"  mouse="false"  pos="260,82,450,434" bkimage="file='welcomepage/basic.png'"/>
+			<Option name="welcome_tab_2"  float="true"  mouse="false"  pos="474,82,666,434" bkimage="file='welcomepage/premium.png'"/>
+
+			<Label  name="text1" text="Have an account？" textid="429" align ="left" height="34"  width="220" endellipsis="true" font="11"   padding="33,82,0,0"     textcolor="#FFFFFFFF"   multiline="false" />
+			<Button name="sign_in"  text="<u>Sign in</u>" showhtml="true"  textid="434"  align ="left"   font="3" height="21"   padding="33,2,0,0"      textcolor="#FFFFFFFF" hottextcolor="#FFE3E3E3" pushedtextcolor="#FFFFFFFF"  multiline="false" />
+			<Label name="text2"  text="Speed？"   align ="left" textid="419"  font="3"  height="21"  padding="33,52,0,0"      textcolor="#FFFFFFFF"   multiline="false" />	
+			<Label name="text3"  text="Streaming resolution"  textid="420" align ="left"  height="21" font="3"    padding="33,12,0,0"      textcolor="#FFFFFFFF"   multiline="false" />
+			<Label name="text4"  text="Optimized for Netflix" textid="421"  align ="left" height="21"   font="3"    padding="33,12,0,0"      textcolor="#FFFFFFFF"   multiline="false" />
+			<Label name="text5"  text="BT & P2P"   align ="left" textid="422"   font="3"  height="21"  padding="33,12,0,0"      textcolor="#FFFFFFFF"   multiline="false" />	
+			<Label name="text6"  text="Virtual locations"   align ="left" textid="423"     font="3"  height="21"  padding="33,12,0,0"      textcolor="#FFFFFFFF"   multiline="false" />	
+			<Label name="text7"  text="Linked devices"   align ="left"   font="3" textid="424"  height="21"  padding="33,12,0,0"      textcolor="#FFFFFFFF"   multiline="false" />		
+			<Label name="text8"  text="Tech support"   align ="left"   font="3" textid="425" height="21"  padding="33,12,0,0"      textcolor="#FFFFFFFF"   multiline="false" />	
+
+			<Button name="left_comfirm"   textcolor ="#FFFFFFFF"   float="true"   font="6"  pos="46,474,346,530"    normalimage="file='welcomepage/Rectangle_w.png' corner='20,0,20,0'"      borderround="8,8"/>
+				
+			<Button name="right_comfirm"    float="true"   font="6"  pos="374,474,664,530"   normalimage="file='welcomepage/Rectangle.png'"  align ="center"     borderround="8,8"/>
+
+
+			<Label name="welcome_page_1_left_btn_top_dsc" mouse="false" text="Proceed with Bisic"    float="true"  align="center" font="8"   pos="46,483,346,504"     textcolor="#FFFFFFFF"   multiline="false" />
+			<Label name="welcome_page_1__left_btn_bottom_dsc" mouse="false" text="Speed limit server"    float="true"  align="center" font="2"   pos="46,504,346,521"      textcolor="#FFFFFFFF"   multiline="false" />
+			
+			<Label name="welcome_page_1_right_btn_top_dsc" mouse="false" text="Try Premoum Free"    float="true"  align="center" font="3"   pos="374,483,664,504"     textcolor="#FFFFFFFF"   multiline="false" />
+			<Label name="welcome_page_1__right_btn_bottom_dsc" mouse="false"  text="Free 3-day trial"    float="true"  align="center" font="2"  pos="374,504,664,521"     textcolor="#FFFFFFFF"   multiline="false" />
+		  
+
+
+			<Label name="guarantee_dsc" text="30-day money-back guarantee" textid="428"    float="true"  align="center" font="2"   pos="0,542,710,558"     textcolor="#FFFFFFFF"   multiline="false" />
+		  
+
+			
+			<Button name="dlg_return" textcolor="#FFA7A6AA" tooltip="return" float="true"  width ="24" height="24" pos="22,10,46,34" normalimage="file='pay/ic_back.png' source='4,0,28,24'" hotimage="file='pay/ic_back.png' source='42,0,66,24'"  pushedimage="file='pay/ic_back.png' source='42,0,66,24'" />	
+
+		</VerticalLayout>	
+  
+		<!--buy pag 2-->
+		 <VerticalLayout visible="true" bkcolor="0xFFFFFFFF"  >	
+
+		    <VerticalLayout name="bk_gif_vt" float="true"  mouse="false"  pos="0,0,710,391"   >
+				<GifAnim name ="bk_gif" bkimage="pay/template2_bg.png"  />
+		    </VerticalLayout>
+			
+			<Label name="discount_title1" text="Get Unlimited Data With Premium" showhtml="true" endellipsis="true" align ="center"  height="32"  padding="0,66,0,0" textcolor="#FFFFFFFF" disabledtextcolor="#FFA7A6AA" font="12" />
+			<Label name="discount_title2" text="You can browse，stream，and games as much as you want"  showhtml="true" float="true"    pos="0,108,710,133"    textcolor="#ffEAEAEA" disabledtextcolor="#FFA7A6AA" font="18" align="center" />				
+			
+			<HorizontalLayout name="product_introduce" align="center"   float="true"   pos="6,250,710,342">
+				<Button height="46" name="product_pic_1" width ="46" float="true"   pos="121,0,167,46" bkimage ="pay/ic_faster.png" mouse="false" />
+				<Label text="10x Faster" name="product_dsc_1" showhtml="true" float="true"   pos="91,54,197,92" multiline ="true" padding="0,0,0,0" textcolor="#ffBF460C" align="center" font="3" />
+	
+				<Button  float="true" name="product_pic_2"   pos="258,0,304,46"  bkimage ="pay/ic_privacy.png" mouse="false" />
+				<Label text="Privacy Protection" showhtml="true"  name="product_dsc_2" float="true"    pos="228,54,334,92"  multiline ="true" padding="0,0,0,0" textcolor="#ffBF460C" align="center" font="3" />
+
+				<Button  padding="0,0,0,0" name="product_pic_3" bkimage ="pay/ic_devices_a.png" mouse="false"  float="true"   pos="395,0,441,46" />
+				<Label text="Connect up to 5 devices" showhtml="true"  name="product_dsc_3" float="true"    pos="365,54,471,92"  multiline ="true" padding="0,0,0,0" textcolor="#ffBF460C" align="center" font="3" />
+
+				<Button  padding="0,0,0,0" name="product_pic_4" bkimage ="pay/ic_online.png" float="true"   pos="543,0,589,46" align="center" mouse="false" />
+				<Label text="24/7 customer support"  showhtml="true" name="product_dsc_4" float="true"  pos="516,54,622,92" multiline ="true" padding="10,0,0,0" textcolor="#ffBF460C" align="center" font="3" />
+			</HorizontalLayout>
+			
+			<Label name="fun_area_title_dsc" text="Access all the perks of Premium" textpadding="5,0,5,0"  showhtml="true" float="true"    pos="0,184,710,208"    textcolor="#ffBF460C " disabledtextcolor="#FFA7A6AA" font="1" align="center" />	
+
+			<Label name="fun_area_title_dsc_2" showhtml="true" text="Choose a plan that’s right for you" textpadding="5,0,5,0" font="11"   float="true"  align="center"   pos="0,411,710,445"    textcolor="#FF333333"   multiline="false" />
+			
+			 <VerticalLayout float="true"   pos="55,467,345,541" childalign="center" childvalign="vcenter">
+			 	<Button name="left_comfirm" float="true"   pos="0,0,290,48" text="Subscribe to 2-yearly"   font="16"  showhtml="true" textcolor ="##ffFF9400"      normalimage="file='pay/btn_normal_white.png'" hotimage="file='pay/btn_normal_white.png' " pushedimage="file='pay/btn_normal_white.png'"   align ="center"      borderround="10,10"/>	
+				<Label name="left_product_sales_dsc" showhtml="true" float="true"   pos="0,58,290,74" showhtml="true" text="Billed at ¥12.99/mo"  font="2" align="center"     textcolor="#ffBBBBBB"   multiline="false" />
+			 </VerticalLayout>
+			 
+			<VerticalLayout float="true"   pos="365,467,655,541" childalign="center"  childvalign="vcenter">
+			 	<Button name="right_comfirm" float="true"   pos="0,0,290,48" text="Subscribe to yearly" showhtml="true" font="16" textcolor ="#ffFFFFFF"      normalimage="file='pay/btn_purchase_normal.png'" hotimage="file='pay/btn_purchase_hover.png' " pushedimage="file='pay/btn_purchase_active.png'"   align ="center"      borderround="10,10"/>	
+				<Label name="right_product_sales_dsc" float="true" showhtml="true"  pos="0,58,290,74" showhtml="true" text="Billed at ¥12.99/mo" align="center"  font="6"     textcolor="#ffBBBBBB"   multiline="false" />
+			 </VerticalLayout>		
+	
+		</VerticalLayout>   
+	    <!--buy pag 3-->	
+        <VerticalLayout visible="true" bkcolor="0xFFFFFFFF" >	
+			<VerticalLayout name="bk_gif_vt" float="true"  mouse="false"  pos="0,0,710,306"   >
+				<GifAnim name ="bk_gif" bkimage="pay/template3_bg.png"  />
+		    </VerticalLayout>
+		
+			<Label name="fun_area_title_dsc" showhtml="true"  text="LIMITED TIME OFFER UP TO 69% OFF"   float="true"   pos="0,301,710,333"   font="11"  textcolor="#ff333333"   align="center" />
+			<Label name="fun_area_title_dsc_2" showhtml="true" text="You can browse，stream，and games as much as you want"  float="true"   pos="0,341,710,366"    textcolor="#ff999999" disabledtextcolor="#FFA7A6AA" font="18" align="center" />	
+			
+			<Label name="product_sales_dsc" showhtml="true" float="true" pos="0,420,710,439" text="Start your 7-day free trial - Then $12.99 per month"  align ="center"   textcolor="#FFBBBBBB" disabledtextcolor="#FFA7A6AA" font="6" />					
+			
+			<Label name="guarantee_dsc" showhtml="true" text="30-day money-back guarantee"  font="6"   float="true"  align="center"   pos="0,499,698,518"    textcolor="#FFCFCFCF"   multiline="false" />
+
+			<Button name="comfirm" text="Subscribe Now" textcolor ="#ffFFFFFF"    font="4"  float="true"  pos="191,450,519,492"  normalimage="file='pay/btn_purchase_normal.png'" hotimage="file='pay/btn_purchase_hover.png' " pushedimage="file='pay/btn_purchase_active.png'"    align ="center"    borderround="10,10"/>			
+		
+			<HorizontalLayout  float="true"   pos="0,549,710,568"  >
+				<Control />
+				<Button name="goto_other_plan" text="<u >Cheak other plan</u>" textcolor ="#ffFF9400" showhtml="true" width="119" heigh="19" align="center"  font="4"   />	
+				<Control />
+			</HorizontalLayout>
+		</VerticalLayout>	
+		<!--buy pag 4-->
+		<VerticalLayout name="discount_vt_2"   visible="true"   childalign="center" bkcolor="0xFFFFFFFF" >	
+		    <VerticalLayout name="bk_gif_vt" float="true"  mouse="false"  pos="0,0,710,278"   >
+				<GifAnim name ="bk_gif" bkimage="pay/template4_bg.png"  />
+		    </VerticalLayout>
+	
+			<Label text="Turbo VPN" name="product_name" showhtml="true" align ="center" textcolor="#FFFFFFFF"  float="true"  mouse="false"  pos="267,22,359,46"   showhtml="true"  font="1" />
+			<Option name="turbo_log"  float="true"  mouse="false"  pos="356,18,443,48" bkimage="file='pay/ic_premium.png'"/>
+
+			<Label name="discount_title2" text="LIMITED TIME OFFER UP TO 60% OFF" showhtml="true" endellipsis="true" align ="center"  height="32" padding="0,83,0,0" textcolor="#FFFFFFFF" disabledtextcolor="#FFA7A6AA" font="11" />
+			
+			<VerticalLayout  float="true"   pos="31,135,673,399" bkimage="file='pay/card4.png'" childalign="center" >
+				<Label name="fun_area_title_dsc" showhtml="true" float="true" pos="61,28,261,53" text="24 MONTHS PLAN"  align ="center"   textcolor="#FFFFFFFF" disabledtextcolor="#FFA7A6AA" font="1" />
+				<Label name="price_item_dsc"  showhtml="true" float="true" pos="155,189,265,214" text="$/per month"  align ="left"   textcolor="#FFFFFFFF" disabledtextcolor="#FFA7A6AA" font="18" />
+				
+				<Label name="price_head" showhtml="true" float="true" pos="43,6,153,259" text="2"  align ="right"   textcolor="#FFFFFFFF" disabledtextcolor="#FFA7A6AA" font="188" />
+				<Label name="price_tail" showhtml="true" float="true" pos="153,36,290,190" text="75"  align ="left"   textcolor="#FFFFFFFF" disabledtextcolor="#FFA7A6AA" font="100" />
+
+				<Label name="fun_area_title_dsc_2" showhtml="true" textpadding="5,0,5,0" text="LIMITED TIME OFFER UP TO 60% OFF"  font="21"  multiline="true"   float="true"  align="left" valign="top" textpadding="0,0,0,0"  pos="335,27,603,87"    textcolor="#FF333333"   multiline="true" />
+				
+				<VerticalLayout name="product_introduce" float="true"  mouse="false"  pos="335,101,635,221">
+					<Option name="select_pic_1"  float="true"  mouse="false"  pos="0,0,24,24" bkimage="file='pay/ic_select_tick.png'"/>
+					<Option name="select_pic_2"  float="true"  mouse="false"  pos="0,32,24,56" bkimage="file='pay/ic_select_tick.png'"/>
+					<Option name="select_pic_3"  float="true"  mouse="false"  pos="0,64,24,88" bkimage="file='pay/ic_select_tick.png'"/>
+					<Option name="select_pic_4"  float="true"  mouse="false"  pos="0,96,24,120" bkimage="file='pay/ic_select_tick.png'"/>
+					
+					<Label name="product_dsc_1" showhtml="true" float="true" pos="38,0,262,24" text="Surf anonymously"  align ="left"   textcolor="#ff808080" disabledtextcolor="#FFA7A6AA" font="4" />
+					<Label name="product_dsc_2" showhtml="true" float="true" pos="38,32,262,56" text="Public Wi-Fi auto protection"  align ="left"   textcolor="#ff808080" disabledtextcolor="#FFA7A6AA" font="4" />
+					<Label name="product_dsc_3" showhtml="true" float="true" pos="38,64,262,88" text="Connect up to 5 devices"  align ="left"   textcolor="#ff808080" disabledtextcolor="#FFA7A6AA" font="4" />
+					<Label name="product_dsc_4" showhtml="true" float="true" pos="38,96,262,120" text="Enjoy streaming / BT servers"  align ="left"   textcolor="#ff808080" disabledtextcolor="#FFA7A6AA" font="4" />	
+                </VerticalLayout>
+			</VerticalLayout>
+			
+			<Label name="product_sales_dsc" showhtml="true" float="true" pos="0,420,710,439" text="Start your 7-day free trial - Then $12.99 per month"  align ="center"   textcolor="#FFCFCFCF" disabledtextcolor="#FFA7A6AA" font="6" />					
+						
+			<Label name="guarantee_dsc" showhtml="true" text="30-day money-back guarantee"  font="2"    float="true"  align="center"   pos="0,509,710,525"    textcolor="#FFCFCFCF"   multiline="false" />
+	  
+			<Button name="comfirm" text="Start Subscription" textcolor ="#ffFFFFFF"    font="4"  float="true"  pos="191,455,519,497"   normalimage="file='pay/btn_normal.png'" hotimage="file='pay/btn_hover.png' " pushedimage="file='pay/btn_active.png'"   align ="center"      borderround="10,10"/>			
+			
+			<HorizontalLayout  float="true"   pos="0,549,710,568"  >
+				<Control />
+				<Button name="goto_other_plan" text="<u >Cheak other plan</u>" textcolor ="#ffFF9400" showhtml="true" width="119" heigh="19" align="center"  font="4"   />	
+				<Control />
+			</HorizontalLayout>
+			
+		</VerticalLayout>
+
+		
+	</TabLayout>
+
+	<Button name="dlg_return" textcolor="#FFA7A6AA" tooltip="return" float="true"  width ="24" height="24" pos="22,10,46,34" normalimage="file='pay/ic_back.png' source='4,0,28,24'" hotimage="file='pay/ic_back.png' source='42,0,66,24'"  pushedimage="file='pay/ic_back.png' source='42,0,66,24'" />	
+
+    <VerticalLayout name="pay_page_loading" inset="0,0,0,0" childalign="center" bkcolor="#99000000" float="true" pos="0,0,710,580" visible="fasle">
+	   <Control />
+			<GifAnim bkimage="page_loading.gif" autosize="true"/>
+	   <Control />
+    </VerticalLayout>
+	
+	<!--
+	<VerticalLayout name="buy_page_head" float="true"  mouse="false"  pos="0,31,698,110" >	
+	   <TabLayout name="title_page_tab" childalign="center" childvalign="vcenter"  float="true"  pos="0,0,698,79" >
+		  
+			   <HorizontalLayout name="VipLogo" childalign="center"  childvalign="vcenter" heigh="24" padding="0,5,0,0">
+					<Control />
+					<Option name="master_log_pic"  float="false"  mouse="false"  pos="199,53,389,68" bkimage="file='pay/logo.png'"/>
+					<Option name="ic_vip" padding="10,0,6,0" float="false"  mouse="false"  pos="399,53,415,69" bkimage="file='pay/ic_vip.png'"/>
+					<Label text=" <c #DAC379>Premium</c>" align ="center"  float="false"  mouse="false"  pos="421,50,505,78"   showhtml="true"  font="1" />
+					<Control />
+			   </HorizontalLayout > 
+		
+				  
+			   <HorizontalLayout name="Timer" childalign="center"  childvalign="vcenter" padding="20,0,0,0" >
+					<Control />
+					<Label  text="01" showhtml="true" name="Time_H"  align ="center"  float="true" pos="242,0,297,55" textcolor="#FFFDFC6C"  font="11" bkimage="pay/rect_6.png"/>
+					<Label text="02"showhtml="true" name="Time_M"  align ="center"  float="true" pos="307,0,362,55" textcolor="#FFFDFC6C"  font="11" bkimage="pay/rect_6.png"/>
+					<Label text="03" showhtml="true" name="Time_S" align ="center"  float="true" pos="372,0,427,55" textcolor="#FFFDFC6C"  font="11" bkimage="pay/rect_6.png"/>	  
+					<Label text=":" showhtml="true" align ="center"  float="true" pos="297,10,307,40" textcolor="#FFFDFC6C"  font="11" />
+					<Label text=":" showhtml="true" align ="center"  float="true" pos="362,10,372,40" textcolor="#FFFDFC6C"  font="11" />	
+					<Control />
+			   </HorizontalLayout >
+				  
+			   <HorizontalLayout name="Text" childalign="center"  childvalign="vcenter" padding="0,10,0,0" >
+				  <VerticalLayout name="single_text" visible="false">
+					<Label name="discount_title" text="A special offer for you on a special day" showhtml="true" heigh="21" align ="center"  textcolor="#FFFFFFFF"   showhtml="true"  font="1" />  
+				  </VerticalLayout>
+				  <VerticalLayout name="mutil_text" visible="true">
+					<Label name="discount_title" showhtml="true"  text="Get unlimited data with Premium"  endellipsis="true" float="false"   pos="0,46,698,86"   font="30"  textcolor="#A8FFFFFF"   align="center" />
+					<Label name="discount_title_2" showhtml="true" text="You can browse,stream,and game as mush as you want"  endellipsis="true" float="false"   pos="0,89,698,120"   font="8"  textcolor="#ffEAEAEA" disabledtextcolor="#FFA7A6AA" font="3" align="center" />	
+				  </VerticalLayout>
+			   </HorizontalLayout >
+		
+		</TabLayout>
+	</VerticalLayout>	
+	-->
+
+</VerticalLayout>
+
+</Window>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window roundcorner="0,0,0,-1" sizebox="0,0,0,0" size="710,580"   layeredimage="file='bg_mask.png'" layeredopacity="255"  >
+<Font id="1" name="Segoe UI" size="16" bold="true"/>
+<Font id="2" name="Segoe UI" size="24" bold="true"/>
+<Font id="3" name="Segoe UI" size="14" bold="true"/>
+<Font id="10" name="Segoe UI" size="10" />
+<Font id="11" name="Segoe UI" size="11" />
+<Font id="12" name="Segoe UI" size="12" bold="true" />
+<Font id="13" name="Segoe UI" size="13" />
+<Font id="14" name="Segoe UI" size="14" bold="false" default="true"/>
+<Font id="15" name="Segoe UI" size="15" />
+<Font id="16" name="Segoe UI" size="16" />
+<Font id="18" name="Segoe UI" size="18" bold="true" />
+<Font id="20" name="Segoe UI" size="20" />
+<Font id="22" name="Segoe UI" size="22" />
+<Font id="23" name="Segoe UI" size="23"  bold="true"/>
+<Font id="24" name="Segoe UI" size="24"  bold="true"/>
+<Font id="30" name="Segoe UI" size="30" bold="true" />
+<Font id="32" name="Segoe UI" size="32" />
+
+
+<VerticalLayout itemshowhtml="true"  borderround="8,8" bkimage="file='bg_mask.png'"  name="promotion_dlg">
+
+	<VerticalLayout padding="200,117,0,0" name="price_promotion_dlg"  height="346" width="311" childalign="center"  childvalign="vcenter" >
+		<VerticalLayout float="true" pos="0,0,311,346"  borderround="8,8">
+			<GifAnim name ="bk_gif" bkimage="pay/dlg_1_bg.png" />
+		</VerticalLayout>
+	  <TabLayout name="title_page_tab" childalign="center" childvalign="vcenter"   >
+		    <VerticalLayout >
+		    </VerticalLayout>		    
+			<VerticalLayout >
+			
+			   <HorizontalLayout name="Timer" childalign="center" visible="true" childvalign="vcenter" padding="19,32,19,0" height="52" width="273" bkimage="pay/clock.png"   >
+					<Label text="2" showhtml="false" name="Time_H"  align ="center"  float="true" pos="0,0,40,52" textcolor="#ffFFFFFF"  font="24" />
+					<Label text="3" showhtml="false" name="Time_H2"  align ="center"  float="true" pos="42,0,82,52" textcolor="#ffFFFFFF"  font="24" />
+					
+					<Label text="5" showhtml="false" name="Time_M"  align ="center"  float="true" pos="95,0,135,52" textcolor="#ffFFFFFF"  font="24" />
+					<Label text="6" showhtml="false" name="Time_M2"  align ="center"  float="true" pos="137,0,177,52" textcolor="#ffFFFFFF"  font="24" />
+					
+					<Label text="1" showhtml="false" name="Time_S" align ="center"  float="true" pos="191,0,231,52" textcolor="#ffFFFFFF"  font="24" />
+					<Label text="8" showhtml="false" name="Time_S2" align ="center"  float="true" pos="233,0,273,52" textcolor="#ffFFFFFF"  font="24" />	  			
+			   </HorizontalLayout >
+
+
+			</VerticalLayout>
+
+		
+	   </TabLayout>
+	   
+		<Label name="pop_title"  text="Really wanna quit Free Trial？"    float="true"  align="center"   pos="0,183,311,205"  font="1"     textcolor="#FF333333" endellipsis="true"   multiline="false" />
+		<Label name="pop_text"   float="true"  align="center"   pos="0,218,311,250" font="14"   text="There is no reason not to give it a try. No commitment. Cancel anytime."  endellipsis="true"       textcolor="#FF666666"   multiline="true" />
+
+		<Button name="dlg_btn_1" float="true" textcolor="#ffFFFFFF" font="1" text="TRY FREE FOR 7 DAYS" pos="42,280,269,322"  borderround="10,10"  bkimage="file='pay/btn_purchase_normal.png'"   />
+	   
+	   
+ 	</VerticalLayout>
+
+
+
+	<Button name="dlg_close" tooltip="close" float="true" visible="true" pos="481,127,495,141" bkimage="file='pay/ic_del.png' "/>	
+</VerticalLayout>
+</Window>

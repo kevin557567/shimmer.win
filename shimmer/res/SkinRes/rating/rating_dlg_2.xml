@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window roundcorner="0,0,0,-1" sizebox="0,0,0,0" size="710,580" layeredimage="file='bg_mask.png'" layeredopacity="255">
+<Font id="1" name="Segoe UI" size="16" bold="true"/>
+<Font id="2" name="Segoe UI" size="24" bold="true"/>
+<Font id="3" name="Segoe UI" size="14" bold="true"/>
+<Font id="10" name="Segoe UI" size="10" />
+<Font id="11" name="Segoe UI" size="11" />
+<Font id="12" name="Segoe UI" size="12" bold="true" />
+<Font id="13" name="Segoe UI" size="13" />
+<Font id="14" name="Segoe UI" size="14" bold="false" default="true"/>
+<Font id="15" name="Segoe UI" size="15" />
+<Font id="16" name="Segoe UI" size="16" />
+<Font id="18" name="Segoe UI" size="18" />
+<Font id="20" name="Segoe UI" size="20" />
+<Font id="22" name="Segoe UI" size="22" />
+<Font id="32" name="Segoe UI" size="32" />
+<Default name="VScrollBar" value="width=&quot;8&quot; scrollunit=&quot;42&quot; showbutton1=&quot;false&quot; showbutton2=&quot;false&quot; thumbnormalimage=&quot;file='scrollbar.png' hquality='false' source='0,0,8,62' corner='3,3,3,3'&quot; thumbhotimage=&quot;file='scrollbar.png' source='0,0,8,62' corner='3,3,3,3'&quot; thumbpushedimage=&quot;file='scrollbar.png' source='0,0,8,62' corner='3,3,3,3'&quot;"/>
+<VerticalLayout borderround="8,8,8,8"  >
+	<VerticalLayout borderround="8,8,8,8" padding="325,109,0,0" height="290" width="314" childalign="center"  bkimage="file='rating/img_speedtest1.png' source='0,5,290,314' " >
+		<Option  padding="2,0,0,0"  height="158"  childalign="center" bkimage="file='rating/good.png' " mouse="false" ></Option>
+		<VerticalLayout childalign="center" height="132" width="314" name="rating_dlg"  >
+			 <Text name="" height="45" padding="0,13,0,0" textcolor="#FFFFFFFF" text="How was your experie" textid="269" font="20" align="center" valign="vcenter" mutiline ="true" />
+			 <HorizontalLayout  padding="26,10,26,0" height="40" visible="true" >
+				<Option name="star1" width="40" mouse="false" normalimage="file='rating/ic_star_n.png'" selectedimage1="file='rating/ic_star_l.png'"   group="star" tag="1"/>
+				<Option name="star2" width="40" mouse="false" padding="16,0,0,0" normalimage="file='rating/ic_star_n.png' " selectedimage1="file='rating/ic_star_l.png' " tag="2" />
+				<Option name="star3" width="40" mouse="false" padding="16,0,0,0"  normalimage="file='rating/ic_star_n.png'"  selectedimage1="file='rating/ic_star_l.png'" tag="3"  />
+				<Option name="star4" width="40" mouse="false" padding="16,0,0,0"  normalimage="file='rating/ic_star_n.png'"   selectedimage1="file='rating/ic_star_l.png'" tag="4" />
+				<Option name="star5" width="40" mouse="false" padding="16,0,0,0"  normalimage="file='rating/ic_star_n.png'"  selectedimage1="file='rating/ic_star_l.png'" tag="5" />		
+			 </HorizontalLayout>
+		</VerticalLayout>
+	</VerticalLayout>
+   <Button name="dlg_close" tooltip="close" float="true" pos="610,117,631,138" bkimage="file='promotion/ic_close_1.png' "/>	
+</VerticalLayout>
+</Window>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window roundcorner="0,0,0,-1" sizebox="0,0,0,0" size="78,97"  layeredimage="" layeredopacity="255" >
+  <Font id="1" name="Segoe UI" size="16" bold="true"/>
+  <Font id="2" name="Segoe UI" size="24" bold="true"/>
+  <Font id="3" name="Segoe UI" size="14" bold="true"/>
+  <Font id="10" name="Segoe UI" size="10" />
+  <Font id="11" name="Segoe UI" size="11" />
+  <Font id="12" name="Segoe UI" size="12" />
+  <Font id="13" name="Segoe UI" size="12" />
+  <Font id="14" name="Segoe UI" size="14" bold="false" default="true"/>
+  <Font id="15" name="Segoe UI" size="15" />
+  <Font id="16" name="Segoe UI" size="16" bold="true"/>
+  <Font id="18" name="Segoe UI" size="18" />
+  <Font id="20" name="Segoe UI" size="20" />
+  <Font id="22" name="Segoe UI" size="22" />
+  <Font id="32" name="Segoe UI" size="32" />
+  <Font id="33" name="Segoe UI" size="16" bold="false"/>
+<VerticalLayout  >
+		 <VerticalLayout name="promotion_page_loading"  width="78" height="68"  >
+		   <GifAnim name ="promotion_gif" bkimage="promotion/ic_home_discount.png" width="104" height="62" />
+		</VerticalLayout>
+		
+
+		<Option name="small_dlg_op_ok" float="true" pos="0,0,79,97"  />
+				<HorizontalLayout name="remain_time_hl"    float="true" pos="0,72,78,93" childalign="center" >
+			<Edit name="remain_time"   textcolor="#FFFA7A48" bkimage="file='client_bg.png' source='0,0,64,64'" font="16" align="center" valign="vcenter" />
+		</HorizontalLayout>
+	</VerticalLayout>
+
+</Window>

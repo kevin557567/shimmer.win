@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window roundcorner="0,0,0,0" sizebox="0,0,0,0" size="374,419" >
+<VerticalLayout childvalign="left" height="40" >  
+	<VerticalLayout childvalign="left" height="40" >  
+		<HorizontalLayout   childvalign="vcenter" childalign="left"  padding="0,0,0,0" bkcolor="#FFF6F2F2">
+			 <Option name="app_item_op" float="true" pos="0,0,374,40"  hotimage="file='SplitTunneling/Rectangle_2.png'"  group="proxyitem" />
+			<Option name="app_icon"  padding="8,5,0,5" width="30"  height="30"  bkcolor="#FFD8D8D8" mouse="false" />
+			<Label textcolor="#ff696969"   font="14" width="250"  height="19" endellipsis="true" name="appitem_nmae" text="App name" textcolor="#D9000000"  align="left" valign="left"  padding="8,9,0,12"/>
+			<Button   width="27" height="29" name="app_add" font="14" text="Add" hottextcolor="#FFbA7B47" pushedtextcolor="#FFffFFff" textcolor="#FFFA7B47" padding="3,10,0,11"  mouse="true" ></Button>
+		</HorizontalLayout>    
+	</VerticalLayout >    
+</VerticalLayout >  
+</Window>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window roundcorner="0,0,0,0" sizebox="0,0,0,0" size="710,580" >
+ <Font id="0" name="微软雅黑" size="13" bold="false" default="true"/>
+ <Font id="1" name="微软雅黑" size="18" bold="true"/>
+ <Font id="2" name="微软雅黑" size="12" shared="true" />
+ <Font id="3" name="微软雅黑" size="16" bold="true"/>
+ <Font id="4" name="微软雅黑" size="14" bold="true" shared="true"/>
+ <Font id="5" name="微软雅黑" size="20" />
+ <Font id="6" name="微软雅黑" size="14" shared="true"/>
+ <Font id="7" name="微软雅黑" size="12" bold="true"/>
+ <Font id="8" name="微软雅黑" size="16" />
+ <Font id="9" name="微软雅黑" size="24" bold="true" shared="true"/>
+ <Font id="10" name="微软雅黑" size="12" />
+ <Font id="11" name="微软雅黑" size="10" />
+ <Font id="12" name="微软雅黑" size="11" bold="true"/>  
+<VerticalLayout childvalign="left" >  
+    <HorizontalLayout height="32"  childvalign="vcenter" childalign="left"  padding="0,19,0,0">
+		<Label textcolor="#ff696969"   font="9" textid="370" width="124"  align="left" valign="left" multiline="true" padding="56,0,0,0"/>
+		<Button bkimage="settings/ic_premium.png"  width="80" height="18"  padding="14,0,0,0"  mouse="false" ></Button>
+	</HorizontalLayout>    
+   
+   	<Label bkcolor="#ffEBE7E6"  height="1" width="446" font="6"   align="left" valign="left" multiline="true" padding="56,16,0,0"/>
+    <Label  height="38" font="6"   align="left" valign="left" multiline="true" padding="56,16,56,0" textid="371" text="Turbo VPN will disable your internet connection when Turbo VPN connection fails to protect your data from online leaks." />	
+
+    <HorizontalLayout float="true"  pos="460,24,502,51">
+		<Option name="kill_switch_on_off"  normalimage="settings/ic_switch_off.png"  selectedimage="settings/ic_switch_on.png" />
+	</HorizontalLayout> 
+  
+</VerticalLayout >  
+</Window>

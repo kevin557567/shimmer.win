@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window roundcorner="0,0,0,-1" sizebox="0,0,0,0" size="710,580" layeredimage="file='bg_mask.png'" layeredopacity="255">
+<Font id="1" name="Segoe UI" size="16" bold="true"/>
+<Font id="2" name="Segoe UI" size="24" bold="true"/>
+<Font id="3" name="Segoe UI" size="14" bold="true"/>
+<Font id="10" name="Segoe UI" size="10" />
+<Font id="11" name="Segoe UI" size="11" />
+<Font id="12" name="Segoe UI" size="12" bold="true" />
+<Font id="13" name="Segoe UI" size="13" />
+<Font id="14" name="Segoe UI" size="14" bold="false" default="true"/>
+<Font id="15" name="Segoe UI" size="15" />
+<Font id="16" name="Segoe UI" size="16" />
+<Font id="18" name="Segoe UI" size="18" />
+<Font id="20" name="Segoe UI" size="20" />
+<Font id="22" name="Segoe UI" size="22" />
+<Font id="32" name="Segoe UI" size="32" />
+<VerticalLayout >
+	<Control />
+		<VerticalLayout padding="199,0,0,0" name="rating_feedback_dlg" bkimage="rating/img_rate.png" height="331" width="311" childalign="center">
+		 <Label  text="Thank you for your surpport! Please share your experience to help other people make more informed decisions" textid="270" multiline="true"  textcolor="#ff666666" font="14" padding="0,188,0,0" align="center" valign="vcenter"/>
+		</VerticalLayout>
+	<Control />
+	<!--<Option name="dlg_ok" float="true" pos="319,119,630,465"  />-->	
+	
+	<Button name="dlg_ok" textid="271" textcolor="#FFFFFFFF" font="1" float="true" pos="241,384,468,426" normalimage="file='rating/btn_normal.png'" hotimage="file='rating/btn_hover.png'" pushedimage="file='rating/btn_active.png'"/>
+</VerticalLayout>
+</Window>

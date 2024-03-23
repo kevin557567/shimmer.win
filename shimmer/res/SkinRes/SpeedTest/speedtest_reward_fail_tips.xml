@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window roundcorner="0,0,0,0" sizebox="0,0,0,0" size="710,580" layeredimage="file='bg_mask.png'" layeredopacity="255">
+ <Font id="0" name="Segoe UI" size="14" bold="false" default="true"/>
+ <Font id="1" name="Segoe UI" size="16"/>
+  <VerticalLayout   >
+     <Control />
+	<VerticalLayout padding="325,0,0,0" height="157" width="286"  bkimage="file='max_bind_bg_dialogue.png' corner='10,10,10,68' hquality='false'" >
+	  <Button name="dlg_close" tooltipid="126" float="true" pos="261,5,281,25" bkimage="file='ic_close_icon.png' " />
+	  <Label mouse="false" textid="253" height="24" textcolor="#fe171426" font="1" align="center" valign="vcenter" padding="10,5,10,0"/>
+	  <Label name="" textid="254"  textcolor="#fe171426" align="center" valign="vcenter" multiline="true" padding="10,6,10,0"/>
+	  <Control></Control>
+	  <HorizontalLayout inset="10,0,10,0" height="44">
+		<Button name="dlg_cancel" textid="255" textcolor="#fe171426" hottextcolor="#fe29C5A6" pushedtextcolor="#fe29C5A6" font="1" align="center" valign="vcenter" />
+		<Button name="copy_btn" textid="256" textcolor="#FFFA7B47" hottextcolor="#fe29C5A6" pushedtextcolor="#fe29C5A6" font="1" align="center" valign="vcenter" />
+	  </HorizontalLayout>
+	</VerticalLayout>
+  <Control />
+</VerticalLayout>
+</Window>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window roundcorner="0,0,0,0" sizebox="0,0,0,0" size="710,580" >
+ <Font id="0" name="微软雅黑" size="13" bold="false" default="true"/>
+ <Font id="1" name="微软雅黑" size="18" bold="true"/>
+ <Font id="2" name="微软雅黑" size="12" shared="true" />
+ <Font id="3" name="微软雅黑" size="16" bold="true"/>
+ <Font id="4" name="微软雅黑" size="14" bold="true" shared="true"/>
+ <Font id="5" name="微软雅黑" size="20" />
+ <Font id="6" name="微软雅黑" size="14" shared="true"/>
+ <Font id="7" name="微软雅黑" size="12" bold="true"/>
+ <Font id="8" name="微软雅黑" size="16" />
+ <Font id="9" name="微软雅黑" size="24" bold="true" shared="true"/>
+ <Font id="10" name="微软雅黑" size="12" />
+ <Font id="11" name="微软雅黑" size="10" />
+ <Font id="12" name="微软雅黑" size="11" bold="true"/>  
+ 
+ <Default name="VScrollBar" value="bknormalimage=&quot;file='bg_normal.png' source='0,0,8,50'&quot; width=&quot;8&quot; scrollunit=&quot;50&quot; showbutton1=&quot;false&quot; showbutton2=&quot;false&quot; thumbnormalimage=&quot;file='scrollbar.png' hquality='false' source='0,0,8,62' corner='3,3,3,3'&quot; thumbhotimage=&quot;file='scrollbar.png' source='0,0,8,62' corner='3,3,3,3'&quot; thumbpushedimage=&quot;file='scrollbar.png' source='0,0,8,62' corner='3,3,3,3'&quot;"/>
+
+<VerticalLayout childvalign="left" >  
+    <HorizontalLayout height="32"  childvalign="vcenter" childalign="left"  padding="0,19,0,0">
+		<Label textcolor="#ff696969"   font="9" text="Protocol" width="105"  textid="232" align="left" valign="left" multiline="true" padding="56,0,0,0"/>
+		<Button bkimage="settings/ic_premium.png"  width="80" height="18"  padding="16,0,0,0"  mouse="false" ></Button>
+    </HorizontalLayout>   
+   <Label bkcolor="#ffEBE7E6"  height="1" width="446" font="6"   align="left" valign="left" multiline="true" padding="56,10,0,0"/>	
+    <VerticalLayout padding="56,0,0,0" vscrollbar="true" height="450" >
+
+			<Option name="protocol_auto" font="4" tag="0" textid="330" userdata="Automatic" text="Automatic" align="left" valign="center" textpadding="26,-6,0,3" textcolor="#ff696969" selectedtextcolor="#FFFA7B47" height="22" padding="0,20,0,0" normalimage="file='language_unselect.png' dest='0,0,12,12'" hotimage="file='language_selected.png' dest='0,0,12,12'" selectedimage="file='language_selected.png' dest='0,0,12,12'"  group="protocolbtn" selected="true"/>
+			<Label name="label_auto" padding="28,0,58,0" textid="331" text="Turbo VPN will automatically pick the protocol most apropriate for your network." align="left" valign="center" textcolor="#ff696969" font="6" height="38" multiline="true"></Label>
+	
+			<Option name="protocol_openvpn" userdata="Openvpn" tag="3" font="4" text="OpenVPN" align="left" valign="center" textpadding="26,-6,0,3" textcolor="#ff696969" selectedtextcolor="#FFFA7B47" height="22" padding="0,20,0,0" normalimage="file='language_unselect.png' dest='0,0,12,12'" hotimage="file='language_selected.png' dest='0,0,12,12'" selectedimage="file='language_selected.png' dest='0,0,12,12'"  group="protocolbtn"/>
+			<Label name="label_udp" padding="28,0,58,0" textid="332" text="Blazing-fast VPN speed with military-grade security, but may not work on all the networks." align="left" valign="center" textcolor="#ff696969" font="6" height="38" multiline="true"></Label>
+
+			<Option name="protocol_v2ray"  userdata="V2ray"  tag="7"  font="4" text="V2ray" align="left" valign="center" textpadding="26,-6,0,3" textcolor="#ff696969" selectedtextcolor="#FFFA7B47" height="22" padding="0,20,0,0" normalimage="file='language_unselect.png' dest='0,0,12,12'" hotimage="file='language_selected.png' dest='0,0,12,12'" selectedimage="file='language_selected.png' dest='0,0,12,12'"  group="protocolbtn"/>
+			<Label name="label_v2ray" padding="28,0,58,0" textid="333" text="High-speed VPN service with fast connection speeds, but may not work on some devices." align="left" valign="center" valign="center" textcolor="#ff696969" font="6" height="38" multiline="true"></Label>
+
+			<Option name="protocol_ikev2" userdata="IKev2"  tag="4" font="4" text="IKEv2" align="left" valign="center" textpadding="26,-6,0,3" textcolor="#ff696969" selectedtextcolor="#FFFA7B47" height="22" padding="0,20,0,0" normalimage="file='language_unselect.png' dest='0,0,12,12'" hotimage="file='language_selected.png' dest='0,0,12,12'" selectedimage="file='language_selected.png' dest='0,0,12,12'"  group="protocolbtn"/>
+			<Label name="label_ikev2" padding="28,0,58,0" textid="334"  text="A more stable VPN service with higher security and lower transmission speeds." align="left" valign="center" textcolor="#ff696969" font="6" height="38" multiline="true"></Label>
+		
+			<Option name="protocol_ssr" userdata="SSR"  tag="16" font="4" text="SSR" align="left" valign="center" textpadding="26,-6,0,3" textcolor="#ff696969" selectedtextcolor="#FFFA7B47" height="22" padding="0,20,0,0" normalimage="file='language_unselect.png' dest='0,0,12,12'" hotimage="file='language_selected.png' dest='0,0,12,12'" selectedimage="file='language_selected.png' dest='0,0,12,12'"  group="protocolbtn"/>
+			<Label name="label_ssr" padding="28,0,58,0" textid="335"  text="Outstanding in terms of speed and stability, encrypted via TLS, but may not work in all network environments." align="left" valign="center" textcolor="#ff696969" font="6" height="38" multiline="true"></Label>
+	
+			<Option name="protocol_trojan" userdata="Trojan"  tag="32" font="4" text="Trojan" align="left" valign="center" textpadding="26,-6,0,3" textcolor="#ff696969" selectedtextcolor="#FFFA7B47" height="22" padding="0,20,0,0" normalimage="file='language_unselect.png' dest='0,0,12,12'" hotimage="file='language_selected.png' dest='0,0,12,12'" selectedimage="file='language_selected.png' dest='0,0,12,12'"  group="protocolbtn"/>
+			<Label name="label_trojan" padding="28,0,58,0" textid="443" align="left" valign="center" textcolor="#ff696969" font="6" height="38" multiline="true"></Label>
+
+		    <Option name="protocol_reality"  userdata="Reality"  tag="2048"  font="4" text="Reality" align="left" valign="center" textpadding="26,-6,0,3" textcolor="#ff696969" selectedtextcolor="#FFFA7B47" height="22" padding="0,20,0,0" normalimage="file='language_unselect.png' dest='0,0,12,12'" hotimage="file='language_selected.png' dest='0,0,12,12'" selectedimage="file='language_selected.png' dest='0,0,12,12'"  group="protocolbtn"/>
+		    <Label name="label_reality" padding="28,0,58,0" textid="444" align="left" valign="center" valign="center" textcolor="#ff696969" font="6" height="38" multiline="true"></Label>
+
+    </VerticalLayout>
+  </VerticalLayout>
+</Window>

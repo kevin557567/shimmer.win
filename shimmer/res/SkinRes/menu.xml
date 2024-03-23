@@ -1,0 +1,161 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Window layeredimage="file='bg_menu.png' corner='7,7,24,11'" size="170,370">
+  <Default name="Menu" value="inset=&quot;7,4,7,8&quot; itemtextpadding=&quot;15,5,15,5&quot; itemtextcolor=&quot;0xfe666666&quot; itemhottextcolor=&quot;0xfeffffff&quot; itemselectedtextcolor=&quot;0xfeffffff&quot; itemhotimage=&quot;file='bg_menu_hover.png' source='0,0,1,1'&quot; itemselectedimage=&quot;file='bg_menu_hover.png' source='0,0,1,1'&quot;" />
+  <Font id="6" name="微软雅黑" size="14" default="true"/>
+  <Font id="4" name="Segoe UI" size="14" bold="true"/>
+  <Font id="9" name="Segoe UI" size="11" />
+   
+  <Menu inset="7,4,7,8">
+    <MenuElement name="login_info" height="112" >
+	  <VerticalLayout>
+		<HorizontalLayout childvalign="vcenter" padding="0,24,0,0" height="42">
+            <Control />
+            <Control    bkimage="file='account/ic_rabbit_free.png' " height="42" width="42" borderround="10,10"  />
+            <Control />
+        </HorizontalLayout>
+	    <HorizontalLayout name="signout_status" visible= "false" childvalign="vcenter"  height="42" padding="0,0,0,0">
+             <Label name="title" textid="225" font="6" height="20" textcolor="#FFFA7B47" padding="15,0,0,0"/>
+			 <Button name="arrow" width="14" height="14" padding="8,10,9,0"  normalimage="account/arrow_right.png" hotimage="account/arrow_right.png"  pushedimage="arrow_right_selected.png"/>
+        </HorizontalLayout>
+	    <HorizontalLayout name="signin_status"  visible= "false" childvalign="vcenter"  height="42" padding="0,0,0,0">
+             <Label name="title" text="inconnecting@gmail.com" font="9" height="20"  textcolor="0xfe666666" valign="vcenter" align="center" padding="0,0,0,0"/>
+        </HorizontalLayout>
+	  </VerticalLayout>
+    </MenuElement>
+	
+	<MenuElement name ="line_info" height="1"  >
+		<VerticalLayout>
+			<HorizontalLayout name ="line_HL">
+				<Control />
+				<Button   name ="line"  width="139" bkimage="file='line.png' " height="1"  />
+				<Control />
+			</HorizontalLayout>
+		</VerticalLayout>
+	</MenuElement>  
+    <MenuElement name="Feedback" height="31" textid="104" font="6"/>
+    <MenuElement name="Privacy" height="31" textid="105" font="6"/>
+    <MenuElement name="Terms" height="31" textid="106" font="6"/>
+    <MenuElement name="Language" height="31">
+      <HorizontalLayout childvalign="vcenter" height="31">
+        <Label name="title" textid="131" font="6" textcolor="0xfe666666" textpadding="15,5,15,5"/>
+        <Button name="arrow" width="14" height="14" padding="0,0,9,0" normalimage="arrow_right.png" hotimage="arrow_right_selected.png" pushedimage="arrow_right_selected.png"/>
+      </HorizontalLayout>
+      <MenuElement name="en" height="42">
+        <HorizontalLayout childvalign="vcenter" width="150" height="42">
+          <VerticalLayout>
+            <Control />
+            <Label name="title" text="English" font="6" height="20" textcolor="0xfe666666" valign="vcenter" textpadding="15,0,15,0"/>
+            <Label name="title1" textid="132" font="2" height="16" textcolor="0xfe666666" valign="vcenter" textpadding="15,0,15,0"/>
+            <Control />
+          </VerticalLayout>
+          <CheckBox name="check" width="10" height="10" normalimage="language_unselect.png" hotimage="language_hover.png"  selectedimage="language_selected.png" padding="0,0,12,0"/>
+        </HorizontalLayout>
+      </MenuElement>
+      <MenuElement name="ru" height="42">
+        <HorizontalLayout childvalign="vcenter" width="150" height="42">
+          <VerticalLayout>
+            <Control />
+            <Label name="title" text="Русский" font="6" height="20" textcolor="0xfe666666" valign="vcenter" textpadding="15,0,15,0"/>
+            <Label name="title1" textid="133" font="2" height="16" textcolor="0xfe666666" valign="vcenter" textpadding="15,0,15,0"/>
+            <Control />
+          </VerticalLayout>
+          <CheckBox name="check" width="10" height="10" normalimage="language_unselect.png" hotimage="language_hover.png" selectedimage="language_selected.png" padding="0,0,12,0"/>
+        </HorizontalLayout>
+      </MenuElement>
+      <MenuElement name="es" height="42">
+        <HorizontalLayout childvalign="vcenter" width="150" height="42">
+          <VerticalLayout>
+            <Control />
+            <Label name="title" text="Español" font="6" height="20" textcolor="0xfe666666" valign="vcenter" textpadding="15,0,15,0"/>
+            <Label name="title1" textid="134" font="2" height="16" textcolor="0xfe666666" valign="vcenter" textpadding="15,0,15,0"/>
+            <Control />
+          </VerticalLayout>
+          <CheckBox name="check" userdata="ua" width="10" height="10" normalimage="language_unselect.png" hotimage="language_hover.png" selectedimage="language_selected.png" padding="0,0,12,0"/>
+        </HorizontalLayout>
+      </MenuElement>
+      <MenuElement name="ua" height="42">
+        <HorizontalLayout childvalign="vcenter" width="150" height="42">
+          <VerticalLayout>
+            <Control />
+            <Label name="title" text="Українська" font="6" height="20" textcolor="0xfe666666" valign="vcenter" textpadding="15,0,15,0"/>
+            <Label name="title1" textid="135" font="2" height="16" textcolor="0xfe666666" valign="vcenter" textpadding="15,0,15,0"/>
+            <Control />
+          </VerticalLayout>
+          <CheckBox name="check" userdata="es" width="10" height="10" normalimage="language_unselect.png" hotimage="language_hover.png" selectedimage="language_selected.png" padding="0,0,12,0"/>
+        </HorizontalLayout>
+      </MenuElement>
+    </MenuElement>
+    
+    <MenuElement name="Protocol" height="31" >
+      <HorizontalLayout childvalign="vcenter" height="31">
+        <Label  name="title" textid="232" font="6" textcolor="0xfe666666" textpadding="15,5,15,5"/>
+        <Button name="arrow" width="14" height="14" padding="0,0,9,0" normalimage="arrow_right.png" hotimage="arrow_right_selected.png" pushedimage="arrow_right_selected.png"/>
+      </HorizontalLayout>
+      <MenuElement name="Automatic" height="42">
+        <HorizontalLayout childvalign="vcenter" width="150" height="42">
+          <VerticalLayout>
+            <Control />
+            <Label name="title" textid="233" font="6" height="20" textcolor="0xfeff0000" valign="vcenter" textpadding="15,0,15,0"/>
+            <Control />
+          </VerticalLayout>
+          <CheckBox name="check" width="10" height="10" normalimage="language_unselect.png" hotimage="language_hover.png"  selectedimage="language_selected.png" padding="0,0,12,0"/>
+        </HorizontalLayout>
+      </MenuElement>
+      <MenuElement name="IKev2" height="42">
+        <HorizontalLayout childvalign="vcenter" width="150" height="42">
+          <VerticalLayout>
+            <Control />
+            <Label name="title" textid="234" font="6" height="20" textcolor="0xfe666666" valign="vcenter" textpadding="15,0,15,0"/>
+            <Control />
+          </VerticalLayout>
+          <CheckBox name="check" width="10" height="10" normalimage="language_unselect.png" hotimage="language_hover.png" selectedimage="language_selected.png" padding="0,0,12,0"/>
+        </HorizontalLayout>
+      </MenuElement>
+      <MenuElement name="Openvpn" height="42">
+        <HorizontalLayout childvalign="vcenter" width="150" height="42">
+          <VerticalLayout>
+            <Control />
+            <Label name="title" textid="235" font="6" height="20" textcolor="0xfe666666" valign="vcenter" textpadding="15,0,15,0"/>
+            <Control />
+          </VerticalLayout>
+          <CheckBox name="check" userdata="Openvpn" width="10" height="10" normalimage="language_unselect.png" hotimage="language_hover.png" selectedimage="language_selected.png" padding="0,0,12,0"/>
+        </HorizontalLayout>
+      </MenuElement>
+      <MenuElement name="V2ray" height="42">
+        <HorizontalLayout childvalign="vcenter" width="150" height="42">
+          <VerticalLayout>
+            <Control />
+            <Label name="title" textid="237" font="6" height="20" textcolor="0xfe666666" valign="vcenter" textpadding="15,0,15,0"/>
+            <Control />
+          </VerticalLayout>
+          <CheckBox name="check" userdata="V2ray" width="10" height="10" normalimage="language_unselect.png" hotimage="language_hover.png" selectedimage="language_selected.png" padding="0,0,12,0"/>
+        </HorizontalLayout>
+      </MenuElement>
+      
+    </MenuElement>
+ 
+    <MenuElement name="launch" height="31" >
+	    <HorizontalLayout childvalign="vcenter" width="150" height="42">
+			<VerticalLayout>
+				<Control />
+				<Label name="title" text="Start on launch"  textid="238" font="6" height="20" textcolor="0xfe666666" valign="vcenter" textpadding="15,0,15,0"/>
+				<Control />
+			</VerticalLayout>
+			<CheckBox name="launch_box" width="32" height="18" normalimage="btn_switchoff.png" selectedimage="btn_switchon.png" padding="0,0,12,0"/>
+        </HorizontalLayout>
+    </MenuElement>
+	
+	<MenuElement name="auto_connect" height="31" >
+	    <HorizontalLayout childvalign="vcenter" width="150" height="42">
+			<VerticalLayout>
+				<Control />
+				<Label name="title" text="Auto-connect" textid="239" font="6" height="20" textcolor="0xfe666666" valign="vcenter" textpadding="15,0,15,0"/>
+				<Control />
+			</VerticalLayout>
+			<CheckBox name="auto_connect_box" width="32" height="18" normalimage="btn_switchoff.png" selectedimage="btn_switchon.png" padding="0,0,12,0"/>
+		</HorizontalLayout>
+    </MenuElement>
+	
+    <MenuElement name="exit" height="31" textid="107" font="6"/>
+  </Menu>
+</Window>

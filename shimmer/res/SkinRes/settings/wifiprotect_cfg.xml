@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window roundcorner="0,0,0,0" sizebox="0,0,0,0" size="710,580" >
+<!--
+  <Font id="0" name="微软雅黑" size="14" bold="false" default="true"/>
+  <Font id="1" name="微软雅黑" size="16"/>-->
+ <Font id="0" name="微软雅黑" size="13" bold="false" default="true"/>
+ <Font id="1" name="微软雅黑" size="18" bold="true"/>
+ <Font id="2" name="微软雅黑" size="12" shared="false" />
+ <Font id="3" name="微软雅黑" size="16" bold="true"/>
+ <Font id="4" name="微软雅黑" size="14" bold="true" shared="true"/>
+ <Font id="5" name="微软雅黑" size="20" />
+ <Font id="6" name="微软雅黑" size="14" shared="true"/>
+ <Font id="7" name="微软雅黑" size="12" bold="true"/>
+ <Font id="8" name="微软雅黑" size="16" />
+ <Font id="9" name="微软雅黑" size="24" bold="true" shared="true"/>
+ <Font id="10" name="微软雅黑" size="12" />
+ <Font id="11" name="微软雅黑" size="10" />
+ <Font id="12" name="微软雅黑" size="11" bold="true"/>  
+ <VerticalLayout childvalign="left" >
+    <HorizontalLayout height="32"  childvalign="vcenter" childalign="left"  padding="0,19,0,0">
+		<Label textcolor="#ff696969"   font="9" textid="350" width="200"  align="left" valign="left" multiline="true" padding="56,0,0,0"/>
+		<Button bkimage="settings/ic_premium.png"  width="80" height="18"  padding="14,0,0,0"  mouse="false" ></Button>
+	</HorizontalLayout>    
+   	<Label bkcolor="#ffEBE7E6"  height="1" width="446" font="6"   align="left" valign="left" multiline="true" padding="56,16,0,0"/>	
+   	<Control height="10" />
+    <Label padding="56,0,56,0"  textid="351" multiline="true" font="6" align="left" valign="vcenter"/>
+	<Option name="wifi_turnof" float="true"  pos="460,24,502,51" normalimage="settings/ic_switch_off.png"  selectedimage="settings/ic_switch_on.png" />
+	<VerticalLayout name="wifi_detail" padding="56,30,56,38" visible="false" >
+	  <VerticalLayout  height="75">
+		<Label textid="352" height="19" font="4" align="left" valign="vcenter" textcolor="#ff383838"  />
+		<Label textid="353" height="36" font="6" align="left" valign="vcenter" padding="0,4,0,0" multiline="true"  />
+      </VerticalLayout>
+      <VerticalLayout  pos = "56,218,503,491">
+	      <HorizontalLayout height="48" bkcolor="#FFFEEDE7"  padding="0,0,0,0" childvalign="vcenter">
+	        <Control width="20" height="20" padding="16,0,0,0" bkimage="settings/ic_wifi.png"/>
+	        <VerticalLayout padding="16,0,0,0" inset="0,9,0,6" height="47">
+	          <Label name="current_wifi" height="19" font="4" align="left" valign="vcenter" text="360-Lobby AP" textcolor="#ff383838"  />
+	          <Label name="current_title" textid="354"  height="28" font="10" align="left" valign="vcenter" multiline="true" />
+	        </VerticalLayout>
+	        <Button name="wifi_trust" textid="355" textcolor="#FFFFFFFF" font="4" align="center" valign="vcenter" padding="2,0,16,0" width="96" height="32" normalimage="settings/btn_trust_normal.png" hotimage="settings/btn_trust_hover.png" pushedimage="settings/btn_trust_active.png" disableimage=""></Button>
+	        <Label name="wifi_trust_label" textid="356" font="4" align="right" valign="vcenter" textcolor="#FFFA7B47" padding="2,0,16,0" width="180" height="24" visible="false"/>
+	        <Label name="wifi_encript_label" textid="358" font="4" align="right" valign="vcenter" textcolor="#FFFA7B47" padding="2,0,16,0" width="180" height="24" visible="false"/>
+	      </HorizontalLayout>
+		  <VerticalLayout height="2" width="462">
+			 <Control name="wifi_item_line"  pos="0,0,0,0" float="true" width="472" height="2" bkcolor="#FFDDDDDD" />
+		  </VerticalLayout>
+		  <VerticalLayout>
+              <VerticalLayout name="trust_list" vscrollbar="true" padding="0,0,0," height = "223"  bkcolor="#FFF6F2F2"  inset="0,0,0,0">
+          </VerticalLayout>
+	  </VerticalLayout>
+      </VerticalLayout>
+    </VerticalLayout>
+</VerticalLayout>
+</Window>
+
+
+ 
+ 
+
+ 
+
+ 
+ 

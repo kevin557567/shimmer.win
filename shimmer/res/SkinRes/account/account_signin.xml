@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window caption="0,0,0,0" roundcorner="0,0,0,0" sizebox="0,0,0,0" size="710,580">
+ <Font id="0" name="Segoe UI" size="13" bold="false" default="true"/>
+ <Font id="1" name="Segoe UI" size="18" bold="true"/>
+ <Font id="2" name="Segoe UI" size="12" shared="true" />
+ <Font id="3" name="Segoe UI" size="16" bold="true"/>
+ <Font id="4" name="Segoe UI" size="14" bold="true"/>
+ <Font id="5" name="Segoe UI" size="20" />
+ <Font id="6" name="Segoe UI" size="14" />
+ <Font id="7" name="Segoe UI" size="12" bold="true"/>
+ <Font id="8" name="Segoe UI" size="16" />
+ <Font id="9" name="Segoe UI" size="10" />
+ <Font id="10" name="Segoe UI" size="8" />
+<!--<Default name="VScrollBar" value="width=&quot;8&quot; showbutton1=&quot;false&quot; showbutton2=&quot;false&quot; thumbnormalimage=&quot;file='Scrollbars.png' source='0,0,8,12' corner='2,3,2,3'&quot; thumbhotimage=&quot;file='Scrollbars.png' source='0,0,8,12' corner='2,3,2,3'&quot; thumbpushedimage=&quot;file='Scrollbars.png' source='0,0,8,12' corner='2,3,2,3'&quot; bknormalimage=&quot;file='Scrollbars.png' source='0,12,8,24' corner='2,3,2,3'&quot; bkhotimage=&quot;file='Scrollbars.png' source='0,12,8,24' corner='2,3,2,3'&quot; bkpushedimage=&quot;file='Scrollbars.png' source='0,12,8,24' corner='2,3,2,3'&quot;" />-->
+<Default name="VScrollBar" value="width=&quot;8&quot; scrollunit=&quot;42&quot; showbutton1=&quot;false&quot; showbutton2=&quot;false&quot; thumbnormalimage=&quot;file='scrollbar.png' hquality='false' source='0,0,8,62' corner='3,3,3,3'&quot; thumbhotimage=&quot;file='scrollbar.png' source='0,0,8,62' corner='3,3,3,3'&quot; thumbpushedimage=&quot;file='scrollbar.png' source='0,0,8,62' corner='3,3,3,3'&quot;"/>
+<VerticalLayout bkcolor="#FFFFFFFF" >
+
+	<VerticalLayout height="164" width ="710" bkimage="file='account/bg_accout.png' corner=0,1,0,0" >
+<!--
+		<HorizontalLayout height="20" padding="648,10,0,0" >
+			<Button name="minibtn"  tooltipid="125" width="28"  height="20" normalimage="file='minimize.png' source='0,0,28,20'" hotimage="file='minimize.png' source='28,0,56,20'" pushedimage="file='minimize.png' source='28,0,56,20'" padding="0,0,0,0"/>
+			<Button name="closebtn"   tooltipid="126" width="28" height="20" normalimage="file='close.png' source='0,0,28,20'" hotimage="file='close.png' source='28,0,56,20'" pushedimage="file='close.png' source='28,0,56,20'"/>
+		</HorizontalLayout>
+-->		
+		<Label textid="204" align ="center"  height="19" padding="0,64,0,0" textcolor="#FFFFFFFF" disabledtextcolor="#FFA7A6AA" font="3" />
+		<Label textid="197"  align ="center"  height="18" padding="0,4,0,0" textcolor="#FFFFFFFF" disabledtextcolor="#FFA7A6AA" font="6" />
+		
+
+		<Button name="dlg_return" textcolor="#FFA7A6AA" tooltip="return" float="true"  width ="24" height="24" pos="22,10,46,34" normalimage="file='account/ic_back.png' source='4,0,28,24'" hotimage="file='account/ic_back.png' source='42,0,66,24'"  pushedimage="file='account/ic_back.png' source='42,0,66,24'" />
+	</VerticalLayout>	
+	
+
+	<HorizontalLayout name ="sign_in_err_tips" float="true"   pos="104,332,596,352" width="492" height="20"  visible ="false">
+		<Control bkimage="account/ic_alert.png"  width="20"  />	
+		<Label textid="205" name ="sign_in_err_info"  padding="10,0,0,0" align ="left"  height="18"  textcolor="#FFF54D4D" disabledtextcolor="#FFA7A6AA" font="6" />
+	</HorizontalLayout>	      
+
+	<Edit name ="signin_account_name" graytext ="Name@example.com" nativebkcolor="#ffF4F4F4"  font ="8" float="true"   pos="103,188,595,189"  width ="492" height="52"  textcolor="#FF333333"  borderround="4,4" wanttab="false" wantreturn="false" multiline="false" textpadding="17,0,16,0"  bkimage="account/bg_table.png" ></Edit>
+	<Edit  name ="signin_passwd"   graytext="Password" font ="8" password="true"  nativebkcolor="#ffF4F4F4" float="true"     pos="103,270,595,322"    width ="492" height="52"  textcolor="#FF333333"  borderround="4,4"  multiline="false" textpadding="17,0,16,0"   bkimage="account/bg_table.png" ></Edit >
+  
+	
+  
+  <HorizontalLayout width ="710" height="18" padding="0,218,0,0">
+    <Control />
+     <Button name="bt_find_passwd" textid="208" float="false"    textcolor="#FFFA7B47"  height="18" font="6"  hottextcolor="FFFA7B47" pushedtextcolor ="#FFA7A6AA"  />
+	<Control />
+  </HorizontalLayout>
+  
+ <HorizontalLayout width ="710" height="42" padding="0,20,0,0">
+	<Control />
+	<Button name="bt_push_signin" textid="203" textcolor ="#ffFFFFFF" width ="328" height="42"  float="false"   font="4"  pos="185,418,513,460"  bkimage="account/btn_sign_disable.png" normalimage="file='account/btn_sign_normal.png'" hotimage="file='account/btn_sign_hover.png' " pushedimage="file='account/btn_sign_pressed.png'"   align ="center" bkcolor ="#FF9C9EAD"    borderround="4,4"/>
+	<Control />
+ </HorizontalLayout>
+ 
+   
+ <Label textid="209"  font="2" float="fasle"   padding="0,20,0,0" align ="center"  height="14"  textcolor="#FF333333" disabledtextcolor="#FFA7A6AA"  />		
+	
+ <HorizontalLayout width ="710" height="14" padding="0,6,0,0">
+	<Control />
+	<Button name="bt_to_signup" textid="210" float="false"   pos="279,500,419,516"  textcolor="#FFFA7B47"  width ="180" height="14" font="6"  hottextcolor="FFFA7B47" pushedtextcolor ="#FFA7A6AA"  />
+	<Control />
+ </HorizontalLayout>
+
+    <VerticalLayout name="account_page_loading" inset="0,0,0,0" childalign="center" bkcolor="#99000000" float="true" pos="0,0,710,580" visible="fasle">
+	   <Control />
+	   <GifAnim bkimage="page_loading.gif" autosize="true"/>
+	   <Control />
+    </VerticalLayout>
+	<VerticalLayout  name ="window_shadow" inset="0,0,0,0" childalign="center" bkcolor="#99000000" float="true" pos="0,0,710,580" visible="false">
+	</VerticalLayout  >	
+</VerticalLayout>
+
+</Window>

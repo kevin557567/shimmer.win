@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window>
+  <HorizontalLayout childvalign="vcenter" height="50">
+    <Option name="proxy_item_btn" float="true" pos="0,0,250,50" normalimage="file='server_vip_normal.png'"   hotimage="file='server_vip_hover.png'" selectedimage="file='bg_selected.png' corner='0,0,50,0'" group="proxyitem" />
+    <Control name="icon" bkimage="guoqi/us.png" mouse="false" width="30" height="30" padding="12,0,10,0"></Control>
+    <!--<Label name="title" mouse="false" valign="vcenter" textcolor="#ffffffff" endellipsis="true" font="6" height="22"/>->
+    <!--<Label name="free" text="" mouse="false" valign="vcenter" align="right" textcolor="#fffa7b46" endellipsis="true" font="7" width="40" height="22" padding="2,0,15,0"/>-->
+    <VerticalLayout childalign="center" maxwidth="136" mouse="false" >
+      <Control mouse="false"></Control>
+      <Label name="title" mouse="false" valign="vcenter" textcolor="#ffffffff" endellipsis="true" font="6" height="22" />
+      <Label name="city"  mouse="false" valign="vcenter" textcolor="#ffcccccc" endellipsis="true" font="10" height="16" />
+      <Control mouse="false"></Control>
+    </VerticalLayout>
+	<!--<Label name="free" text="" mouse="false" valign="vcenter" align="right" textcolor="#fffa7b46" endellipsis="true" font="7" width="40" height="22" padding="2,0,15,0"/>-->
+    <!--<Label name="title" mouse="false" width="50" valign="vcenter" textcolor="#ff00ff00" endellipsis="true" font="3" height="22" text="Free"/>-->
+	<Control float="true" pos="198,15,238,35" bkimage="vip_mark.png" mouse="false" > </Control>
+    <Control float="true" pos="0,49,250,50" bkimage="file='line_list.png' hquality='false'" height="1" mouse="false"></Control>
+  </HorizontalLayout>
+</Window>

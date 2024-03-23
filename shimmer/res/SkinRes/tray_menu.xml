@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Window layeredimage="file='tray_menu_bg.png' corner='7,7,24,11'" size="160,72">
+  <Font id="1" name="微软雅黑" size="13" bold="false" default="true" />
+  <Default name="Menu" value="inset=&quot;2,1,2,1&quot; itemtextpadding=&quot;10,5,5,5&quot; itemtextcolor=&quot;0xfe666666&quot; itemhottextcolor=&quot;0xfeFFFFFF&quot; itemselectedtextcolor=&quot;0xfeffffff&quot; itemhotimage=&quot;file='bg_menu_hover.png' source='0,0,1,1'&quot; itemselectedimage=&quot;file='bg_menu_hover.png' source='0,0,1,1'&quot;" />
+  <Menu inset="2,2,2,2" itemalign="left">
+    <MenuElement name="Open" height="34" textid="108" font="1" />
+    <MenuElement name="exit" height="34" textid="109" font="1" />
+  </Menu>
+</Window>

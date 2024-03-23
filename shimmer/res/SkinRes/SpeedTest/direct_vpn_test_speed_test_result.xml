@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window roundcorner="0,0,0,-1" sizebox="0,0,0,0"  size="710,580" layeredimage="file='bg_mask.png'" layeredopacity="255">
+<Font id="1" name="Segoe UI" size="16" bold="true"/>
+<Font id="2" name="Segoe UI" size="24" bold="true"/>
+<Font id="3" name="Segoe UI" size="14" bold="true"/>
+<Font id="10" name="Segoe UI" size="10" />
+<Font id="11" name="Segoe UI" size="11" />
+<Font id="12" name="Segoe UI" size="12" bold="true"/>
+<Font id="13" name="Segoe UI" size="12" />
+<Font id="14" name="Segoe UI" size="14" bold="false" default="true"/>
+<Font id="15" name="Segoe UI" size="15" />
+<Font id="16" name="Segoe UI" size="16" />
+<Font id="18" name="Segoe UI" size="18" />
+<Font id="20" name="Segoe UI" size="20" />
+<Font id="22" name="Segoe UI" size="22" />
+<Font id="32" name="Segoe UI" size="32" />
+<Font id="33" name="Segoe UI" size="15" bold="true"/>
+<VerticalLayout   >
+     <Control />
+	<VerticalLayout padding="325,0,0,0"  height="368" width="311"  childalign="center" bkimage="file='SpeedTest/img_speedtest2.png'">
+		<Control  bkimage="" width="311" height="168" mouse="false"  ></Control>
+		<Label name="" height="21" padding="0,15,0,0" textcolor="#FF333333" text="Speedtest complete"  textid="248" font="1" align="center" valign="vcenter"/>
+        	<VerticalLayout>
+			<HorizontalLayout  padding="30,28,0,0"   height="16" >
+				<HorizontalLayout   childalign="left" width="156" height="16" >
+					<Control  name="net_icon"  bkimage="SpeedTest/ic_network.png" width="16" height="16" mouse="false"  ></Control>
+					<Label name="net_name" height="" padding="10,0,0,0" maxwidth="94" textcolor="#D9000000" text="---" font="12"  align="left"/>
+				</HorizontalLayout>	
+				<HorizontalLayout  width="153"  childalign="left" height="16" >	
+					<Control  name="ip_icon" padding="0,0,0,0"  bkimage="SpeedTest/ic_ip.png" width="16" height="16" mouse="false"  ></Control>
+					<Label name="server_ip" height="" padding="10,0,0,0" maxwidth="94" textcolor="#D9000000" text="---" font="12"  align="left"/>	
+				</HorizontalLayout>		
+				
+			</HorizontalLayout>	
+			
+			<HorizontalLayout  padding="24,11,0,0"  childalign="left" height="16">
+				<HorizontalLayout    childalign="left" width="150" height="16"  padding="6,0,0,0" >	
+					<Control  width="16" name="country_icon" bkcolor="#FFD8D8D8"  mouse="false"  borderround="3,3" ></Control>
+					<Label name="country" height="" padding="10,0,0,0" maxwidth="94" textcolor="#D9000000"   text="---" font="12"  align="left" valign="vcenter"/>
+				</HorizontalLayout>	
+				<HorizontalLayout  width="153"  childalign="left" height="16" >					
+					<Control bkimage="SpeedTest/ic_download.png" width="16" padding="6,0,0,0"  mouse="false"  ></Control>
+					<Label name="dowload_speed_right" height="" padding="10,0,0,0" maxwidth="94" textcolor="#D9000000" text="---" font="12"  align="left"/>		
+				</HorizontalLayout>						
+			</HorizontalLayout>		
+	</VerticalLayout>
+			  
+			<Control  bkimage="file='SpeedTest/line.png'" float="true" pos="156,228,158,284"  mouse="false"  ></Control>  
+			<Button name="dlg_ok" text="Got it" textid1="249" float="true" pos="42,300,269,342" font="33" align="center" textcolor="#FFFFFFFF"  normalimage="file='SpeedTest/btn_normal.png' " hotimage="file='SpeedTest/btn_hover.png'" pushedimage="file='SpeedTest/btn_active.png' "    />	 
+			<Button name="dlg_close" tooltip="close" float="true" pos="279,8,303,32" bkimage="file='SpeedTest/ic_close.png' "/>	
+		
+	</VerticalLayout>
+  <Control />
+</VerticalLayout>
+</Window>

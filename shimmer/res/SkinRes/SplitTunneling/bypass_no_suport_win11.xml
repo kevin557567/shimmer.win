@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window roundcorner="0,0,0,0" sizebox="0,0,0,0" size="300,88">
+ <Font id="0" name="Segoe UI" size="14" bold="false" default="true"/>
+ <Font id="1" name="Segoe UI" size="16" bold="true"/>
+
+<VerticalLayout  bkcolor="0xff848484">
+ <!-- <Button name="dlg_close" tooltip="关闭" float="true" pos="252,6,272,26" normalimage="ic_arrow.png"/>-->
+  <HorizontalLayout padding="12,14,6,14">
+    <VerticalLayout padding="0,0,12,0" width="24" childalign="center">
+      <Control ></Control>
+      <Control  width="24" height="24" bkimage="ic_master.png"></Control>
+      <Control></Control>
+    </VerticalLayout>
+	  <VerticalLayout childpadding="0" padding="0,0,12,0">
+		  <Label text="TurboVPN" height="20" textcolor="#ffffffff" font="1" align="left" valign="vcenter" padding="0,0,0,2"/>
+		  <Label text="Your operating system does not " height="20" textcolor="#ffffffff" align="left" valign="vcenter"/>
+		  <Label text="currently support this feature." height="20" textcolor="#ffffffff" align="left" valign="vcenter"/>
+    </VerticalLayout>
+  </HorizontalLayout>
+
+</VerticalLayout>
+</Window>

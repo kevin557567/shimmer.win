@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window roundcorner="0,0,0,-1" sizebox="0,0,0,0" mininfo="710,580" size="710,580" >
+ <Font id="0" name="Segoe UI" size="13" bold="false" default="true"/>
+ <Font id="1" name="Segoe UI" size="18" bold="true"/>
+ <Font id="2" name="Segoe UI" size="12" shared="true" />
+ <Font id="3" name="Segoe UI" size="16" bold="true"/>
+ <Font id="4" name="Segoe UI" size="14" bold="true" shared="true"/>
+ <Font id="5" name="Segoe UI" size="20" />
+ <Font id="6" name="Segoe UI" size="14" shared="true"/>
+ <Font id="7" name="Segoe UI" size="12" bold="true"/>
+ <Font id="8" name="Segoe UI" size="16" />
+ <Font id="9" name="Segoe UI" size="24" bold="true" shared="true"/>
+ <Font id="10" name="Segoe UI" size="12" />
+ <Font id="11" name="Segoe UI" size="10" />
+ <Font id="12" name="Segoe UI" size="11" bold="true"/>
+<HorizontalLayout  bkcolor="0xff000000" width="710" >
+	<VerticalLayout width="140"  childvalign="vcenter" bkimage="settings/bg_sidebar.png" inset="0,0,0,0">
+		<HorizontalLayout   height="24" childvalign="vcenter" padding="0,22,0,0">
+            <Option  name="general_btn" font="6" textpadding="18,0,10,0" endellipsis="true" textid="299" text="General" tooltipid="299" align="left" valign="center" textcolor="#ffdcdcdc" hottextcolor="#FFFFFFFF" selectedtextcolor="#FFFFFFFF"    normalimage="file='settings\Rectangle_1.png' dest='0,0,6,24'" hotimage="file='settings\ic_sidebar_active.png' dest='0,0,6,24'" selectedimage="file='settings\ic_sidebar_active.png' dest='0,0,6,24'"  group="cfg_btn" />					
+		</HorizontalLayout> 
+		<HorizontalLayout height="24" childvalign="vcenter" padding="0,19,0,0">
+			<Option  name="protocol_btn" font="6" textpadding="18,0,10,0" endellipsis="true" textid="232" tooltipid="232" text="Protocol" align="left" valign="center"  textcolor="#ffdcdcdc" hottextcolor="#FFFFFFFF" selectedtextcolor="#FFFFFFFF"   normalimage="file='settings\Rectangle_1.png' dest='0,0,6,24'" hotimage="file='settings\ic_sidebar_active.png' dest='0,0,6,24'" selectedimage="file='settings\ic_sidebar_active.png' dest='0,0,6,24'"  group="cfg_btn" />		
+		</HorizontalLayout> 
+		<HorizontalLayout  height="24" childvalign="vcenter" padding="0,19,0,0">	
+			<Option  name="feedback_btn" font="6" textpadding="18,0,10,0" endellipsis="true" textid="104" tooltipid="104"  text="Feedback" align="left" valign="center"  textcolor="#ffdcdcdc"  hottextcolor="#FFFFFFFF" selectedtextcolor="#FFFFFFFF"   normalimage="file='settings\Rectangle_1.png' dest='0,0,6,24'" hotimage="file='settings\ic_sidebar_active.png' dest='0,0,6,24'" selectedimage="file='settings\ic_sidebar_active.png' dest='0,0,6,24'"  group="cfg_btn" />			
+		</HorizontalLayout> 
+		<HorizontalLayout  height="24" childvalign="vcenter" padding="0,19,0,0">	
+			<Option  name="wifiprotect_btn" font="6" textpadding="18,0,10,0" endellipsis="true" textid="350" tooltipid="350"  align="left" valign="center"  textcolor="#ffdcdcdc"  hottextcolor="#FFFFFFFF" selectedtextcolor="#FFFFFFFF"   normalimage="file='settings\Rectangle_1.png' dest='0,0,6,24'" hotimage="file='settings\ic_sidebar_active.png' dest='0,0,6,24'" selectedimage="file='settings\ic_sidebar_active.png' dest='0,0,6,24'"  group="cfg_btn" />			
+		</HorizontalLayout>
+		<HorizontalLayout  height="24" childvalign="vcenter" padding="0,19,0,0">	
+			<Option  name="kill_switch_btn" font="6" textpadding="18,0,10,0" endellipsis="true"  tooltipid="370"  textid="370" align="left" valign="center"  textcolor="#ffdcdcdc"  hottextcolor="#FFFFFFFF" selectedtextcolor="#FFFFFFFF"   normalimage="file='settings\Rectangle_1.png' dest='0,0,6,24'" hotimage="file='settings\ic_sidebar_active.png' dest='0,0,6,24'" selectedimage="file='settings\ic_sidebar_active.png' dest='0,0,6,24'"  group="cfg_btn" />			
+		</HorizontalLayout> 
+		<HorizontalLayout  height="24" childvalign="vcenter" padding="0,19,0,0">	
+			<Option  name="split_tunneling_btn" font="6" textpadding="18,0,10,0" endellipsis="true" tooltipid="400"  textid="400" align="left" valign="center"  textcolor="#ffdcdcdc"  hottextcolor="#FFFFFFFF" selectedtextcolor="#FFFFFFFF"   normalimage="file='settings\Rectangle_1.png' dest='0,0,6,24'" hotimage="file='settings\ic_sidebar_active.png' dest='0,0,6,24'" selectedimage="file='settings\ic_sidebar_active.png' dest='0,0,6,24'"  group="cfg_btn" />			
+		</HorizontalLayout> 
+		<HorizontalLayout  height="24" childvalign="vcenter" padding="0,19,0,0">	
+			<Option  name="about_us_btn" font="6" textpadding="18,0,10,0" endellipsis="true"  tooltipid="390"  textid="390" align="left" valign="center"  textcolor="#ffdcdcdc"  hottextcolor="#FFFFFFFF" selectedtextcolor="#FFFFFFFF"   normalimage="file='settings\Rectangle_1.png' dest='0,0,6,24'" hotimage="file='settings\ic_sidebar_active.png' dest='0,0,6,24'" selectedimage="file='settings\ic_sidebar_active.png' dest='0,0,6,24'"  group="cfg_btn" />			
+		</HorizontalLayout> 		
+<!--		
+		<HorizontalLayout  height="24" childvalign="vcenter" padding="0,19,0,0">
+			<Button  name="policy_btn" font="4" textpadding="18,0,10,0" endellipsis="true" textid="105"  tooltipid="105" text="Privacy Policy" align="left" valign="center" textcolor="#ffdcdcdc" hottextcolor="#FFFFFFFF" pushedtextcolor="#FFFFFFFF"   normalimage="file='settings\Rectangle_1.png' dest='0,0,6,24'" hotimage="file='settings\ic_sidebar_active.png' dest='0,0,6,24'" selectedimage="file='settings\ic_sidebar_active.png' dest='0,0,6,24'"  group="cfg_btn" />		
+		</HorizontalLayout> 	
+		<HorizontalLayout  height="24" childvalign="vcenter" padding="0,19,0,0">
+			<Button  name="terms_of_use_btn" font="4" textpadding="18,0,10,0" endellipsis="true" textid="106"  tooltipid="106" text="Terms Of Use" align="left" valign="center" textcolor="#ffdcdcdc" hottextcolor="#FFFFFFFF" pushedtextcolor="#FFFFFFFF"   normalimage="file='settings\Rectangle_1.png' dest='0,0,6,24'" hotimage="file='settings\ic_sidebar_active.png' dest='0,0,6,24'" selectedimage="file='settings\ic_sidebar_active.png' dest='0,0,6,24'"  group="cfg_btn" />		
+		</HorizontalLayout> 
+	-->
+	</VerticalLayout>
+	<VerticalLayout  width="570" childvalign="vcenter" bkimage="settings/bg_setting.png" inset="0,0,0,0">
+		<TabLayout name="settings_switch" visible="true"   >	
+			<Include source="settings/general_cfg.xml" />
+		    <Include source="settings/protocol_cfg.xml" />
+			<Include source="settings/feedback_cfg.xml" />
+			<!---->	
+			<Include source="settings/wifiprotect_cfg.xml" />
+			<Include source="settings/killswitch_cfg.xml" />		
+			<Include source="settings/splittunneling_cfg.xml" />
+			<Include source="settings/aboutus_cfg.xml" />			
+		</TabLayout>
+	</VerticalLayout>
+	
+	<Button name="seting_rating_btn" text="Rate Us" textid="435"  align="left" float="true" pos="0,430,140,451" textpadding="24,0,0,0" textcolor="#ffdcdcdc"  hottextcolor="#FFFFFFFF" pushedtextcolor="#FFFFFFFF" endellipsis="true" font="6" ></Button>	
+	<Button name="account_btn" text="My account" textid="304" align="left" float="true" pos="0,460,140,492" textpadding="24,0,0,0" textcolor="#ffdcdcdc"  hottextcolor="#FFFFFFFF" pushedtextcolor="#FFFFFFFF" endellipsis="true" font="6" ></Button>
+	<Button name="quit_btn" textid="107" text="Quit" align="left" float="true" textpadding="24,0,0,0" pos="0,490,140,533"  textcolor="#ffdcdcdc"  hottextcolor="#FFFFFFFF" pushedtextcolor="#FFFFFFFF" endellipsis="true" font="6"  ></Button>	
+  </HorizontalLayout> 
+</Window>

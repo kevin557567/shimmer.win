@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window roundcorner="0,0,0,0" sizebox="0,0,0,0" size="447,40" >
+ <Font id="0" name="微软雅黑" size="13" bold="false" default="true"/>
+ <Font id="1" name="微软雅黑" size="18" bold="true"/>
+ <Font id="2" name="微软雅黑" size="12" shared="true" />
+ <Font id="3" name="微软雅黑" size="16" bold="true"/>
+ <Font id="4" name="微软雅黑" size="14" bold="true" shared="true"/>
+ <Font id="5" name="微软雅黑" size="20" />
+ <Font id="6" name="微软雅黑" size="14" shared="true"/>
+ <Font id="7" name="微软雅黑" size="12" bold="true"/>
+ <Font id="8" name="微软雅黑" size="16" />
+ <Font id="9" name="微软雅黑" size="24" bold="true" shared="true"/>
+ <Font id="10" name="微软雅黑" size="12" />
+ <Font id="11" name="微软雅黑" size="10" />
+ <Font id="12" name="微软雅黑" size="11" bold="true"/>  
+<VerticalLayout childvalign="left" height="40" >  
+    <HorizontalLayout   childvalign="vcenter" childalign="left"  padding="0,0,0,0" bkcolor="#FFF6F2F2">
+		<Option name="app_item_op" float="true" pos="0,0,460,48"   hotimage="file='SplitTunneling/Rectangle_2.png'"   group="proxyitem" />
+		<Label textcolor="#ff696969"  name="bypass_item_name"  font="6" width="320"  height="19" text="www.facebook.com"  align="left" valign="left"  padding="8,11,0,10"/>
+		<Option name="bypass_item_on_off"  padding="0,7,0,6" width="42"  height="27"  normalimage="settings/ic_switch_off.png"  selectedimage="settings/ic_switch_on.png" />
+		<Button bkimage="SplitTunneling/ic_delete.png"  width="24" height="24" name="del_item"  padding="36,8,0,8"  mouse="true" ></Button>
+	</HorizontalLayout>    
+</VerticalLayout >  
+</Window>

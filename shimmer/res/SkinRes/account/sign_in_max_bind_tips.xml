@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window caption="0,0,0,0" roundcorner="0,0,0,0" sizebox="0,0,0,0"  size="286,158">
+ <Font id="0" name="Segoe UI" size="13" bold="false" default="true"/>
+ <Font id="1" name="Segoe UI" size="18" bold="true"/>
+ <Font id="2" name="Segoe UI" size="12" shared="true" />
+ <Font id="3" name="Segoe UI" size="16" bold="true"/>
+ <Font id="4" name="Segoe UI" size="14" bold="true"/>
+ <Font id="5" name="Segoe UI" size="20" />
+ <Font id="6" name="Segoe UI" size="14" />
+ <Font id="7" name="Segoe UI" size="12" bold="true"/>
+ <Font id="8" name="Segoe UI" size="16" />
+ <Font id="9" name="Segoe UI" size="10" />
+ <Font id="10" name="Segoe UI" size="8" />
+<!--<Default name="VScrollBar" value="width=&quot;8&quot; showbutton1=&quot;false&quot; showbutton2=&quot;false&quot; thumbnormalimage=&quot;file='Scrollbars.png' source='0,0,8,12' corner='2,3,2,3'&quot; thumbhotimage=&quot;file='Scrollbars.png' source='0,0,8,12' corner='2,3,2,3'&quot; thumbpushedimage=&quot;file='Scrollbars.png' source='0,0,8,12' corner='2,3,2,3'&quot; bknormalimage=&quot;file='Scrollbars.png' source='0,12,8,24' corner='2,3,2,3'&quot; bkhotimage=&quot;file='Scrollbars.png' source='0,12,8,24' corner='2,3,2,3'&quot; bkpushedimage=&quot;file='Scrollbars.png' source='0,12,8,24' corner='2,3,2,3'&quot;" />-->
+<Default name="VScrollBar" value="width=&quot;8&quot; scrollunit=&quot;42&quot; showbutton1=&quot;false&quot; showbutton2=&quot;false&quot; thumbnormalimage=&quot;file='scrollbar.png' hquality='false' source='0,0,8,62' corner='3,3,3,3'&quot; thumbhotimage=&quot;file='scrollbar.png' source='0,0,8,62' corner='3,3,3,3'&quot; thumbpushedimage=&quot;file='scrollbar.png' source='0,0,8,62' corner='3,3,3,3'&quot;"/>
+<VerticalLayout  bkimage="file='account/bg_dialogue.png' ">
+	<Button name="dlg_close" tooltip="close" float="true"   pos="256,10,276,30" width="20" height="20" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" bkimage="file='account/ic_close.png'" />
+	
+	<Label   padding="0,10,0,0" height="18"   align="center"  font="4" textcolor="#FF171426" textid="219" mouse="false"></Label>
+	<Label padding="0,10,0,0" name="max_bind_label" height="16"   align="center"  font="6"  textcolor="#FF171426" textid="220" mouse="false"></Label>
+	<Label padding="0,0,0,0"  height="16"   align="center"  font="6"  textcolor="#FF171426" textid="221" mouse="false" multiline ="true"></Label>
+	<Label padding="0,0,0,0" height="16"   align="center"  font="6"  textcolor="#FF171426" textid="222" ></Label>
+	<Button name="dlg_cancel"  float="true" tooltip="cancel"  pos="20,128,123,144" textid="223" font ="4" width="93" height="16"  textcolor="#FF171426" disabledtextcolor="#FFA7A6AA" align="center"  />
+	<Button name="copy_btn" float="true"  tooltip="Feedback" pos="154,128,277,144" textid="224" font ="4" width="123" height="16"  textcolor="#FFFA7B47" disabledtextcolor="#FFA7A6AA" align="center"   />
+
+  </VerticalLayout>
+</Window>

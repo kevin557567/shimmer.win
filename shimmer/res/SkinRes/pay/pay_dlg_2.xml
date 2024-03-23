@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window roundcorner="0,0,0,-1" sizebox="0,0,0,0" size="710,580" layeredimage="file='bg_mask.png'" layeredopacity="255"  >
+<Font id="1" name="Segoe UI" size="16" bold="true"/>
+<Font id="2" name="Segoe UI" size="24" bold="true"/>
+<Font id="3" name="Segoe UI" size="14" bold="true"/>
+<Font id="10" name="Segoe UI" size="10" />
+<Font id="11" name="Segoe UI" size="11" />
+<Font id="12" name="Segoe UI" size="12" bold="true" />
+<Font id="13" name="Segoe UI" size="13" />
+<Font id="14" name="Segoe UI" size="14" bold="false" default="true"/>
+<Font id="15" name="Segoe UI" size="15" />
+<Font id="16" name="Segoe UI" size="16" />
+<Font id="18" name="Segoe UI" size="18" bold="true" />
+<Font id="20" name="Segoe UI" size="20" />
+<Font id="22" name="Segoe UI" size="22" />
+<Font id="23" name="Segoe UI" size="23"  bold="true"/>
+<Font id="24" name="Segoe UI" size="24"  bold="true"/>
+<Font id="30" name="Segoe UI" size="30" bold="true" />
+<Font id="32" name="Segoe UI" size="32" />
+
+
+<VerticalLayout itemshowhtml="true"  borderround="8,8" bkimage="file='bg_mask.png'" name="promotion_dlg" >
+
+	<VerticalLayout padding="200,90,0,0"  name="price_promotion_dlg"  height="410" width="311" childalign="center"  childvalign="vcenter"  >
+		<VerticalLayout bkimage="" float="true" pos="0,0,311,410"  borderround="8,8">
+		     <GifAnim name ="bk_gif" bkimage="pay/free_dlg_2_bg.png"  />
+		</VerticalLayout>
+	<TabLayout name="title_page_tab" childalign="center" childvalign="vcenter"   >
+		<VerticalLayout >
+
+		</VerticalLayout>
+		  <VerticalLayout>
+			   <HorizontalLayout name="Timer" childalign="center" visible="false" childvalign="vcenter" padding="19,30,19,0" height="52" width="273" bkimage="pay/clock.png"   >
+					<Label text="2" showhtml="false" name="Time_H"  align ="center"  float="true" pos="0,0,40,52" textcolor="#ffFFFFFF"  font="24" />
+					<Label text="3" showhtml="false" name="Time_H2"  align ="center"  float="true" pos="42,0,82,52" textcolor="#ffFFFFFF"  font="24" />
+					
+					<Label text="5" showhtml="false" name="Time_M"  align ="center"  float="true" pos="95,0,135,52" textcolor="#ffFFFFFF"  font="24" />
+					<Label text="6" showhtml="false" name="Time_M2"  align ="center"  float="true" pos="137,0,177,52" textcolor="#ffFFFFFF"  font="24" />
+					
+					<Label text="1" showhtml="false" name="Time_S" align ="center"  float="true" pos="191,0,231,52" textcolor="#ffFFFFFF"  font="24" />
+					<Label text="8" showhtml="false" name="Time_S2" align ="center"  float="true" pos="233,0,273,52" textcolor="#ffFFFFFF"  font="24" />	  			
+			   </HorizontalLayout >
+		   </VerticalLayout>
+	  
+
+
+   </TabLayout>
+	<VerticalLayout name="product_introduce" float="true"  mouse="false"  pos="24,167,311,293">
+		<Option name="select_pic_1"  float="true"  mouse="false"  pos="0,0,18,18" bkimage="file='pay/slect_ic_white.png'"/>
+		<Option name="select_pic_2"  float="true"  mouse="false"  pos="0,29,18,47" bkimage="file='pay/slect_ic_white.png'"/>
+		<Option name="select_pic_3"  float="true"  mouse="false"  pos="0,58,18,76" bkimage="file='pay/slect_ic_white.png'"/>
+		<Option name="select_pic_4"  float="true"  mouse="false"  pos="0,87,18,105" bkimage="file='pay/slect_ic_white.png'"/>
+		
+		<Label name="product_dsc_1" endellipsis="true" showhtml="false" float="true" pos="28,0,287,18" text="unlimited download/upload data"  align ="left"   textcolor="#ffffffff" disabledtextcolor="#FFA7A6AA" font="8" textpadding="0,0,35,0"/>
+		<Label name="product_dsc_2" endellipsis="true" showhtml="false" float="true" pos="28,27,287,45" text="Optimized for Nextifix and others"  align ="left"   textcolor="#ffffffff" disabledtextcolor="#FFA7A6AA" font="8" textpadding="0,0,35,0"/>
+		<Label name="product_dsc_3" endellipsis="true" showhtml="false" float="true" pos="28,57,287,75" text="50+ vitrual locations with cities"  align ="left"   textcolor="#ffffffff" disabledtextcolor="#FFA7A6AA" font="8" textpadding="0,0,35,0"/>
+		<Label name="product_dsc_4" endellipsis="true" showhtml="false" float="true" pos="28,85,287,103" text="Secure up to 6 devices"  align ="left"   textcolor="#ffffffff" disabledtextcolor="#FFA7A6AA" font="8" textpadding="0,0,35,0"/>	
+	</VerticalLayout>
+   
+	<Label  name="pop_title" float="true" textpadding="20,0,20,0" pos="0,101,311,160"   endellipsis="true" text="Last chance to get Premium bennifis for free"  align ="center" multiline="true" showhtml="false"  textcolor="#FFFFFFFF"  font="1" />
+	 <!-- <Label  name="pop_text" float="true" pos="0,203,300,241" textpadding="10,0,10,0" endellipsis="true" text="There is no reason not to give it a try.No commitment Cancel anytime." align ="center" multiline="true" showhtml="false"  textcolor="#FFFFFFFF"  font="14" />
+	  -->
+	
+		<VerticalLayout float="true" pos="20,318,291,391"  name="price_promotion_btn" childalign="center"  childvalign="vcenter">
+			<VerticalLayout  name="price_double_btn" visible="true" childalign="center"  childvalign="vcenter">
+				<Button name="dlg_btn_2"  textcolor="#FFFF8D00" font="1" text="TRY FREE FOR 7 DAYS"   bkimage="file='pay/btn_normal_2.png'"  borderround="10,10" />
+				<Button name="dlg_btn_1"  padding="90,10,0,0" visible="true" width="91" textcolor="#FFffffff" font="8" text="Decline other"  />	
+			</VerticalLayout>
+			<!--
+			<VerticalLayout  name="price_single_btn" visible="false" childalign="center"  childvalign="vcenter">
+				<Button name="dlg_btn_1"  textcolor="#FFFF8D00"  font="1" text="Start Subscription"    normalimage="file='pay/btn_normal_2.png'" hotimage="file='pay/btn_hover_2.png' " pushedimage="file='pay/btn_active_2.png'"  borderround="10,10" />
+			</VerticalLayout>-->
+		</VerticalLayout>  
+	</VerticalLayout>
+
+
+
+	
+	<!--
+	<Button name="dlg_close" tooltip="close" float="true" visible="true" pos="470,147,490,167" bkimage="file='promotion/ic_close_1.png' "/>	-->
+</VerticalLayout>
+</Window>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window roundcorner="0,0,0,0" sizebox="0,0,0,0" size="698,580" >
+  <Font id="0" name="Segoe UI" size="14" bold="false" default="true"/>
+  <Font id="1" name="Segoe UI" size="16"/>
+<VerticalLayout childvalign="left" >  
+    <Label textcolor="#fe171426" text="ur internet access will be disabled. To restore your internet access, you will need to connect to VPN or turn the Kill Switch off." align="left" valign="left" multiline="true" padding="0,6,10,0"/>
+
+  </VerticalLayout>
+</Window>

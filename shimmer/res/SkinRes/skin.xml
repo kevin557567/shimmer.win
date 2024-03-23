@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window caption="0,0,0,36" roundcorner="4,4,4,4" sizebox="0,0,0,0" mininfo="308,42" size="710,580" >
+ <Font id="0" name="微软雅黑" size="13" bold="false" default="true"/>
+ <Font id="1" name="微软雅黑" size="18" bold="true"/>
+ <Font id="2" name="微软雅黑" size="12" shared="true" />
+ <Font id="3" name="微软雅黑" size="16" bold="true"/>
+ <Font id="4" name="微软雅黑" size="14" bold="true" shared="true"/>
+ <Font id="5" name="微软雅黑" size="20" />
+ <Font id="6" name="微软雅黑" size="14" shared="true"/>
+ <Font id="7" name="微软雅黑" size="12" bold="true"/>
+ <Font id="8" name="微软雅黑" size="16" />
+ <Font id="9" name="微软雅黑" size="24" bold="true" shared="true"/>
+ <Font id="10" name="微软雅黑" size="12" />
+ <Font id="11" name="微软雅黑" size="10" />
+ <Font id="12" name="微软雅黑" size="11" bold="true"/>
+<!--<Default name="VScrollBar" value="width=&quot;8&quot; showbutton1=&quot;false&quot; showbutton2=&quot;false&quot; thumbnormalimage=&quot;file='Scrollbars.png' source='0,0,8,12' corner='2,3,2,3'&quot; thumbhotimage=&quot;file='Scrollbars.png' source='0,0,8,12' corner='2,3,2,3'&quot; thumbpushedimage=&quot;file='Scrollbars.png' source='0,0,8,12' corner='2,3,2,3'&quot; bknormalimage=&quot;file='Scrollbars.png' source='0,12,8,24' corner='2,3,2,3'&quot; bkhotimage=&quot;file='Scrollbars.png' source='0,12,8,24' corner='2,3,2,3'&quot; bkpushedimage=&quot;file='Scrollbars.png' source='0,12,8,24' corner='2,3,2,3'&quot;" />
+<Default name="VScrollBar" value="width=&quot;0&quot; scrollunit=&quot;50&quot; showbutton1=&quot;false&quot; showbutton2=&quot;false&quot; thumbnormalimage=&quot;file='scrollbar.png' hquality='false' source='0,0,8,62' corner='3,3,3,3'&quot; thumbhotimage=&quot;file='scrollbar.png' source='0,0,8,62' corner='3,3,3,3'&quot; thumbpushedimage=&quot;file='scrollbar.png' source='0,0,8,62' corner='3,3,3,3'&quot;"/>-->
+<Default name="VScrollBar" value="bknormalimage=&quot;file='bg_normal.png' source='0,0,8,50'&quot; width=&quot;8&quot; scrollunit=&quot;50&quot; showbutton1=&quot;false&quot; showbutton2=&quot;false&quot; thumbnormalimage=&quot;file='scrollbar.png' hquality='false' source='0,0,8,62' corner='3,3,3,3'&quot; thumbhotimage=&quot;file='scrollbar.png' source='0,0,8,62' corner='3,3,3,3'&quot; thumbpushedimage=&quot;file='scrollbar.png' source='0,0,8,62' corner='3,3,3,3'&quot;"/>
+
+<VerticalLayout>
+<!--start page-->
+	<VerticalLayout bkcolor="0xff171426" visible="true" name="start_page" childalign="center"  bkimage="main_bg.png1">
+		<HorizontalLayout height="36"  childvalign="vcenter" inset="12,1,10,0">	 
+			<Control />
+			<Button name="minibtn" tooltipid="125" width="28" height="20" normalimage="file='minimize.png' source='0,0,28,20'" hotimage="file='minimize.png' source='28,0,56,20'" pushedimage="file='minimize.png' source='28,0,56,20'" padding="0,0,0,0"/>
+			<Button name="closebtn" tooltipid="126" width="28" height="20" normalimage="file='close.png' source='0,0,28,20'" hotimage="file='close.png' source='28,0,56,20'" pushedimage="file='close.png' source='28,0,56,20'"/>
+		</HorizontalLayout>	
+		
+		<VerticalLayout    padding="0,120,0,0" childalign="center">
+		 
+			<GifAnim bkimage="win_turbo.png" width="90" height="90" name="start_anim"/>
+		
+				<!--<CRlottieAnim name="start_ratote" jsondata="lottie/speedtest.json"/>-->
+		</VerticalLayout>
+		
+		 <Option visible="true" mouse="false"   bkimage="file='Turbo VPN.png'" valign="center" align="center" float="true" pos="273,278,424,303"/>
+		 <HorizontalLayout childalign="center"  float="true" pos="0,443,698,460" >
+		  <Label name="start_tips"  align="center" valign="vcenter" text="Loading…" font="16" textcolor="0xffE8E8E8"  ></Label>	
+		 </HorizontalLayout>	 
+
+	</VerticalLayout>
+	<!--main page-->
+	<VerticalLayout  visible="false" name="m_main_page" >
+		<HorizontalLayout height="36" bkcolor="0xfffa7b47" childvalign="vcenter" inset="12,1,10,0">
+		<!--<Control bkimage="logo_turbo.png" width="22" height="20" paddingvip="12,9,0,0"></Control> -->
+			<HorizontalLayout width="300" childvalign="vcenter">	
+					<HorizontalLayout name="logo_title2" visible="false" childvalign="vcenter">
+						<Button name="return_btn" textcolor="#FFA7A6AA" tooltip="return" float="true"  pos="22,8,46,30" normalimage="file='pay/ic_back.png' source='4,0,28,24'" hotimage="file='pay/ic_back.png' source='42,0,66,24'"  pushedimage="file='pay/ic_back.png' source='42,0,66,24'" />	
+					</HorizontalLayout>	
+					
+					<HorizontalLayout name="logo_title1" visible="true" childvalign="vcenter">
+						<Button name="logo_turbo" enabled="false" width="22" height="20" normalimage="file='logo_turbo.png' source='0,0,22,20'" hotimage="file='logo_turbo.png' source='0,0,22,20'" pushedimage="file='logo_turbo.png' source='0,0,22,20'"/>
+						<Label name="caption"  text="Turbo VPN  1.0.0.3" padding="11,0,0,0" textcolor="#FFFFFFFF" font="3" valign="vcenter"></Label>
+					</HorizontalLayout>	
+			</HorizontalLayout>	
+			
+			<Control />
+			<Button name="account_btn" tooltip="account"  width="24" height="24" normalimage="file='settings/ic_profile.png' " hotimage="file='settings/ic_profile_hover.png' " pushedimage="file='settings/ic_profile_active.png' " padding="0,0,12,0"/>
+			<Button name="speedtest_btn" tooltip="speedtest" visible="false"   width="24" height="24" normalimage="file='ic_speedtest_normal.png' " hotimage="file='ic_speedtest_hover.png' " pushedimage="file='ic_speedtest_active.png' " padding="0,0,12,0"/>		
+			<Button name="promotion_btn" tooltip="gift" width="24" height="24" normalimage="file='ic_gift_normal.png' " hotimage="file='ic_gift_hover.png' " pushedimage="file='ic_gift_normal.pn' " padding="0,0,12,0"/>
+			<Button name="menu_btn" tooltipid="127" width="24" height="24" normalimage="file='ic_setting_normal.png' " hotimage="file='ic_setting_hover.png'" pushedimage="file='ic_setting_active.png' " padding="0,0,12,0"/>
+			<Button name="minibtn" tooltipid="125" width="28" height="20" normalimage="file='minimize.png' source='0,0,28,20'" hotimage="file='minimize.png' source='28,0,56,20'" pushedimage="file='minimize.png' source='28,0,56,20'" padding="0,0,0,0"/>
+			<Button name="closebtn" tooltipid="126" width="28" height="20" normalimage="file='close.png' source='0,0,28,20'" hotimage="file='close.png' source='28,0,56,20'" pushedimage="file='close.png' source='28,0,56,20'"/>
+		</HorizontalLayout>
+		
+	  <HorizontalLayout name ="main_connect_page" visible="true">
+		<VerticalLayout width="250" bkcolor="0xff3a384d" childalign="center">
+		  <HorizontalLayout name="type_anim" childalign="center"  padding="0,0,0,0"  height="50" visible="true" bkcolor="0xff242234">
+			<Button name="globalbtn"  padding="16,8,0,0" textid="230" tooltipid="127" width="111" height="32" font= "8" textcolor="#FF242234" disabledtextcolor="#FFFEFEFE"  normalimage="file='btn_global_normal.png' source='0,0,111,32'" hotimage="file='btn_global_hover.png' source='0,0,111,32'" pushedimage="file='btn_global_hover.png' source='0,0,111,32'"  disabledimage="file='btn_global_active.png'" enabled="false" />
+			<Button name="specialbtn" padding="0,8,0,0" textid="231" tooltipid="127" width="111" height="32" font= "8" textcolor="#FF242234" disabledtextcolor="#FFFEFEFE"  normalimage="file='btn_special_normal.png' source='0,0,111,32'" hotimage="file='btn_special_hover.png' source='0,0,111,32'" pushedimage="file='btn_special_hover.png' source='0,0,111,32'"  disabledimage="file='btn_special_active.png'" enabled="true"/>
+		  </HorizontalLayout>
+		  <HorizontalLayout name="globalsearchtab" childvalign="vcenter" height="42" bkcolor="0xff242234" >
+			<Option name="proxy_item_btn_back"  mouse="false" float="true" pos="0,0,250,42" normalimage="bg_search.png" hotimage="file='bg_search.png'" selectedimage="file='bg_search.png' corner='50,0,50,0'" group="proxyitem" />
+			<Edit name="global_search_key" align="left" font ="6" padding="10,0,0,0" textcolor="#FFFFFFFF" bkcolor="#FF615F70" nativebkcolor="#FF615F70" width="165" height="28" ></Edit>
+			<Option name="global_search_btn" padding="0,7,0,7" width="16" height="16" normalimage="searchon.png" selectedimage="searchoff.png" />
+			<control width="11" />
+			<Button name="reload_btn" align="center" valign="vcenter" padding="0,0,0,0" width="40" height="30" normalimage="btn_refresh_active.png" hotimage="btn_refresh_hover.png" pushedimage="btn_refresh_normal.png" disableimage=""></Button>
+			<Control float="true" pos="0,49,250,50" bkimage="file='line_list.png' hquality='false'" height="1" mouse="false"></Control>
+		  </HorizontalLayout>
+		  <HorizontalLayout name="specialsearchtab" childvalign="vcenter" height="42" bkcolor="0xff242234" visible="false">
+			<Option name="proxy_item_btn_back"  mouse="false" float="true" pos="0,0,250,42" normalimage="bg_search.png" hotimage="file='bg_search.png'" selectedimage="file='bg_search.png' corner='50,0,50,0'" group="proxyitem" />
+			<Edit name="special_search_key" align="left" font ="6" padding="10,0,0,0" textcolor="#FFFFFFFF" bkcolor="#FF615F70" nativebkcolor="#FF615F70" width="165" height="28" ></Edit>
+			<Option name="special_search_btn" padding="0,7,0,7" width="16" height="16" normalimage="searchon.png" selectedimage="searchoff.png" />
+			<control width="11" />
+			<Button name="reload_btn" align="center" valign="vcenter" padding="0,0,0,0" width="40" height="30" normalimage="btn_refresh_active.png" hotimage="btn_refresh_hover.png" pushedimage="btn_refresh_normal.png" disableimage=""></Button>
+			<Control float="true" pos="0,49,250,50" bkimage="file='line_list.png' hquality='false'" height="1" mouse="false"></Control>
+		  </HorizontalLayout>
+		  <VerticalLayout name="proxy_list" linesize="50" pos="0,92,250,542" vscrollbar="true" >
+		  </VerticalLayout>
+		  <VerticalLayout name="special_list" linesize="50" pos="0,92,250,542" vscrollbar="true"  visible="false" >
+		  </VerticalLayout>
+		  <VerticalLayout name="reload_anim" childalign="center" float="true" pos="0,0,250,491" visible="false">
+			<Control />
+			<GifAnim bkimage="loading.gif" autosize="true"/>
+			<Control />
+		  </VerticalLayout>
+		  <Control name="list_mask" bkcolor="b2000000" visible="false" float="true" pos="0,0,250,544"></Control>
+		</VerticalLayout>
+		<VerticalLayout bkimage="client_bg.png" name="main_page">
+		  <VerticalLayout padding="22,16,22,0"  width="416" height="68" name ="main_page_promotion_Vt">
+			<VerticalLayout name="main_page_promotion" >
+				<Control />
+					<GifAnim name="promotionbar" bkimage="file='bg_sale_home.png' " width="416" height="68"/>
+				<Control />
+			</VerticalLayout>
+			<Button name="promotionbar_btn" float="true" enabled="false" pos="0,0,416,68"></Button>
+		  </VerticalLayout>
+
+		  <TabLayout name="state_page_tab">
+			<VerticalLayout childalign="center">
+			  <Control bkimage="rabbit_un.png" width="64" height="82" padding="0,159,0,0"/>
+			  <Label textid="101" textcolor="#ffffffff" font="8" height="19" padding="10,64,10,0" align="center" valign="vcenter"/>
+			  <Button name="connect_btn" width="64" height="64" padding="0,32,0,0" normalimage="file='btn_unconnect.png' source='0,0,64,64'" hotimage="file='unconnect_active.png' source='0,0,64,64'" pushedimage="file='unconnect_active.png' source='0,0,64,64'" disabledimage="file='unconnect_disabled.png' source='0,0,64,64'"/>
+			</VerticalLayout>
+			<VerticalLayout childalign="center">
+			  <GifAnim bkimage="connecting.gif" width="136" height="90" padding="0,155,0,0"/>
+			  <Label textid="102" textcolor="#ffffffff" font="8" height="19" padding="10,26,10,0" align="center" valign="vcenter"/>
+			  <Progress name="connect_process" bkimage="file='progress_back.png' corner='5,2,5,2'" foreimage="file='progress_front.png' corner='5,2,0,2'" height="8" padding="58,26,57,0" min="0" max="100" value="0"/>
+			  <Button name="disconnect_btn" width="64" height="64" padding="0,32,0,0" normalimage="file='btn_disconnect.png' source='0,0,64,64'" hotimage="file='btn_disconnect.png' source='0,0,64,64'" pushedimage="file='btn_disconnect.png' source='0,0,64,64'"/>
+			</VerticalLayout>
+			<VerticalLayout childalign="center">
+			   <!--Location Info-->
+			   <VerticalLayout float="true" name ="location_info_page" bkimage="bg_home_speed_left.png" bkcolor="#ff4650A9" borderround="8,8"  pos="31,257,228,366" >
+				 <HorizontalLayout height="18" padding="7,8,0,0" >
+					<Label   textid="344"  width="88" textcolor="#ff4A4949" font="7"   />
+					<Control></Control>
+					<HorizontalLayout  width="83" name="Server_Info_Upgrade_HL"  padding="0,0,8,0"  align="right"  height ="18" borderround="4,4" bkimage="btn_home_upgrade_normal.png" normalimage="file='btn_home_upgrade_normal.png'" hotimage="file='btn_home_upgrade_normal.png'" pushedimage="file='btn_home_upgrade_normal.png'"  >
+					  <Label padding="8,0,0,2"  text="Upgrade"  autosize="true"  textcolor="#FFFFFFFF" font="11" />
+					  <Control></Control>
+					  <Button padding="6,3,8,3" align="right"  width="12" normalimage="file='ic_next.png'"  ></Button>
+					  <Option name="upgrade_left"  float="true" pos="0,0,100,18"  /> 
+					</HorizontalLayout>
+				 
+				 </HorizontalLayout>
+				 
+				 <HorizontalLayout height="16" padding="7,12,0,0" >
+					<Label   text="IP"  width1="14" align="left" textcolor="#ff4A4949" font="7" />
+
+					<Label  padding="0,0,4,0"  text="0.0.0.0"  name="ip"  textcolor="#ff4A4949" font="7" align="right" />
+				 </HorizontalLayout>
+				 
+				 <HorizontalLayout height="16" align="left" padding="7,4,0,0" >
+					<Label    textid="345"    maxwidth="100" textcolor="#ff4A4949" font="7" />
+				   
+					<Label  padding="0,0,4,0"  text="0%"   name="load"  textcolor="#ff4A4949" font="7" align="right" />
+				 </HorizontalLayout>
+				 
+				 <HorizontalLayout height="20" padding="7,4,0,0" >
+					<Label    textid="346"    maxwidth="100" align="left" textcolor="#ff4A4949" font="7"  />
+				
+					<Label  padding="0,0,6,0"  text="233ms" name="latency"   textcolor="#ff4A4949" font="7" align="right"/>
+				 </HorizontalLayout>
+			   </VerticalLayout> 
+			  
+			   <!--Speed Info-->
+			   <VerticalLayout float="true" name ="speed_info_page" bkcolor="#ff4650A9" bkimage="bg_home_speed_right.png" borderround="8,8"  pos="232,257,429,366" > 
+				 <HorizontalLayout height="18" padding="7,8,0,0" >
+					<Label    textid="347"  width="88" textcolor="#ff4A4949" font="7" />
+					  <Control></Control> 
+					  <HorizontalLayout  width="83" name="Speed_Info_Upgrade_HL" padding="0,0,8,0"  align="right"  borderround="4,4"  bkimage="btn_home_upgrade_normal.png" normalimage="file='btn_home_upgrade_normal.png'" hotimage="file='btn_home_upgrade_normal.png'" pushedimage="file='btn_home_upgrade_normal.png'" >
+					  <Label padding="8,0,0,2"  text="Go Faster"  autosize="true"  textcolor="#FFFFFFFF" font="11" />
+					  <Control></Control>
+					  <Button padding="6,3,8,3"   width="12" normalimage="file='ic_next.png'"  ></Button>
+					  <Option name="upgrade_right"  float="true" pos="0,0,83,18"  />
+					</HorizontalLayout>	
+				
+				 </HorizontalLayout>
+			
+				 <HorizontalLayout height="16" padding="7,12,0,0" >
+					<Label   textid="348"   align="left"  textcolor="#ff4A4949" font="7"  endellipsis="true" />
+					<Label  padding="0,0,4,0"  text="1Mbps"  name="speed"  endellipsis="true"  textcolor="#ff4A4949" font="7" align="right"/>
+				 </HorizontalLayout>
+				 
+				 <HorizontalLayout height="16" padding="7,4,0,0">
+					<Label text="UP" textid="363"  maxwidth="100" align="left"  textcolor="#ff4A4949" font="7" />
+					<Label padding="0,0,4,0"   align="right" text="233Mpbs"  name="up_speed"  textcolor="#ff4A4949" font="7" />
+				 </HorizontalLayout>
+				 <HorizontalLayout height="16" padding="7,4,0,0" >
+					<Label text="Down" textid="364"  maxwidth="100" align="left" textcolor="#ff4A4949" font="7" />
+					<Label padding="0,0,4,0"  align="right"  text=""  name="downd_speed" textcolor="#ff4A4949" font="7"  />
+				 </HorizontalLayout>
+		
+			   </VerticalLayout>
+			   
+			  <Label textid="103" textcolor="#FFFA7B47" font="8" height="19" padding="10,78,10,0" align="center" valign="vcenter"/>
+			  <Label name="connected_time" text="00:00:00" textcolor="#FFFA7B47" font="8" height="19" padding="10,15,10,0" align="center" valign="vcenter"/> 
+			  <Control bkimage="rabbit_ed.png" width="95" height="64" padding="0,45,0,0"/>
+			
+			  <Button name="disconnect_btn" width="64" height="64" padding="0,116,0,0" normalimage="file='btn_disconnect.png' source='0,0,64,64'" hotimage="file='btn_disconnect.png' source='0,0,64,64'" pushedimage="file='btn_disconnect.png' source='0,0,64,64'"/>
+
+			</VerticalLayout>
+			<!-- speedTest page-->
+			<VerticalLayout childalign="center"  >
+				<Label name="speedtest_title" text="Internet Speed Test" textid="241" height="16" textcolor="#A6FFFFFF" font="2" padding="8,0,8,0" align="left" valign="vcenter"/>	
+				<Button name="speedtest_tips" bkimage="bg_tips.png" endellipsis="true" mouse="false" padding="0,18,0,0"  borderround="3,3" visible="true" font="6" textcolor="#A6FFFFFF"  text="Testing local network speed"  width="226" height="30" align="center" valign="vcenter" />
+				<VerticalLayout  height="189" padding="0,32,0,0" >
+					<CRlottieAnim name="speedtest_ratote" jsondata="lottie/speedtest.json"/>
+				</VerticalLayout>
+				<Button name="speedtest_cancel" padding="0,34,0,0" visible="true" text="Cancel1" textcolor="#FFFFFFFF" font="4" width="136" height="42" align="center" valign="vcenter" normalimage="file='SpeedTest/btn_cancel_normal.png' " hotimage="file='SpeedTest/btn_cancel_hover.png'" pushedimage="file='SpeedTest/btn_cancel_active.png' "/>		
+			   <!--Speed Info pannel-->
+			  <HorizontalLayout name="connecting_speed_test_page"  padding="32,40,32,0"  childalign="center" >
+				  <VerticalLayout bkimage="SpeedTest/card_loal2.png"  width="180" height="109"  name="local_page" >
+					<Label name="" height="16" padding="8,8,0,0" textcolor="#A6FFFFFF" text="Local Network" textid="246" font="2" align="left" />
+					
+					<HorizontalLayout  padding="16,22,0,0"  childalign="left" height="16" >
+						<Control  name="net_icon"  bkimage="SpeedTest/ic_network.png" width="16" height="16" mouse="false"  ></Control>
+						<Label name="net_name" height="" padding="16,0,0,0" textcolor="#D9FFFFFF" text="--" font="12"  align="left"/>
+					</HorizontalLayout>	
+					
+					<HorizontalLayout  padding="16,16,0,0"  childalign="left" height="16">
+						<Control bkimage="SpeedTest/ic_download.png" width="16"  mouse="false"  ></Control>
+						<Label name="dowload_speed_letf" height="" padding="16,0,0,0" textcolor="#D9FFFFFF" text="-- Mbps" font="2"  align="left"/>
+					</HorizontalLayout>		
+				  </VerticalLayout>
+			  
+				  <VerticalLayout name="vpn_speedtest_unconnect" padding="24,0,0,0" bkimage="SpeedTest/card_vpn.png" width="180" height="109" >
+					<Label name="" height="16" padding="8,8,0,0" textcolor="#A6FFFFFF" text="VPN Network" textid="247" font="2" align="left" />
+					<HorizontalLayout  padding="16,19,0,0"  childalign="left" height="16" name="connecting_speed_test_status" >
+						<Control  width="16" bkimage="SpeedTest/ic_location.png"   mouse="false"  borderround="3,3" ></Control>
+						<Label name="connet_status" height="" padding="16,0,0,0" textcolor="#D9FFFFFF"   text="Not connect" font="2"  align="left"/>
+					</HorizontalLayout>	
+					
+					<HorizontalLayout  padding="16,17,0,0"  childalign="left" height="16">
+						<Control bkimage="SpeedTest/ic_download.png" width="16"  mouse="false"  ></Control>
+						<Label name="unconnect_dowload_speed_right" height="" padding="16,0,0,0" textcolor="#D9FFFFFF" text="-- Mbps" font="2"  align="left"/>
+						
+					</HorizontalLayout>		
+				  </VerticalLayout>
+				  
+				  <VerticalLayout name="vpn_speedtest_connected" visible="false" padding="24,0,0,0" bkimage="SpeedTest/card_vpn.png" width="180" height="109" >
+					<Label name="" height="16" padding="8,8,0,0" textcolor="#A6FFFFFF" text="VPN Network"  textid="247" font="2" align="left" />
+					<HorizontalLayout  padding="16,21,0,0"  childalign="left" height="16" name="connected_speed_test_status" >
+						<Control  width="16" name="country_icon" bkcolor="#ff2E2D3D"   mouse="false"  borderround="3,3" ></Control>
+						<Label name="country" height="" padding="16,0,0,0" textcolor="#D9FFFFFF"   text="--" font="2"  align="left" valign="vcenter"/>
+					</HorizontalLayout>	
+					
+					<HorizontalLayout  padding="16,17,0,0"  childalign="left" height="16">
+						<Control bkimage="SpeedTest/ic_download.png" width="16"  mouse="false"  ></Control>
+						<Label name="conneted_dowload_speed_right" height="" padding="16,0,0,0" textcolor="#D9FFFFFF" text="-- Mbps" font="2"  align="left"/>
+					</HorizontalLayout>		
+				  </VerticalLayout>			  
+			  </HorizontalLayout>	
+			  
+			 <Label name="anim_dowload_speed" float="true" pos="142,235,318,267" textcolor="#FFFA7B47" text="89 Mbps" font="8"  align="center" valign="vcenter"/>
+			 
+			</VerticalLayout>
+			
+			<!-- speedTest page vpn Connected Status-->
+			<VerticalLayout childalign="center"  childvalign="vcenter"   >
+				<HorizontalLayout height="24"   padding="0,12,0,0" >
+					<Label name="speedtest_title" padding="0,4,0,0" align="center" valign="vcenter" height="16" text="Internet Speed Test"  textid="241"  textcolor="#A6FFFFFF" font="2"   /> 
+				</HorizontalLayout>	 
+				<Option name="speedtest_return_btn"  float="true" pos="10,8,34,32" textcolor="#FFA7A6AA" tooltip="return"  normalimage="file='pay/ic_back.png' source='4,0,28,24'" hotimage="file='pay/ic_back.png' source='42,0,66,24'"  pushedimage="file='pay/ic_back.png' source='42,0,66,24'"  />			
+				<!-- <Button name="speedtest_tips" bkimage="bg_tips.png" endellipsis="true" mouse="false" padding="0,18,0,0"  borderround="3,3" visible="true" font="6" textcolor="#A6FFFFFF"  text="Testing local network speed"  width="226" height="30" align="center" valign="vcenter" />-->
+					<VerticalLayout  height="189" padding="0,24,0,0" >
+						<CRlottieAnim name="speedtest_ratote_1" jsondata="lottie/speedtest.json"/>
+					</VerticalLayout>
+					<Button name="speedtest_start" padding="0,34,0,0" visible="true" text="Start1" textcolor="#FFFFFFFF" font="4" width="136" height="42" align="center" valign="vcenter" normalimage="file='SpeedTest/btn_speedtest_normal.png' " hotimage="file='SpeedTest/btn_speedtest_hover.png'" pushedimage="file='SpeedTest/btn_speedtest_active.png' "/>		
+				   <!--Speed Info pannel-->
+				  <HorizontalLayout name="connected_speed_test_page_1"  padding="32,80,32,0"  childalign="center" >
+					  <VerticalLayout bkimage="SpeedTest/bg_vip_big copy.png"  width="384" height="109"  name="local_page_1" >
+						<Label name="" height="16" padding="8,8,0,0" textcolor="#A6FFFFFF" textid="365"  font="7" align="left" />
+						<HorizontalLayout  padding="16,22,0,0"   height="16" >
+							<HorizontalLayout   childalign="left" width="232" height="16" >
+								<Control  name="net_icon"  bkimage="SpeedTest/ic_network.png" width="16" height="16" mouse="false"  ></Control>
+								<Label name="net_name" height="" padding="16,0,0,0" textcolor="#D9FFFFFF" text="---" font="7"  align="left"/>
+							</HorizontalLayout>	
+							<HorizontalLayout  width="152"  childalign="left" height="16" >	
+								<Control  name="ip_icon" padding="0,0,0,0"  bkimage="SpeedTest/ic_ip.png" width="16" height="16" mouse="false"  ></Control>
+								<Label name="server_ip" height="" padding="16,0,0,0" textcolor="#D9FFFFFF" text="---" font="7"  align="left"/>	
+							</HorizontalLayout>		
+							
+						</HorizontalLayout>	
+						
+						<HorizontalLayout  padding="10,19,0,0"  childalign="left" height="16">
+							<HorizontalLayout    childalign="left" width="226" height="16"  padding="6,0,0,0">	
+								<Control  width="16" name="country_icon"  bkcolor="#ff2E2D3D"   mouse="false"  borderround="3,3" ></Control>
+								<Label name="country" height="" padding="16,0,0,0" textcolor="#D9FFFFFF"   text="---" font="7"  align="left" valign="vcenter"/>
+							</HorizontalLayout>	
+							<HorizontalLayout  width="152"  childalign="left" height="16" >					
+								<Control bkimage="SpeedTest/ic_download.png" width="16" padding="6,0,0,0"  mouse="false"  ></Control>
+								<Label name="dowload_speed_right" height="" padding="16,0,0,0" textcolor="#D9FFFFFF" text="---" font="7"  align="left"/>		
+							</HorizontalLayout>						
+						</HorizontalLayout>		
+					  </VerticalLayout>
+				 </HorizontalLayout>	
+			   
+			</VerticalLayout>
+		  </TabLayout>
+
+		 </VerticalLayout>
+		</HorizontalLayout>
+		
+		<!--config page -->	
+		<HorizontalLayout width="710" height="580" name ="main_config_page" visible="false">		
+			<VerticalLayout childalign="center"  >	
+				<Include source="settings/settings_view.xml" />
+			</VerticalLayout>		
+		</HorizontalLayout>	
+			
+		
+	<!--rating start-->  
+		<VerticalLayout childalign="center" name="rating_dlg" float="true" pos="308,93,651,217" visible="false" bkimage="rating/bg_rate.png" >
+			<Label name="" height="25" padding="0,23,0,0" textcolor="#FFFFFFFF" text="How was your experie" textid="269" font="3" align="center" valign="vcenter" />	
+			 <HorizontalLayout  padding="39,16,40,0" height="40" visible="true" >
+				<Option name="star1" width="40" normalimage="file='rating/ic_star_n.png'" selectedimage1="file='rating/ic_star_l.png'"   group="star" tag="1"/>
+				<Option name="star2" width="40" padding="16,0,0,0" normalimage="file='rating/ic_star_n.png' " selectedimage1="file='rating/ic_star_l.png' " tag="2" />
+				<Option name="star3" width="40" padding="16,0,0,0"  normalimage="file='rating/ic_star_n.png'"  selectedimage1="file='rating/ic_star_l.png'" tag="3"  />
+				<Option name="star4" width="40" padding="16,0,0,0"  normalimage="file='rating/ic_star_n.png'"   selectedimage1="file='rating/ic_star_l.png'" tag="4" />
+				<Option name="star5" width="40" padding="16,0,0,0"  normalimage="file='rating/ic_star_n.png'"  selectedimage1="file='rating/ic_star_l.png'" tag="5" />				
+			 </HorizontalLayout>
+		</VerticalLayout>
+
+		
+		<VerticalLayout  name ="main_window_shadow" inset="0,0,0,0" childalign="center" bkcolor="#99000000" float="true" pos="0,0,710,580" visible="false">
+		</VerticalLayout  >
+		
+		 <VerticalLayout name="page_loading" inset="42,0,0,0" childalign="center" bkcolor="#99000000" float="true" pos="0,0,710,580" visible="false">
+		   <Control />
+		   <GifAnim  bkimage="page_loading.gif" autosize="true"/>
+		   <Control />
+		 </VerticalLayout>	
+	</VerticalLayout>
+</VerticalLayout>
+</Window>

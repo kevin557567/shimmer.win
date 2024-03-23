@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window size="432,230">
+  <Font id="0" name="Segoe UI" size="14" bold="false" default="true"/>
+  <Font id="1" name="Segoe UI" size="18" bold="true"/>
+  <VerticalLayout bkimage="file='settings/commdlg_bg.png' corner=0,1,0,0">
+    <HorizontalLayout height="36">
+      <Control></Control>
+      <Button name="dlg_close" tooltipid="126" width="36" height="36" normalimage="settings/common_close.png"/>
+    </HorizontalLayout>
+    <Label mouse="false" text="Reminder" height="22" textcolor="#FF000000" font="1" align="left" valign="vcenter" padding="36,4,0,0"/>
+    <Label textcolor="#FF666666" text="TAP-Windows Adapter is necessary for VPN service, please enable it first." align="left" valign="vcenter" multiline="true" padding="36,16,24,0"/>
+    <HorizontalLayout padding="0,36,0,0" height="40">
+      <Control></Control>
+      <Button name="copy_btn" padding="0,0,24,0" width="132" normalimage="file='settings/btn.png' corner='10,10,10,10'" hotimage="file='settings/btn_hover.png' corner='10,10,10,10'" pushimage="file='settings/btn_press.png' corner='10,10,10,10'" text="Enable Now" textcolor="#ffffffff" align="center" valign="vcenter" />
+    </HorizontalLayout>
+  </VerticalLayout>
+</Window>

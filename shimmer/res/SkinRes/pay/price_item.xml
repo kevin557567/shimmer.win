@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window >
+  <HorizontalLayout   width="147" padding="0,0,0,0"  >
+	  <VerticalLayout  childvalign="vcenter"  width="146" padding="0,11,0,0" bkimage="file='pay/bg_shadow.png' corner='0,0,0,0'"  >
+		<Option name="price_item"  width="147" height="207" float="true"  pos="0,0,147,207" normalimage="file='pay/bg_price_normal.png' corner='0,0,0,0'" hotimage="file='pay/bg_price_hover.png' corner='0,0,0,0'" selectedimage="file='pay/bg_price_active.png' corner='0,0,0,0'" group="priceitem"/>
+		<Label name="title" text="24 Months Plan"  textpadding="15,12,13,11"  mouse="false"  align="center" valign="vcenter" textcolor="#ffDEA187"  font="3" height="44"/>
+		<Label name="cur_price" align ="bottom" text="$4.17<f 6>/mo</f >"  padding="21,21,0,0" showhtml="true"  mouse="false" valign="vcenter" textcolor="#ffDEA187"  font="28" height="44"/>
+		
+		<Option name="save_option"  text="Save 58%"  mouse="false" textcolor="#ffFA7B47" font="2" pushedtextcolor="#ffFFFFFF"  width="96" height="25" padding="25,16,0,0" borderround="12,12"></Option>
+
+		<Text name="price_dsc" text="<c #FA7B47>$15.99</c> $11.99 for every month"  float="true" pos="14,163,133,194" showhtml="true" align="center" mouse="false" multiline="true"  textcolor="#ff242234"  font="9" ></Text>
+		<!--
+		<Control name="redline" float="true" pos="14,170,50,171" bkcolor="#ffEE0B3A" height="1" mouse="false"></Control>
+		-->
+	  </VerticalLayout>
+	
+	  <Option name="line"   mouse="false" width="1"   padding="0,11,0,3" bkimage="pay/Rectangle.png" />
+	   
+	   
+	    <Option name="most_popular" text="Most popular" float="true"  textcolor="#FFFFFFFF" mouse="false"  pos="24,0,118,22" bkimage="file='pay/img_popular.png'"/>
+   </HorizontalLayout>	  
+</Window>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window caption="0,0,0,0" roundcorner="0,0,0,0" sizebox="0,0,0,0" size="710,580">
+ <Font id="0" name="Segoe UI" size="13" bold="false" default="true"/>
+ <Font id="1" name="Segoe UI" size="18" bold="true"/>
+ <Font id="2" name="Segoe UI" size="12" shared="true" />
+ <Font id="3" name="Segoe UI" size="16" bold="true"/>
+ <Font id="4" name="Segoe UI" size="14" bold="true"/>
+ <Font id="5" name="Segoe UI" size="20" />
+ <Font id="6" name="Segoe UI" size="14" />
+ <Font id="7" name="Segoe UI" size="12" bold="true"/>
+ <Font id="8" name="Segoe UI" size="16" shared="true"/>
+ <Font id="9" name="Segoe UI" size="10" />
+ <Font id="10" name="Segoe UI" size="8" />
+ <Font id="18" name="Segoe UI" size="18" bold="true"/>
+ <Font id="11" name="Segoe UI" size="24" bold="true"/>
+ <Font id="28" name="Segoe UI" size="28" bold="true"/>
+  <Font id="32" name="Segoe UI" size="32" bold="true"/>
+<!--<Default name="VScrollBar" value="width=&quot;8&quot; showbutton1=&quot;false&quot; showbutton2=&quot;false&quot; thumbnormalimage=&quot;file='Scrollbars.png' source='0,0,8,12' corner='2,3,2,3'&quot; thumbhotimage=&quot;file='Scrollbars.png' source='0,0,8,12' corner='2,3,2,3'&quot; thumbpushedimage=&quot;file='Scrollbars.png' source='0,0,8,12' corner='2,3,2,3'&quot; bknormalimage=&quot;file='Scrollbars.png' source='0,12,8,24' corner='2,3,2,3'&quot; bkhotimage=&quot;file='Scrollbars.png' source='0,12,8,24' corner='2,3,2,3'&quot; bkpushedimage=&quot;file='Scrollbars.png' source='0,12,8,24' corner='2,3,2,3'&quot;" />-->
+<Default name="VScrollBar" value="width=&quot;8&quot; scrollunit=&quot;42&quot; showbutton1=&quot;false&quot; showbutton2=&quot;false&quot; thumbnormalimage=&quot;file='scrollbar.png' hquality='false' source='0,0,8,62' corner='3,3,3,3'&quot; thumbhotimage=&quot;file='scrollbar.png' source='0,0,8,62' corner='3,3,3,3'&quot; thumbpushedimage=&quot;file='scrollbar.png' source='0,0,8,62' corner='3,3,3,3'&quot;"/>
+<VerticalLayout bkcolor="0xFFFFFFFF" >
+	<VerticalLayout name="discount_vt"  height="300" width ="710" bkimage="file='welcomepage/Path2.png' corner='5,5,5,5'  source='0,3,300,713'" visible="true" >
+	
+		<Label text="<c #FFFFFFFF >Turbo VPN </c> <c #F0E531>Premium</c>" align ="center"  height="20" padding="0,46,0,0"  showhtml="true"  font="18" />
+		<Label name="welcome_title" text="Get unlimited speed with Premium"  align ="center"  height="27" padding="0,16,0,0" textcolor="#FFFFFFFF" font="11" />
+		<Label name="welcome_title_2" text="Access all the perks of Premium" textid="426" align ="center"  height="22" padding="0,12,0,0" textcolor="#FFFFFFFF" font="3" />
+		
+		<Option name="ic_speed" width ="42" height="42" float="true"  mouse="false"  pos="122,188,164,230" bkimage="file='pay/ic_speed.png'"/>
+		<Option name="ic_servers" width ="42" height="42" float="true"  mouse="false"  pos="254,188,296,230" bkimage="file='pay/ic_servers.png'"/>
+		<Option name="ic_devices" width ="42" height="42" float="true"   mouse="false" pos="387,188,429,230" bkimage="file='welcomepage/Group5.png'"/>
+		<Option name="ic_247" width ="42" height="42" float="true"  mouse="false"  pos="529,192,561,224" bkimage="file='welcomepage/phone.png'"/>
+		
+		<Option name=""  float="true"  mouse="false"  pos="211,207,212,257" bkcolor="#FFE3E3E3" />
+		<Option name=""  float="true"  mouse="false"  pos="347,207,348,257"  bkcolor="#FFE3E3E3"/>
+		<Option name=""  float="true"  mouse="false"  pos="483,207,484,257" bkcolor="#FFE3E3E3"/>
+
+		
+		<HorizontalLayout padding="90,89,0,0" height="44"> 
+			<Label text="Unlimited speed"  align ="center"  height="44" width="106" padding="0,0,0,0"  multiline="true" showhtml="true" textcolor="#FFFFFFFF" disabledtextcolor="#FFA7A6AA" font="3" />
+			<Label text="22000+ servers"  align ="center"  height="44" width="106" padding="30,0,0,0" multiline="true" showhtml="true" textcolor="#FFFFFFFF" disabledtextcolor="#FFA7A6AA" font="3" />			
+			<Label text="Connect up to 5 devices"  align ="center"  height="42" width="106" padding="30,0,0,0" multiline="true" showhtml="true" textcolor="#FFFFFFFF" disabledtextcolor="#FFA7A6AA" font="3" />
+			<Label text="24/7 customer <x 50>       support"  align ="left"  height="42" width="120" padding="30,0,0,0" multiline="true" showhtml="true" textcolor="#FFFFFFFF" disabledtextcolor="#FFA7A6AA" font="3" />
+	    </HorizontalLayout>	  
+	
+	</VerticalLayout>	
+	
+	<Label  text="Choose the right plan for you" textid="427" align ="center"  float="true" font="3"     pos="0,343,710,365"     textcolor="#ff525252"   multiline="false" />
+	
+	<Label name="welcome_page2_btn_dsc_left" text="Free 3-day trial"  font="2"   align ="center"   float="true"    pos="125,385,343,401"    textcolor="#FFFF844F"   multiline="false" />
+	<Label name="welcome_page2_btn_dsc_right" text="Speed limit server"  font="2"   align ="center"   float="true"    pos="367,385,585,401"    textcolor="#FFA2A2A2"   multiline="false" />
+	
+	<Button  name="try_Premium_free" text="Try Premium free" textcolor ="#ffFFFFFF"  float="true"   font="6"  pos="125,408,343,450"   normalimage="file='welcomepage/Rectangle.png'"    align ="center"     borderround="8,8"/>
+	<Button name="proceed_with_free" text="Proceed with Free" textcolor ="#FFA2A2A2"   float="true"   font="6"  pos="367,408,585,450"    normalimage="file='welcomepage/rc_grad.png' corner='20,0,20,0'"  align ="center"     borderround="8,8"/>
+	
+
+	<Label name="welcome_page2_guarantee_dsc" text="30-day money-back guarantee" textid="428"   float="true"  align="center" font="4"   pos="0,462,710,481"     textcolor="#ff525252"   multiline="false" />
+  
+  
+    <HorizontalLayout  float="true"     pos="28,529,710,551" >
+	    <Control padding="30,0,0,0"/>
+		<HorizontalLayout  width="300" >
+			<Label name = "turnto_sign_up_dsc" text="Have an account? " textid="429" autosize="true"  align ="center"    textcolor="#ff525252" disabledtextcolor="#FFA7A6AA" font="3" />		
+			<Button name="sign_in" textid="203"  align ="left" autosize="true"   padding="5,0,0,0" textcolor="#FFFA7B47"  font="3"  hottextcolor="FFFA7B47" pushedtextcolor ="#FFA7A6AA"  />
+	    </HorizontalLayout>       
+	   <Control />
+	</HorizontalLayout>
+	
+	
+	<Button name="dlg_return" textcolor="#FFA7A6AA" tooltip="return" float="true"  width ="24" height="24" pos="22,10,46,34" normalimage="file='pay/ic_back.png' source='4,0,28,24'" hotimage="file='pay/ic_back.png' source='42,0,66,24'"  pushedimage="file='pay/ic_back.png' source='42,0,66,24'" />	
+
+</VerticalLayout>
+
+</Window>

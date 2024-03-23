@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window roundcorner="0,0,0,-1" sizebox="0,0,0,0" size="710,580" layeredimage="file='bg_mask.png'" layeredopacity="255">
+<Font id="1" name="Segoe UI" size="16" bold="true"/>
+<Font id="2" name="Segoe UI" size="24" bold="true"/>
+<Font id="3" name="Segoe UI" size="14" bold="true"/>
+<Font id="10" name="Segoe UI" size="10" />
+<Font id="11" name="Segoe UI" size="11" />
+<Font id="12" name="Segoe UI" size="12" bold="true" />
+<Font id="13" name="Segoe UI" size="13" />
+<Font id="14" name="Segoe UI" size="14" bold="false" default="true"/>
+<Font id="15" name="Segoe UI" size="15" />
+<Font id="16" name="Segoe UI" size="16" />
+<Font id="18" name="Segoe UI" size="18" />
+<Font id="20" name="Segoe UI" size="20" />
+<Font id="22" name="Segoe UI" size="22" />
+<Font id="32" name="Segoe UI" size="32" />
+<VerticalLayout   >
+     <Control />
+	<VerticalLayout padding="325,0,0,0" height="346" width="311"  childalign="center" bkimage="file='SpeedTest/img_speedtest_expried.png'">
+		<Control width="311" height="168" mouse="false"  padding="0,0,0,0" ></Control>
+		<Label name="expried_tips" height="21" padding="0,17,0,0" textcolor="#FF333333" text="Your Premium trial have expired" textid="262" font="3" align="center" valign="vcenter"/>
+		<VerticalLayout padding="0,4,0,0" width="235" height="60" >
+			<Label   font="13"  mouse="false" multiline="true"   textcolor="#FF666666" align="center"  text="Upgrade now and continue to enjoy many privileges" textid="263"  ></Label>	
+		</VerticalLayout>
+		
+		<Button name="dlg_ok" textid="Upgrade now" textid="261" float="true" pos="42,280,269,322" font="1" align="center" textcolor="#FFFFFFFF"  normalimage="file='SpeedTest/btn_normal.png' " hotimage="file='SpeedTest/btn_hover.png'" pushedimage="file='SpeedTest/btn_active.png' "    />	 
+		<Button name="dlg_close" tooltip="close" float="true" pos="279,8,303,32" bkimage="file='SpeedTest/ic_close.png' "/>	
+	</VerticalLayout>
+  <Control />
+</VerticalLayout>
+</Window>

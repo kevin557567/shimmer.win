@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window roundcorner="0,0,0,0" sizebox="0,0,0,0" size="710,580"  layeredimage="file='bg_mask.png'" layeredopacity="255">
+ <Font id="0" name="Segoe UI" size="14" bold="false" default="true"/>
+ <Font id="1" name="Segoe UI" size="14" bold="true"/>
+<VerticalLayout>
+ 	<Control />
+	<VerticalLayout padding="283,0,0,0" bkimage="file='bg_dialogue.png' corner='10,10,10,68' hquality='false'" width="286" height="165" >
+	  <Button name="dlg_close" tooltipid="126" float="true" pos="254,10,282,30" normalimage="file='close_dialogue.png' source='0,0,28,20'" hotimage="file='close_dialogue.png' source='28,0,56,20'" pushedimage="file='close_dialogue.png' source='28,0,56,20'"/>
+	  <Label mouse="false" text="Reminder" height="24" textcolor="#fe171426" font="1" align="center" valign="vcenter" padding="30,18,30,0"/>
+	  <Label textcolor="#fe171426" text="Please disconnect VPN connection before configuring this function." align="center" valign="vcenter" multiline="true" padding="30,6,30,0"/>
+	  <Control></Control>
+	  <HorizontalLayout inset="10,0,10,0" height="56">
+	    <Button name="copy_btn" text="OK" textcolor="#fe171426" hottextcolor="#fe29C5A6" pushedtextcolor="#fe29C5A6" font="1" align="center" valign="vcenter" />
+	  </HorizontalLayout>
+ 	</VerticalLayout>
+	<Control />
+</VerticalLayout>
+</Window> 

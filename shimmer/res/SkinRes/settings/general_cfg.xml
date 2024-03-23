@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window roundcorner="0,0,0,0" sizebox="0,0,0,0" size="710,580" >
+  <!--
+  <Font id="0" name="微软雅黑" size="14" bold="false" default="true"/>
+  <Font id="1" name="微软雅黑" size="16"/>-->
+  <Font id="0" name="微软雅黑" size="13" bold="false" default="true"/>
+  <Font id="1" name="微软雅黑" size="18" bold="true"/>
+  <Font id="2" name="微软雅黑" size="12" shared="false" />
+  <Font id="3" name="微软雅黑" size="16" bold="true"/>
+  <Font id="4" name="微软雅黑" size="14" bold="true" shared="true"/>
+  <Font id="5" name="微软雅黑" size="20" />
+  <Font id="6" name="微软雅黑" size="14" shared="true"/>
+  <Font id="7" name="微软雅黑" size="12" shared="true"/>
+  <Font id="8" name="微软雅黑" size="16" />
+  <Font id="9" name="微软雅黑" size="24" bold="true" shared="true"/>
+  <Font id="10" name="微软雅黑" size="12" />
+  <Font id="11" name="微软雅黑" size="10" />
+  <Font id="12" name="微软雅黑" size="11" bold="true"/>
+  <Default name="VScrollBar" value="width=&quot;8&quot; scrollunit=&quot;42&quot; showbutton1=&quot;false&quot; showbutton2=&quot;false&quot; thumbnormalimage=&quot;file='scrollbar.png' hquality='false' source='0,0,8,62' corner='3,3,3,3'&quot; thumbhotimage=&quot;file='scrollbar.png' source='0,0,8,62' corner='3,3,3,3'&quot; thumbpushedimage=&quot;file='scrollbar.png' source='0,0,8,62' corner='3,3,3,3'&quot;"/>
+
+  <VerticalLayout childvalign="left" >
+    <Label textcolor="#ff696969"  height="32" font="9" textid="300"  text="General Settings" align="left" valign="left" multiline="true" padding="56,19,0,0"/>
+    <Label bkcolor="#ffEBE7E6"  height="1" width="446" font="6"   align="left" valign="left" multiline="true" padding="56,16,0,0"/>
+    <Label textcolor="#D9000000" name="" height="19" font="6" textid="301" text="Launch at Windows startup" align="left" valign="left" multiline="true" padding="56,16,0,0"/>
+    <Label textcolor="#D9000000" name="" height="19" font="6" textid="302" text="Auto-connect upon APP launch" align="left" valign="left" multiline="true" padding="56,16,0,0"/>
+    <Label bkcolor="#ffEBE7E6"  height="1" width="446"  align="left" valign="left" multiline="true" padding="56,16,0,0"/>
+    <Label textcolor="#D9000000"  height="19" font="6" textid="131" text="Language" align="left" valign="left" multiline="true" padding="56,16,0,0"/>
+
+    <ComboBox padding="56,16,0,0"  font="6" bordercolor="#ffEBE7E8" itemhlinesize="#ffEBE7E8" dropboxsize="446,222" name="language_combo" itemfont="7"  itemtextpadding="16,0,0,0" itemtextcolor="#D9000000" itemhottextcolor="#FFFA7B47" itemhotbkcolor="#ffEBE7E8" itemselectedtextcolor="#D9000000" itembkcolor="#ffEBE7E8" itemselectedbkcolor="#ffEBE7E8"  width="446" height="25" normalimage="settings/bg_language.png" hotimage="settings/bg_language.png" pushedimage="settings/bg_language2.png">
+      <ListLabelElement height="22" text="English"  bkimage="file='guoqi/flag_united kingdom@2x.png' dest='12,4,35,20'" selected="true" userdata="en"/>
+      <ListLabelElement height="22" text="Russian"  bkimage="file='guoqi/flag_russia@2x.png' dest='12,4,35,20'" userdata="ru"/>
+      <ListLabelElement height="22" text="Ukraine"  bkimage="file='guoqi/flag_ukraine@2x.png' dest='12,4,35,20'" userdata="ua"/>
+      <ListLabelElement height="22" text="Spanish"   bkimage="file='guoqi/flag_spain@2x.png' dest='12,4,35,20'" userdata="es"/>
+
+      <ListLabelElement height="22" text="Turkey" bkimage="file='guoqi/flag_turkey@2x.png' dest='12,4,35,20'" userdata="tr"/>
+      <ListLabelElement height="22" text="Germany" bkimage="file='guoqi/flag_germany@2x.png' dest='12,4,35,20'" userdata="de"/>
+      <ListLabelElement height="22" text="French" bkimage="file='guoqi/flag_france@2x.png' dest='12,4,35,20'" userdata="fr"/>
+      <ListLabelElement height="22" text="Arabic" bkimage="file='guoqi/flag_united arab emirates@2x.png' dest='12,4,35,20'" userdata="ar"/>
+
+      <ListLabelElement height="22" text="South korea" bkimage="file='guoqi/flag_south korea@2x.png' dest='12,4,35,20'" userdata="kr"/>
+      <ListLabelElement height="22" text="Bahasa Indonesia" bkimage="file='guoqi/flag_id@2x.png' dest='12,4,35,20'" userdata="id"/>
+    </ComboBox>
+    <Option name="startup" float="true" pos="460,81,502,108" normalimage="settings/ic_switch_off.png"  selectedimage="settings/ic_switch_on.png" />
+    <Option name="autoconnect" float="true" pos="460,115,502,142" normalimage="settings/ic_switch_off.png" selectedimage="settings/ic_switch_on.png" />
+    <Label name="userinfo" text="" autosize="true" visible="false" align="center" textcolor="#ff696969" font="2"  float="true" pos="0,440,570,453"  valign="center" ></Label>
+    <HorizontalLayout  float="true" pos="0,455,710,490" childvalign="vcenter" align="center">
+      <Label name="vertext" text="Version" textid ="305" align="right" textcolor="#ff696969" font="4" width="280" padding="0,0,5,0"></Label>
+      <Button name="version" text="" autosize="true" align="left" textcolor="#ff696969" font="4" ></Button>
+    </HorizontalLayout>
+    <Button name="ver" text="Your are using the best version" enabled="false" autosize="true" textid="303" showhtml="true" align="center" textcolor="#ff696969" float="true" pos="0,485,570,504"  valign="center"></Button>
+  </VerticalLayout>
+</Window>
