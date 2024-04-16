@@ -29,6 +29,7 @@
     <ClCompile Include="firebase.cpp" />
     <ClCompile Include="machine.cpp" />
     <ClCompile Include="main.cc" />
+    <ClCompile Include="rpsmgr.cpp" />
     <ClCompile Include="winsvr.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -42,6 +43,7 @@
     <ClInclude Include="DataEncrypt.h" />
     <ClInclude Include="firebase.h" />
     <ClInclude Include="machine.h" />
+    <ClInclude Include="rpsmgr.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>

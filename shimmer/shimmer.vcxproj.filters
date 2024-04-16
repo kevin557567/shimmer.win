@@ -29,14 +29,17 @@
     <ClCompile Include="MainWinFrame.cpp">
       <Filter>UI</Filter>
     </ClCompile>
-    <ClCompile Include="VPNMgr.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="DataMgr.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="FloatWindow.cpp">
       <Filter>UI</Filter>
+    </ClCompile>
+    <ClCompile Include="vpnmgr.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="rpcmgr.cpp">
+      <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -55,14 +58,17 @@
     <ClInclude Include="MainWinFrame.h">
       <Filter>UI</Filter>
     </ClInclude>
-    <ClInclude Include="VPNMgr.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="DataMgr.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="FloatWindow.h">
       <Filter>UI</Filter>
+    </ClInclude>
+    <ClInclude Include="vpnmgr.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="rpcmgr.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

@@ -271,13 +271,14 @@
     <ClCompile Include="LaunchScreen.cpp" />
     <ClCompile Include="Machine.cpp" />
     <ClCompile Include="MainWinFrame.cpp" />
+    <ClCompile Include="rpcmgr.cpp" />
     <ClCompile Include="StdAfx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='UnicodeDebug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='UnicodeRelease|Win32'">Create</PrecompiledHeader>
     </ClCompile>
-    <ClCompile Include="VPNMgr.cpp" />
+    <ClCompile Include="vpnmgr.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="DataMgr.h" />
@@ -286,8 +287,9 @@
     <ClInclude Include="Machine.h" />
     <ClInclude Include="MainWinFrame.h" />
     <ClInclude Include="resource.h" />
+    <ClInclude Include="rpcmgr.h" />
     <ClInclude Include="StdAfx.h" />
-    <ClInclude Include="VPNMgr.h" />
+    <ClInclude Include="vpnmgr.h" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="shimmer.rc" />

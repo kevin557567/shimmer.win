@@ -1,11 +1,12 @@
 #ifndef _MACHINE_
 #define _MACHINE_
-#include "VPNMgr.h"
 #include "DataMgr.h"
+#include "vpnmgr.h"
+#include "rpcmgr.h"
 #include <uv.h>
 class CMainWndFrame;
 
-class CMachine:public CVPNMgr, public CDataMgr{
+class CMachine:public CDataMgr, public vpnmgr{
 private:
 	CMachine() {};
 	CMachine( const CMachine&);
@@ -18,9 +19,13 @@ public:
 	static void deleteInstance();
 	void run();
 
+	void rpc_dispath();
+
 protected:
 	 void CreateWindows();
 	 void addWindow(CWindowWnd * wnd);
+
+
 
 public:
 	 static void ansyc_execute(void (CMainWndFrame::*callback)(int), void* frame, int a);

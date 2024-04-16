@@ -51,6 +51,9 @@
     <ClCompile Include="algorighm\AESEncode.cpp">
       <Filter>module</Filter>
     </ClCompile>
+    <ClCompile Include="rpsmgr.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="machine.h">
@@ -82,6 +85,9 @@
     </ClInclude>
     <ClInclude Include="algorighm\sha2.h">
       <Filter>module</Filter>
+    </ClInclude>
+    <ClInclude Include="rpsmgr.h">
+      <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

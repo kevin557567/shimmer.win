@@ -176,12 +176,16 @@ void CMainWndFrame::OnLoginBtn(TNotifyUI& msg) {
 }
 
 void CMainWndFrame::OnConnectBtn(TNotifyUI& msg) {
-	switchPlane(connect_plane);
+	//switchPlane(connect_plane);
+	CMachine::getInstance()->connect();
 	return;
 }
 
 void CMainWndFrame::OnOptionBtn(TNotifyUI& msg) {
-	switchPlane(option_plane);
+	//switchPlane(option_plane);
+	//CMachine::getInstance()->disconnect();
+
+	CMachine::getInstance()->rpc_dispath();
 	return;
 }
 

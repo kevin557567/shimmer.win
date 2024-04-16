@@ -19,6 +19,14 @@ typedef struct asnyc_req_t {
 	int arg;
 }asnyc_req;
 
+rpcmgr *rpcc = NULL;
+
+//void on_exit(uv_process_t *req, int64_t exit_status, int term_signal) {
+//	//fprintf(stderr, "Process exited with status %"PRId64", signal %d\n", exit_status, term_signal);
+//	uv_close((uv_handle_t*)req, NULL);
+//}
+// 
+
 CMachine::CMachine(const CMachine&) {
 	printf("CMachine");
 }
@@ -53,6 +61,13 @@ void CMachine::CreateWindows() {
 	//delete pMainWndFrame;
 }
 
+
+void CMachine::rpc_dispath() {
+
+	rpcc->send_data("abcdef", 6);
+
+}
+
 void CMachine::run() {
 	uv_loop_t *loop = uv_default_loop();
 	//uv_thread_t id = uv_thread_self();
@@ -64,6 +79,11 @@ void CMachine::run() {
 		, [](uv_work_t *req, int status) {}
 	);
 
+
+	rpcc = new rpcmgr();
+	rpcc->initPipeClient();
+
+ 
 	////idler
 	//uv_idle_t idler;
 	//uv_idle_init(loop, &idler);
